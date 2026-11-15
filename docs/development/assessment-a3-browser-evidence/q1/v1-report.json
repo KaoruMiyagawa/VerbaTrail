@@ -1,0 +1,15 @@
+{
+  "passed": [
+    "completed v1 result",
+    "in-progress v1 restored and submitted",
+    "unstarted v1 409"
+  ],
+  "run_ids": [
+    "asr_a5246ce3ec164c73",
+    "asr_cb1823840fa041f0",
+    "asr_1852e5bdbdc64e04"
+  ],
+  "failed": [],
+  "skipped": [],
+  "fixture": "V1 historical rows created by actual API using old release version selection"
+}

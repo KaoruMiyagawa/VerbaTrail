@@ -1,0 +1,21 @@
+{
+  "passed": [
+    "home entry",
+    "four skill statuses",
+    "v2 reading",
+    "incomplete submit disabled",
+    "four answers and real score",
+    "result details",
+    "reload and return restore",
+    "new run repeated exposure",
+    "four viewport screenshots"
+  ],
+  "failed": [],
+  "skipped": [
+    "network interruption",
+    "v1 browser history",
+    "keyboard and touch",
+    "four skill regression"
+  ],
+  "retested": []
+}

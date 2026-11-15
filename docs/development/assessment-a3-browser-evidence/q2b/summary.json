@@ -1,0 +1,198 @@
+{
+  "status": "pass",
+  "skills": {
+    "reading": {
+      "status": "pass",
+      "details": {
+        "session_id": "sess_46f1bca7dd734461",
+        "version": "ielts-reading content pack (seeded); assessment_run_created: false",
+        "result_visible": true,
+        "evaluation": "\u6700\u8fd1\u4e00\u6b21\u4f5c\u7b54\u8bc4\u4ef7\n\u6b63\u786e\n\n\u7b54\u6848\u4e0e\u672c\u9898\u8bbe\u5b9a\u7684\u9605\u8bfb\u8bc1\u636e\u76f8\u7b26\u3002\n\n\u9700\u8981\u8fc1\u79fb\u9a8c\u8bc1\u9898 \u00b7 \u7531\u670d\u52a1\u7aef\u9009\u62e9\u4e00\u9898\u65b0\u7684\u8fc1\u79fb\u9a8c\u8bc1\u9898\u3002\n\u67e5\u770b\u672c\u6b21\u8bc4\u4ef7\u8bb0\u5f55\n\u8fdb\u5165\u72ec\u7acb\u8fc1\u79fb\u9a8c\u8bc1"
+      }
+    },
+    "listening": {
+      "status": "pass",
+      "details": {
+        "session_id": "sess_8acb91b4bf704a77",
+        "playable_audio": {
+          "duration": 63.715918,
+          "readyState": 4,
+          "src": "http://127.0.0.1:13432/audio/listening/study-group.wav"
+        },
+        "playback": {
+          "playing": true,
+          "currentTime": 0.330826,
+          "duration": 63.715918
+        },
+        "submitted_answers": 5,
+        "server_score": "\u672c\u6b21\u7ed3\u679c\uff1a3 / 5",
+        "other_learner_get_status": 404,
+        "other_learner_submit_status": 404,
+        "restored_after_reload": true
+      }
+    },
+    "speaking": {
+      "status": "pass",
+      "details": {
+        "prompt": "What part of your daily routine do you enjoy most, and why?",
+        "microphone": "Chrome fake-device-for-media-stream; virtual device only, no physical microphone tested",
+        "localRecording": {
+          "src": "blob:http://127.0.0.1:13432/5bc9",
+          "readyState": 4,
+          "recordings": 1
+        },
+        "localPlayback": {
+          "playing": true,
+          "currentTime": 0.094749
+        },
+        "local_blob_restored_after_reload": true,
+        "server_metadata_saved": true,
+        "evaluation_status": "not_assessed",
+        "band_claim": false
+      }
+    },
+    "writing": {
+      "status": "pass",
+      "details": {
+        "draft_restored": true,
+        "revision_count_visible": 2,
+        "latest_draft_restored": true,
+        "session": "writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2",
+        "semantic_quality": "not_assessed",
+        "word_count_is_not_quality_score": true
+      }
+    }
+  },
+  "navigation": {
+    "status": "pass",
+    "routes": [
+      "/",
+      "/learning",
+      "/",
+      "/learn/listening",
+      "/",
+      "/learn/speaking",
+      "/",
+      "/learn/writing",
+      "/",
+      "/learn/assessment"
+    ],
+    "themes": [
+      {
+        "theme": "premium",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "noir",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "premium",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "noir",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "premium",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "noir",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "premium",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "noir",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      }
+    ],
+    "assessment_runs_after_visit": 0
+  },
+  "browser_exit_code": 0,
+  "database": {
+    "counts": {
+      "LearningSession": 4,
+      "Attempt": 6,
+      "SpeakingPractice": 1,
+      "WritingDraft": 1,
+      "WritingRevision": 2,
+      "AssessmentRun": 0,
+      "AssessmentTask": 0
+    },
+    "reading": {
+      "attempt_ids": [
+        "att_707e221374324fb4"
+      ],
+      "session_ids": [
+        "sess_46f1bca7dd734461"
+      ],
+      "evaluation_statuses": [
+        "evaluated"
+      ]
+    },
+    "listening": {
+      "attempt_ids": [
+        "att_b265416bdabf4a40",
+        "att_5dfcc27381504da9",
+        "att_8789281cb1764a6a",
+        "att_a4dd3225866649b9",
+        "att_8dda6dba4b7c4727"
+      ],
+      "session_ids": [
+        "sess_8acb91b4bf704a77"
+      ],
+      "evaluation_sources": [
+        "rule_check"
+      ]
+    },
+    "speaking": [
+      {
+        "recording_id": "7260697d-177c-4c7b-a955-d1cd65776a34",
+        "session_id": "speak_2afce2886086ceac4efd46550e6b13580d707a61",
+        "evaluation_status": "not_assessed",
+        "evidence_type": "practice_only"
+      }
+    ],
+    "writing": {
+      "revision_ids": [
+        "writing_2ef48978efa14b3d",
+        "writing_a3d7265ed615455c"
+      ],
+      "session_ids": [
+        "writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2"
+      ],
+      "revision_numbers": [
+        1,
+        2
+      ],
+      "quality_evaluation": "not_assessed"
+    },
+    "assessment_runs": 0,
+    "assessment_tasks": 0,
+    "temporary_database": "isolated SQLite at current Alembic head; deleted after runner exits"
+  },
+  "browser_report": "browser-report.json",
+  "http_evidence": "server-http-requests.json",
+  "database_evidence": "database-evidence.json"
+}

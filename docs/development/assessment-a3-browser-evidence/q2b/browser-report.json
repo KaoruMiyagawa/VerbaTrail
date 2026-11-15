@@ -1,0 +1,879 @@
+{
+  "status": "pass",
+  "browser": "Headless Chrome, real Uvicorn + Vite, isolated SQLite",
+  "skills": {
+    "reading": {
+      "status": "pass",
+      "details": {
+        "session_id": "sess_46f1bca7dd734461",
+        "version": "ielts-reading content pack (seeded); assessment_run_created: false",
+        "result_visible": true,
+        "evaluation": "最近一次作答评价\n正确\n\n答案与本题设定的阅读证据相符。\n\n需要迁移验证题 · 由服务端选择一题新的迁移验证题。\n查看本次评价记录\n进入独立迁移验证"
+      }
+    },
+    "listening": {
+      "status": "pass",
+      "details": {
+        "session_id": "sess_8acb91b4bf704a77",
+        "playable_audio": {
+          "duration": 63.715918,
+          "readyState": 4,
+          "src": "http://127.0.0.1:13432/audio/listening/study-group.wav"
+        },
+        "playback": {
+          "playing": true,
+          "currentTime": 0.330826,
+          "duration": 63.715918
+        },
+        "submitted_answers": 5,
+        "server_score": "本次结果：3 / 5",
+        "other_learner_get_status": 404,
+        "other_learner_submit_status": 404,
+        "restored_after_reload": true
+      }
+    },
+    "speaking": {
+      "status": "pass",
+      "details": {
+        "prompt": "What part of your daily routine do you enjoy most, and why?",
+        "microphone": "Chrome fake-device-for-media-stream; virtual device only, no physical microphone tested",
+        "localRecording": {
+          "src": "blob:http://127.0.0.1:13432/5bc9",
+          "readyState": 4,
+          "recordings": 1
+        },
+        "localPlayback": {
+          "playing": true,
+          "currentTime": 0.094749
+        },
+        "local_blob_restored_after_reload": true,
+        "server_metadata_saved": true,
+        "evaluation_status": "not_assessed",
+        "band_claim": false
+      }
+    },
+    "writing": {
+      "status": "pass",
+      "details": {
+        "draft_restored": true,
+        "revision_count_visible": 2,
+        "latest_draft_restored": true,
+        "session": "writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2",
+        "semantic_quality": "not_assessed",
+        "word_count_is_not_quality_score": true
+      }
+    }
+  },
+  "navigation": {
+    "status": "pass",
+    "routes": [
+      "/",
+      "/learning",
+      "/",
+      "/learn/listening",
+      "/",
+      "/learn/speaking",
+      "/",
+      "/learn/writing",
+      "/",
+      "/learn/assessment"
+    ],
+    "themes": [
+      {
+        "theme": "premium",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "noir",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "premium",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "noir",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "premium",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "noir",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "premium",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      },
+      {
+        "theme": "noir",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1425
+      }
+    ],
+    "assessment_runs_after_visit": 0
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/topics",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/sessions?learner_id=default_learner",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/topics",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/sessions?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:13431/api/v1/sessions",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/sessions",
+      "body": "{\"topic_id\":\"ielts-acad-reading-english\",\"learner_id\":\"default_learner\",\"exam_variant\":\"academic\"}",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/sessions?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/knowledge-states?learner_id=default_learner",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/reviews?learner_id=default_learner&status=pending",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/reviews?learner_id=default_learner&status=completed",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/sessions/sess_46f1bca7dd734461/material",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/knowledge-states?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/reviews?learner_id=default_learner&status=pending",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/reviews?learner_id=default_learner&status=completed",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:13431/api/v1/sessions/sess_46f1bca7dd734461/attempts",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/sessions/sess_46f1bca7dd734461/attempts",
+      "body": "{\"question_id\":\"ielts-acad-english-initial\",\"submitted_answer\":\"B\",\"idempotency_key\":\"93213948-29d0-4294-ba08-6a30d5dc47e2\"}",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/sessions/sess_46f1bca7dd734461",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/sessions/sess_46f1bca7dd734461/attempts",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/knowledge-states?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/reviews?learner_id=default_learner&status=pending",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/reviews?learner_id=default_learner&status=completed",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/sessions?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/knowledge-states?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/reviews?learner_id=default_learner&status=pending",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/reviews?learner_id=default_learner&status=completed",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/sessions/sess_46f1bca7dd734461/material",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/listening/history?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/listening/history?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:13431/api/v1/listening/sessions",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/listening/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/listening/sessions/sess_8acb91b4bf704a77?learner_id=q2b_wrong_learner",
+      "body": null,
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/listening/sessions/sess_8acb91b4bf704a77/submit?learner_id=q2b_wrong_learner",
+      "body": "{\"answers\":{\"listening-study-group-v1-q1\":\"Room 12\",\"listening-study-group-v1-q2\":\"The north entrance\",\"listening-study-group-v1-q3\":\"10:15\",\"listening-study-group-v1-q4\":\"A student card and a notebook\",\"listening-study-group-v1-q5\":\"Before Tuesday afternoon\"},\"idempotency_key\":\"q2b-owner-check\"}",
+      "status": 404
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:13431/api/v1/listening/sessions/sess_8acb91b4bf704a77/submit?learner_id=q2b_wrong_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:13431/api/v1/listening/sessions/sess_8acb91b4bf704a77/submit?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/listening/sessions/sess_8acb91b4bf704a77/submit?learner_id=default_learner",
+      "body": "{\"answers\":{\"listening-study-group-v1-q1\":\"Room 12\",\"listening-study-group-v1-q2\":\"The north entrance\",\"listening-study-group-v1-q3\":\"10:15\",\"listening-study-group-v1-q4\":\"A student card and a notebook\",\"listening-study-group-v1-q5\":\"Before Tuesday afternoon\"},\"idempotency_key\":\"listen-sess_8acb91b4bf704a77\"}",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/listening/history?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/listening/history?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/listening/sessions/sess_8acb91b4bf704a77?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/listening/history?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/listening/sessions/sess_8acb91b4bf704a77?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/prompts",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/practices?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/prompts",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/practices?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/practices",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/practices",
+      "body": "{\"learner_id\":\"default_learner\",\"recording_id\":\"7260697d-177c-4c7b-a955-d1cd65776a34\",\"prompt_id\":\"daily-routine\",\"prompt_version\":\"speaking-part1-v1\",\"duration_seconds\":1.77,\"recorded_at\":\"2026-11-15T11:03:27.341Z\",\"self_check\":[\"direct\"]}",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/practices?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/prompts",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/practices?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/prompts",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/speaking/practices?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/draft?learner_id=default_learner",
+      "body": "{\"body\":\"Local councils should consider the needs of the whole neighbourhood before deciding how to use public land. A community garden can bring neighbours together and give residents a practical way to grow food. It may also provide a calm place for older people and families. However, an outdoor sports facility can support exercise and give young people a safe place to meet. In my view, the best choice depends on what the area already has. If there is no nearby place for exercise, a small court may be more useful. Where sports facilities are already available, a garden could serve a different need. Councils should consult residents, review available space, and choose a plan that can be maintained over time.\",\"version\":0}",
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/draft?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/revisions?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/revisions?learner_id=default_learner",
+      "body": "{\"body\":\"Local councils should consider the needs of the whole neighbourhood before deciding how to use public land. A community garden can bring neighbours together and give residents a practical way to grow food. It may also provide a calm place for older people and families. However, an outdoor sports facility can support exercise and give young people a safe place to meet. In my view, the best choice depends on what the area already has. If there is no nearby place for exercise, a small court may be more useful. Where sports facilities are already available, a garden could serve a different need. Councils should consult residents, review available space, and choose a plan that can be maintained over time.\",\"version\":1,\"idempotency_key\":\"2cde46bd-64e7-4e26-9751-657b016178ba\"}",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/draft?learner_id=default_learner",
+      "body": "{\"body\":\"Local councils should consider the needs of the whole neighbourhood before deciding how to use public land. A community garden can bring neighbours together and give residents a practical way to grow food. It may also provide a calm place for older people and families. However, an outdoor sports facility can support exercise and give young people a safe place to meet. In my view, the best choice depends on what the area already has. If there is no nearby place for exercise, a small court may be more useful. Where sports facilities are already available, a garden could serve a different need. Councils should consult residents, review available space, and choose a plan that can be maintained over time. The local council could also arrange a trial and review attendance before making a permanent decision.\",\"version\":2}",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/revisions?learner_id=default_learner",
+      "body": "{\"body\":\"Local councils should consider the needs of the whole neighbourhood before deciding how to use public land. A community garden can bring neighbours together and give residents a practical way to grow food. It may also provide a calm place for older people and families. However, an outdoor sports facility can support exercise and give young people a safe place to meet. In my view, the best choice depends on what the area already has. If there is no nearby place for exercise, a small court may be more useful. Where sports facilities are already available, a garden could serve a different need. Councils should consult residents, review available space, and choose a plan that can be maintained over time. The local council could also arrange a trial and review attendance before making a permanent decision.\",\"version\":3,\"idempotency_key\":\"2698cb35-8950-4366-8792-e1b48c1eb696\"}",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions",
+      "body": "{\"learner_id\":\"default_learner\"}",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/health",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/revisions/writing_a3d7265ed615455c?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/revisions/writing_2ef48978efa14b3d?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/revisions/writing_a3d7265ed615455c?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/writing/sessions/writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2/revisions/writing_2ef48978efa14b3d?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": null,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/exams/catalog",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:13431/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null,
+      "status": 200
+    }
+  ],
+  "screenshots": [
+    "learn-home-entry.png",
+    "reading-normal-session.png",
+    "reading-normal-result.png",
+    "reading-premium.png",
+    "reading-noir.png",
+    "listening-intro.png",
+    "listening-server-result.png",
+    "listening-premium.png",
+    "listening-noir.png",
+    "speaking-prompt.png",
+    "speaking-premium.png",
+    "speaking-noir.png",
+    "writing-task2-prompt.png",
+    "writing-revision-two.png",
+    "writing-premium.png",
+    "writing-noir.png",
+    "assessment-entry-remains-distinct.png"
+  ],
+  "steps": [
+    {
+      "name": "learn-home-four-skills-and-assessment-entry",
+      "routes": [
+        "/learning",
+        "/learn/listening",
+        "/learn/speaking",
+        "/learn/writing"
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "ordinary-reading-session-submitted",
+      "session_id": "sess_46f1bca7dd734461",
+      "version": "ielts-reading content pack (seeded); assessment_run_created: false",
+      "result_visible": true,
+      "evaluation": "最近一次作答评价\n正确\n\n答案与本题设定的阅读证据相符。\n\n需要迁移验证题 · 由服务端选择一题新的迁移验证题。\n查看本次评价记录\n进入独立迁移验证",
+      "status": "pass"
+    },
+    {
+      "name": "listening-real-audio-scoring-and-ownership",
+      "session_id": "sess_8acb91b4bf704a77",
+      "playable_audio": {
+        "duration": 63.715918,
+        "readyState": 4,
+        "src": "http://127.0.0.1:13432/audio/listening/study-group.wav"
+      },
+      "playback": {
+        "playing": true,
+        "currentTime": 0.330826,
+        "duration": 63.715918
+      },
+      "submitted_answers": 5,
+      "server_score": "本次结果：3 / 5",
+      "other_learner_get_status": 404,
+      "other_learner_submit_status": 404,
+      "restored_after_reload": true,
+      "status": "pass"
+    },
+    {
+      "name": "speaking-virtual-microphone-local-recording-and-self-check",
+      "prompt": "What part of your daily routine do you enjoy most, and why?",
+      "microphone": "Chrome fake-device-for-media-stream; virtual device only, no physical microphone tested",
+      "localRecording": {
+        "src": "blob:http://127.0.0.1:13432/5bc9",
+        "readyState": 4,
+        "recordings": 1
+      },
+      "localPlayback": {
+        "playing": true,
+        "currentTime": 0.094749
+      },
+      "local_blob_restored_after_reload": true,
+      "server_metadata_saved": true,
+      "evaluation_status": "not_assessed",
+      "band_claim": false,
+      "status": "pass"
+    },
+    {
+      "name": "writing-draft-revision-and-refresh-restore",
+      "draft_restored": true,
+      "revision_count_visible": 2,
+      "latest_draft_restored": true,
+      "session": "writ_cbb3597a56a42a2c95091bfecaf88684a5e161f2",
+      "semantic_quality": "not_assessed",
+      "word_count_is_not_quality_score": true,
+      "status": "pass"
+    },
+    {
+      "name": "assessment-route-distinct-and-read-only-on-visit",
+      "assessment_run_count": 0,
+      "status": "pass"
+    }
+  ],
+  "failures": [],
+  "runtime_errors": []
+}

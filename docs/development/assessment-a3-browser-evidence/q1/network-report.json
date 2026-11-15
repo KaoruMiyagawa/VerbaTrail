@@ -1,0 +1,15 @@
+{
+  "passed": [
+    "create request offline and stable key retry",
+    "submit request offline and state query after reconnect",
+    "real backend retry result"
+  ],
+  "run_id": "asr_cf20af846c9842b7",
+  "create_idempotency_key": "238f4ee6-8bbd-44e5-97d3-2647c37113f5",
+  "failed": [],
+  "skipped": [
+    "successful backend submit with lost response",
+    "V1 browser history"
+  ],
+  "retested": []
+}

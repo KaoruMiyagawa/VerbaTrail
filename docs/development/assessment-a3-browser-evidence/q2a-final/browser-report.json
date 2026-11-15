@@ -1,0 +1,425 @@
+{
+  "pointer": {
+    "status": "pass",
+    "events": [
+      {
+        "type": "mousePressed",
+        "x": 276.5859375,
+        "y": 499.734375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 276.5859375,
+        "y": 499.734375
+      },
+      {
+        "type": "mousePressed",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mousePressed",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mousePressed",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mousePressed",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mousePressed",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mousePressed",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mousePressed",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mousePressed",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mousePressed",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mousePressed",
+        "x": 260.5,
+        "y": 357.375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 260.5,
+        "y": 357.375
+      },
+      {
+        "type": "mousePressed",
+        "x": 263.8125,
+        "y": 661.203125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 263.8125,
+        "y": 661.203125
+      }
+    ]
+  },
+  "touch": {
+    "status": "partial",
+    "events": [
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      }
+    ],
+    "scroll": [
+      {
+        "before": 0,
+        "after": 385,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 385,
+        "after": 770,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 770,
+        "after": 1155,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 1155,
+        "after": 1540,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 1540,
+        "after": 1925,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 1925,
+        "after": 2310,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 2310,
+        "after": 2605,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 2605,
+        "after": 2605,
+        "from": 650,
+        "to": 250
+      }
+    ]
+  },
+  "focus": {
+    "status": "not_run"
+  },
+  "version_drafts": {
+    "status": "not_run"
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs/asr_b3a7cc239be84f35?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs/asr_b3a7cc239be84f35/reading?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs/asr_b3a7cc239be84f35/reading/start?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs/asr_b3a7cc239be84f35/reading/submit"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs/asr_b3a7cc239be84f35/reading/submit"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs/asr_5cb0eb800c204738?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs/asr_5cb0eb800c204738/reading?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs/asr_5cb0eb800c204738/reading/start?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7702/api/v1/assessment-runs?learner_id=default_learner"
+    }
+  ],
+  "failed": [],
+  "skipped": [
+    "focus visibility audit",
+    "V1/V2 draft isolation",
+    "complete touch traversal and result reading"
+  ],
+  "retested": []
+}

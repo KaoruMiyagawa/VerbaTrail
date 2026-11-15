@@ -1,0 +1,118 @@
+{
+  "backend_requests": [
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34/reading",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34/reading/start",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34/reading/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34/reading/submit",
+      "body": {
+        "learner_id": "default_learner",
+        "answers": {
+          "readgarden-v2-q1": "Vegetables for the café",
+          "readgarden-v2-q2": "To reduce water loss from the soil",
+          "readgarden-v2-q3": "It focused only on income from the café",
+          "readgarden-v2-q4": "To increase the number of plots"
+        },
+        "idempotency_key": "71ed418d-4c64-4672-86fd-eebbb18226aa"
+      },
+      "attempt_count_before": 0,
+      "status": 200,
+      "attempt_count_after": 4
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_4403b37f02824c34/reading",
+      "status": 200
+    }
+  ],
+  "proxy": "none: Chrome DevTools response interception",
+  "database": {
+    "run_id": "asr_4403b37f02824c34",
+    "task_status": "completed",
+    "session_id": "sess_1a15fe49528f44bd",
+    "session_status": "completed",
+    "attempt_ids": [
+      "att_af13e3ad791a4284",
+      "att_6fb8112e927e4066",
+      "att_e09d3b3f59304af5",
+      "att_420ae0366f3045b0"
+    ],
+    "assessment_runs": 1,
+    "learning_sessions": 1,
+    "attempts": 4,
+    "answers_match": true
+  }
+}

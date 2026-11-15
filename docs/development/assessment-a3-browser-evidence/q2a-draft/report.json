@@ -1,0 +1,71 @@
+{
+  "status": "pass",
+  "run_ids": [
+    "asr_34f4c9ab052a4680",
+    "asr_80b0dbe1fef84284",
+    "asr_6f553c6e88a54f47"
+  ],
+  "storage_keys": [
+    "assessment:draft:default_learner:asr_34f4c9ab052a4680:reading-initial-community-garden-v1",
+    "assessment:draft:default_learner:asr_6f553c6e88a54f47:reading-initial-community-garden-v2",
+    "assessment:draft:default_learner:asr_80b0dbe1fef84284:reading-initial-community-garden-v2"
+  ],
+  "steps": [
+    {
+      "step": "select",
+      "run_id": "asr_34f4c9ab052a4680",
+      "version": "reading-initial-community-garden-v1"
+    },
+    {
+      "step": "select",
+      "run_id": "asr_80b0dbe1fef84284",
+      "version": "reading-initial-community-garden-v2"
+    },
+    {
+      "step": "select",
+      "run_id": "asr_34f4c9ab052a4680",
+      "version": "reading-initial-community-garden-v1"
+    },
+    {
+      "step": "select",
+      "run_id": "asr_80b0dbe1fef84284",
+      "version": "reading-initial-community-garden-v2"
+    },
+    {
+      "step": "select",
+      "run_id": "asr_6f553c6e88a54f47",
+      "version": "reading-initial-community-garden-v2"
+    },
+    {
+      "step": "select",
+      "run_id": "asr_34f4c9ab052a4680",
+      "version": "reading-initial-community-garden-v1"
+    },
+    {
+      "step": "select",
+      "run_id": "asr_80b0dbe1fef84284",
+      "version": "reading-initial-community-garden-v2"
+    },
+    {
+      "step": "select",
+      "run_id": "asr_34f4c9ab052a4680",
+      "version": "reading-initial-community-garden-v1"
+    },
+    {
+      "step": "select",
+      "run_id": "asr_6f553c6e88a54f47",
+      "version": "reading-initial-community-garden-v2"
+    }
+  ],
+  "checks": [
+    "V1 and V2 drafts remain separate",
+    "different V2 runs remain separate",
+    "refresh retains drafts",
+    "submitted server result overrides altered local draft",
+    "other runs retain drafts"
+  ],
+  "failed": [],
+  "skipped": [],
+  "retested": [],
+  "fixture": "historical V1 created via real API with old version-selection behavior in isolated process"
+}

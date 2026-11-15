@@ -1,0 +1,44 @@
+{
+  "counts": {
+    "AssessmentRun": 2,
+    "LearningSession": 2,
+    "Attempt": 4
+  },
+  "sessions": [
+    {
+      "id": "sess_22eccd698c1a4497",
+      "status": "completed"
+    },
+    {
+      "id": "sess_b673cb63770447cc",
+      "status": "active"
+    }
+  ],
+  "server_posts": [
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_0bf542ccc70a4eb5/reading/start",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_0bf542ccc70a4eb5/reading/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_826a9a85db314224/reading/start",
+      "status": 200
+    }
+  ]
+}

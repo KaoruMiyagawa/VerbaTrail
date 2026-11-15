@@ -1,9 +1,10 @@
 export type PlannedSkillWorkspace = 'listening' | 'speaking' | 'writing';
-export type WorkspaceId = 'home' | 'learning' | PlannedSkillWorkspace | 'diagnosis' | 'transfer' | 'review' | 'profile';
+export type WorkspaceId = 'home' | 'learning' | 'assessment' | PlannedSkillWorkspace | 'diagnosis' | 'transfer' | 'review' | 'profile';
 
 export const WORKSPACE_PATHS = {
   home: '/',
   learning: '/learning',
+  assessment: '/learn/assessment',
   listening: '/learn/listening',
   speaking: '/learn/speaking',
   writing: '/learn/writing',

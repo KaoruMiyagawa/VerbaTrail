@@ -1,0 +1,2158 @@
+{
+  "status": "pass",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "input": "Chrome DevTools Protocol Input.dispatchKeyEvent Tab, Shift+Tab, Enter and Space",
+  "themes": {
+    "premium": "Premium Academic",
+    "noir": "Noir & Champagne"
+  },
+  "matrix": {
+    "premium": [
+      {
+        "theme": "premium",
+        "control": "learn-entry",
+        "expected": "进入初始能力评估 →",
+        "tag": "BUTTON",
+        "type": "button",
+        "text": "进入初始能力评估 →",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 480.1875,
+          "width": 166.171875,
+          "height": 43.09375,
+          "top": 480.1875,
+          "right": 359.671875,
+          "bottom": 523.28125,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-learn-entry.png",
+        "status": "pass"
+      },
+      {
+        "theme": "premium",
+        "control": "create-run",
+        "expected": "开始新一轮评估",
+        "tag": "BUTTON",
+        "type": "button",
+        "text": "开始新一轮评估",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 201,
+          "y": 335.828125,
+          "width": 134,
+          "height": 43.09375,
+          "top": 335.828125,
+          "right": 335,
+          "bottom": 378.921875,
+          "left": 201
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1440,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-create-run.png",
+        "status": "pass"
+      },
+      {
+        "theme": "premium",
+        "control": "start-reading",
+        "expected": "开始 Reading",
+        "tag": "BUTTON",
+        "type": "submit",
+        "text": "开始 Reading",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 201,
+          "y": 613.265625,
+          "width": 125.625,
+          "height": 43.09375,
+          "top": 613.265625,
+          "right": 326.625,
+          "bottom": 656.359375,
+          "left": 201
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1440,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-start-reading.png",
+        "status": "pass"
+      },
+      {
+        "theme": "premium",
+        "control": "question-1-radio",
+        "expected": "Vegetables for the café",
+        "tag": "INPUT",
+        "type": "radio",
+        "text": "Vegetables for the café",
+        "name": "readgarden-v2-q1",
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 486.75,
+          "width": 13,
+          "height": 26.390625,
+          "top": 486.75,
+          "right": 206.5,
+          "bottom": 513.140625,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-question-1-radio.png",
+        "status": "pass"
+      },
+      {
+        "theme": "premium",
+        "control": "question-2-radio",
+        "expected": "To reduce water loss from the soil",
+        "tag": "INPUT",
+        "type": "radio",
+        "text": "To reduce water loss from the soil",
+        "name": "readgarden-v2-q2",
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 698.640625,
+          "width": 13,
+          "height": 26.390625,
+          "top": 698.640625,
+          "right": 206.5,
+          "bottom": 725.03125,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-question-2-radio.png",
+        "status": "pass"
+      },
+      {
+        "theme": "premium",
+        "control": "question-3-radio",
+        "expected": "It focused only on income from the café",
+        "tag": "INPUT",
+        "type": "radio",
+        "text": "It focused only on income from the café",
+        "name": "readgarden-v2-q3",
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 910.53125,
+          "width": 13,
+          "height": 26.390625,
+          "top": 910.53125,
+          "right": 206.5,
+          "bottom": 936.921875,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-question-3-radio.png",
+        "status": "pass"
+      },
+      {
+        "theme": "premium",
+        "control": "question-4-radio",
+        "expected": "To increase the number of plots",
+        "tag": "INPUT",
+        "type": "radio",
+        "text": "To increase the number of plots",
+        "name": "readgarden-v2-q4",
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 612.421875,
+          "width": 13,
+          "height": 26.390625,
+          "top": 612.421875,
+          "right": 206.5,
+          "bottom": 638.8125,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-question-4-radio.png",
+        "status": "pass"
+      },
+      {
+        "theme": "premium",
+        "control": "submit",
+        "expected": "提交作答",
+        "tag": "BUTTON",
+        "type": "submit",
+        "text": "提交作答",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 786.734375,
+          "width": 92,
+          "height": 43.09375,
+          "top": 786.734375,
+          "right": 285.5,
+          "bottom": 829.828125,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-submit.png",
+        "status": "pass"
+      },
+      {
+        "theme": "premium",
+        "control": "history-select",
+        "expected": "2026/11/15 18:30:00 · initial-v2 · completed",
+        "tag": "BUTTON",
+        "type": "button",
+        "text": "2026/11/15 18:30:00 · initial-v2 · completed",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 378.921875,
+          "width": 332.421875,
+          "height": 26.390625,
+          "top": 378.921875,
+          "right": 525.921875,
+          "bottom": 405.3125,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-history-select.png",
+        "status": "pass"
+      },
+      {
+        "theme": "premium",
+        "control": "return-learn",
+        "expected": "← 返回 Learn",
+        "tag": "BUTTON",
+        "type": "button",
+        "text": "← 返回 Learn",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(196, 172, 126)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 162.5,
+          "y": 134.59375,
+          "width": 118.90625,
+          "height": 41.4375,
+          "top": 134.59375,
+          "right": 281.40625,
+          "bottom": 176.03125,
+          "left": 162.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-premium-return-learn.png",
+        "status": "pass"
+      }
+    ],
+    "noir": [
+      {
+        "theme": "noir",
+        "control": "learn-entry",
+        "expected": "进入初始能力评估 →",
+        "tag": "BUTTON",
+        "type": "button",
+        "text": "进入初始能力评估 →",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 234.1875,
+          "width": 166.171875,
+          "height": 43.09375,
+          "top": 234.1875,
+          "right": 359.671875,
+          "bottom": 277.28125,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-learn-entry.png",
+        "status": "pass"
+      },
+      {
+        "theme": "noir",
+        "control": "create-run",
+        "expected": "开始新一轮评估",
+        "tag": "BUTTON",
+        "type": "button",
+        "text": "开始新一轮评估",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 335.828125,
+          "width": 134,
+          "height": 43.09375,
+          "top": 335.828125,
+          "right": 327.5,
+          "bottom": 378.921875,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-create-run.png",
+        "status": "pass"
+      },
+      {
+        "theme": "noir",
+        "control": "start-reading",
+        "expected": "开始 Reading",
+        "tag": "BUTTON",
+        "type": "submit",
+        "text": "开始 Reading",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 201,
+          "y": 639.65625,
+          "width": 125.625,
+          "height": 43.09375,
+          "top": 639.65625,
+          "right": 326.625,
+          "bottom": 682.75,
+          "left": 201
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1440,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-start-reading.png",
+        "status": "pass"
+      },
+      {
+        "theme": "noir",
+        "control": "question-1-radio",
+        "expected": "Vegetables for the café",
+        "tag": "INPUT",
+        "type": "radio",
+        "text": "Vegetables for the café",
+        "name": "readgarden-v2-q1",
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 486.53125,
+          "width": 13,
+          "height": 26.390625,
+          "top": 486.53125,
+          "right": 206.5,
+          "bottom": 512.921875,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-question-1-radio.png",
+        "status": "pass"
+      },
+      {
+        "theme": "noir",
+        "control": "question-2-radio",
+        "expected": "To reduce water loss from the soil",
+        "tag": "INPUT",
+        "type": "radio",
+        "text": "To reduce water loss from the soil",
+        "name": "readgarden-v2-q2",
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 698.421875,
+          "width": 13,
+          "height": 26.390625,
+          "top": 698.421875,
+          "right": 206.5,
+          "bottom": 724.8125,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-question-2-radio.png",
+        "status": "pass"
+      },
+      {
+        "theme": "noir",
+        "control": "question-3-radio",
+        "expected": "It focused only on income from the café",
+        "tag": "INPUT",
+        "type": "radio",
+        "text": "It focused only on income from the café",
+        "name": "readgarden-v2-q3",
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 910.3125,
+          "width": 13,
+          "height": 26.390625,
+          "top": 910.3125,
+          "right": 206.5,
+          "bottom": 936.703125,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-question-3-radio.png",
+        "status": "pass"
+      },
+      {
+        "theme": "noir",
+        "control": "question-4-radio",
+        "expected": "To increase the number of plots",
+        "tag": "INPUT",
+        "type": "radio",
+        "text": "To increase the number of plots",
+        "name": "readgarden-v2-q4",
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 613.203125,
+          "width": 13,
+          "height": 26.390625,
+          "top": 613.203125,
+          "right": 206.5,
+          "bottom": 639.59375,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-question-4-radio.png",
+        "status": "pass"
+      },
+      {
+        "theme": "noir",
+        "control": "submit",
+        "expected": "提交作答",
+        "tag": "BUTTON",
+        "type": "submit",
+        "text": "提交作答",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 787.515625,
+          "width": 92,
+          "height": 43.09375,
+          "top": 787.515625,
+          "right": 285.5,
+          "bottom": 830.609375,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-submit.png",
+        "status": "pass"
+      },
+      {
+        "theme": "noir",
+        "control": "history-select",
+        "expected": "2026/11/15 18:30:21 · initial-v2 · completed",
+        "tag": "BUTTON",
+        "type": "button",
+        "text": "2026/11/15 18:30:21 · initial-v2 · completed",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 193.5,
+          "y": 378.921875,
+          "width": 332.421875,
+          "height": 26.390625,
+          "top": 378.921875,
+          "right": 525.921875,
+          "bottom": 405.3125,
+          "left": 193.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-history-select.png",
+        "status": "pass"
+      },
+      {
+        "theme": "noir",
+        "control": "return-learn",
+        "expected": "← 返回 Learn",
+        "tag": "BUTTON",
+        "type": "button",
+        "text": "← 返回 Learn",
+        "name": null,
+        "focusVisible": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px",
+          "color": "rgb(210, 183, 127)",
+          "offset": "2px"
+        },
+        "boxShadow": "none",
+        "rect": {
+          "x": 162.5,
+          "y": 134.59375,
+          "width": 118.90625,
+          "height": 41.4375,
+          "top": 134.59375,
+          "right": 281.40625,
+          "bottom": 176.03125,
+          "left": 162.5
+        },
+        "viewportVisible": true,
+        "nav": {
+          "position": "sticky",
+          "rect": {
+            "top": 0,
+            "right": 1425,
+            "bottom": 77,
+            "left": 0
+          },
+          "overlap": false
+        },
+        "visualIndicator": true,
+        "pass": true,
+        "screenshot": "focus-noir-return-learn.png",
+        "status": "pass"
+      }
+    ]
+  },
+  "traversal": [
+    {
+      "tag": "BUTTON",
+      "text": "VerbaTrail",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 22.328125,
+        "right": 179.65625,
+        "bottom": 53.671875,
+        "left": 57.59375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 269.203125,
+        "bottom": 56.125,
+        "left": 207.65625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "阅读",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 579.4375,
+        "bottom": 56.125,
+        "left": 528.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "诊断洞察",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 660.4375,
+        "bottom": 56.125,
+        "left": 582.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "迁移验证",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 741.4375,
+        "bottom": 56.125,
+        "left": 663.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "复习",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 795.4375,
+        "bottom": 56.125,
+        "left": 744.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "学习档案",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 876.4375,
+        "bottom": 56.125,
+        "left": 798.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "☾ 曜黑",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 17.796875,
+        "right": 1243.40625,
+        "bottom": 58.1875,
+        "left": 1179.265625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "真实",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1300.40625,
+        "bottom": 51.890625,
+        "left": 1258.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "演示",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1344.40625,
+        "bottom": 51.890625,
+        "left": 1302.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "进入初始能力评估 →",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 480.1875,
+        "right": 359.671875,
+        "bottom": 523.28125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "开始新一轮评估",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 335.828125,
+        "right": 335,
+        "bottom": 378.921875,
+        "left": 201
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/15 18:30:00 · initial-v2 · not_started",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 378.921875,
+        "right": 538.65625,
+        "bottom": 405.3125,
+        "left": 201
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "开始 Reading",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 613.265625,
+        "right": 326.625,
+        "bottom": 656.359375,
+        "left": 201
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "Vegetables for the café",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 486.75,
+        "right": 206.5,
+        "bottom": 513.140625,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "To reduce water loss from the soil",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 698.640625,
+        "right": 206.5,
+        "bottom": 725.03125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "It focused only on income from the café",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 910.53125,
+        "right": 206.5,
+        "bottom": 936.921875,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "To increase the number of plots",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 612.421875,
+        "right": 206.5,
+        "bottom": 638.8125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "提交作答",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 786.734375,
+        "right": 285.5,
+        "bottom": 829.828125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "VerbaTrail",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 22.328125,
+        "right": 179.65625,
+        "bottom": 53.671875,
+        "left": 57.59375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 269.203125,
+        "bottom": 56.125,
+        "left": 207.65625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "阅读",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 579.4375,
+        "bottom": 56.125,
+        "left": 528.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "诊断洞察",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 660.4375,
+        "bottom": 56.125,
+        "left": 582.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "迁移验证",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 741.4375,
+        "bottom": 56.125,
+        "left": 663.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "复习",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 795.4375,
+        "bottom": 56.125,
+        "left": 744.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "学习档案",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 876.4375,
+        "bottom": 56.125,
+        "left": 798.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "☾ 曜黑",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 17.796875,
+        "right": 1243.40625,
+        "bottom": 58.1875,
+        "left": 1179.265625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "真实",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1300.40625,
+        "bottom": 51.890625,
+        "left": 1258.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "演示",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1344.40625,
+        "bottom": 51.890625,
+        "left": 1302.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "← 返回 Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 134.59375,
+        "right": 281.40625,
+        "bottom": 176.03125,
+        "left": 162.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "开始新一轮评估",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 335.828125,
+        "right": 327.5,
+        "bottom": 378.921875,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/15 18:30:00 · initial-v2 · completed",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 378.921875,
+        "right": 525.921875,
+        "bottom": 405.3125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "开始新一轮评估",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 335.828125,
+        "right": 327.5,
+        "bottom": 378.921875,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/15 18:30:00 · initial-v2 · completed",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 378.921875,
+        "right": 525.921875,
+        "bottom": 405.3125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "VerbaTrail",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 22.328125,
+        "right": 179.65625,
+        "bottom": 53.671875,
+        "left": 57.59375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 269.203125,
+        "bottom": 56.125,
+        "left": 207.65625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "阅读",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 579.4375,
+        "bottom": 56.125,
+        "left": 528.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "诊断洞察",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 660.4375,
+        "bottom": 56.125,
+        "left": 582.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "迁移验证",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 741.4375,
+        "bottom": 56.125,
+        "left": 663.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "复习",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 795.4375,
+        "bottom": 56.125,
+        "left": 744.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "学习档案",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 876.4375,
+        "bottom": 56.125,
+        "left": 798.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "☾ 曜黑",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 17.796875,
+        "right": 1243.40625,
+        "bottom": 58.1875,
+        "left": 1179.265625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "真实",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1300.40625,
+        "bottom": 51.890625,
+        "left": 1258.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "演示",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1344.40625,
+        "bottom": 51.890625,
+        "left": 1302.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "← 返回 Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 134.59375,
+        "right": 281.40625,
+        "bottom": 176.03125,
+        "left": 162.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "进入初始能力评估 →",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 480.1875,
+        "right": 359.671875,
+        "bottom": 523.28125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Listening 听力 可练习 练习捕捉关键信息，理解语境与细节。 进入听力 →",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 552.28125,
+        "right": 703.5,
+        "bottom": 743.203125,
+        "left": 162.5
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Speaking 口语 可练习 围绕熟悉与陌生话题，组织清楚连贯的表达。 进入口语 →",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 552.28125,
+        "right": 1262.5,
+        "bottom": 743.203125,
+        "left": 721.5
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Reading 阅读 可练习 用原创阅读材料练习判断题与段落标题匹配。 进入阅读 →",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 761.203125,
+        "right": 703.5,
+        "bottom": 952.125,
+        "left": 162.5
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Writing 写作 可练习 完成一套原创 Task 2 练习，从草稿到修订。 进入写作 →",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 761.203125,
+        "right": 1262.5,
+        "bottom": 952.125,
+        "left": 721.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "IELTS Academic 学术学习与高等教育",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 824.109375,
+        "right": 707.5,
+        "bottom": 893.9375,
+        "left": 162.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "IELTS General Training 日常、工作与移民场景",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 824.109375,
+        "right": 1262.5,
+        "bottom": 893.9375,
+        "left": 717.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "VerbaTrail",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 22.328125,
+        "right": 179.65625,
+        "bottom": 53.671875,
+        "left": 57.59375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 269.203125,
+        "bottom": 56.125,
+        "left": 207.65625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "阅读",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 579.4375,
+        "bottom": 56.125,
+        "left": 528.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "诊断洞察",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 660.4375,
+        "bottom": 56.125,
+        "left": 582.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "迁移验证",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 741.4375,
+        "bottom": 56.125,
+        "left": 663.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "复习",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 795.4375,
+        "bottom": 56.125,
+        "left": 744.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "学习档案",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 876.4375,
+        "bottom": 56.125,
+        "left": 798.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "☾ 曜黑",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 17.796875,
+        "right": 1243.40625,
+        "bottom": 58.1875,
+        "left": 1179.265625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "真实",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1300.40625,
+        "bottom": 51.890625,
+        "left": 1258.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "演示",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1344.40625,
+        "bottom": 51.890625,
+        "left": 1302.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "进入初始能力评估 →",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 234.1875,
+        "right": 359.671875,
+        "bottom": 277.28125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "开始新一轮评估",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 335.828125,
+        "right": 327.5,
+        "bottom": 378.921875,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/15 18:30:21 · initial-v2 · not_started",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 378.921875,
+        "right": 538.65625,
+        "bottom": 405.3125,
+        "left": 201
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/15 18:30:00 · initial-v2 · completed",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 405.3125,
+        "right": 533.421875,
+        "bottom": 431.703125,
+        "left": 201
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "开始 Reading",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 639.65625,
+        "right": 326.625,
+        "bottom": 682.75,
+        "left": 201
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "Vegetables for the café",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 486.53125,
+        "right": 206.5,
+        "bottom": 512.921875,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "To reduce water loss from the soil",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 698.421875,
+        "right": 206.5,
+        "bottom": 724.8125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "It focused only on income from the café",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 910.3125,
+        "right": 206.5,
+        "bottom": 936.703125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "To increase the number of plots",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 613.203125,
+        "right": 206.5,
+        "bottom": 639.59375,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "提交作答",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 787.515625,
+        "right": 285.5,
+        "bottom": 830.609375,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "VerbaTrail",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 22.328125,
+        "right": 179.65625,
+        "bottom": 53.671875,
+        "left": 57.59375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 269.203125,
+        "bottom": 56.125,
+        "left": 207.65625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "阅读",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 579.4375,
+        "bottom": 56.125,
+        "left": 528.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "诊断洞察",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 660.4375,
+        "bottom": 56.125,
+        "left": 582.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "迁移验证",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 741.4375,
+        "bottom": 56.125,
+        "left": 663.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "复习",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 795.4375,
+        "bottom": 56.125,
+        "left": 744.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "学习档案",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 876.4375,
+        "bottom": 56.125,
+        "left": 798.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "☼ 暖白",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 17.796875,
+        "right": 1243.40625,
+        "bottom": 58.1875,
+        "left": 1174.921875
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "真实",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1300.40625,
+        "bottom": 51.890625,
+        "left": 1258.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "演示",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1344.40625,
+        "bottom": 51.890625,
+        "left": 1302.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "← 返回 Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 134.59375,
+        "right": 281.40625,
+        "bottom": 176.03125,
+        "left": 162.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "开始新一轮评估",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 335.828125,
+        "right": 327.5,
+        "bottom": 378.921875,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/15 18:30:21 · initial-v2 · completed",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 378.921875,
+        "right": 525.921875,
+        "bottom": 405.3125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "开始新一轮评估",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 335.828125,
+        "right": 327.5,
+        "bottom": 378.921875,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/15 18:30:21 · initial-v2 · completed",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 378.921875,
+        "right": 525.921875,
+        "bottom": 405.3125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/15 18:30:00 · initial-v2 · completed",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 405.3125,
+        "right": 525.921875,
+        "bottom": 431.703125,
+        "left": 193.5
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "VerbaTrail",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 22.328125,
+        "right": 179.65625,
+        "bottom": 53.671875,
+        "left": 57.59375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 269.203125,
+        "bottom": 56.125,
+        "left": 207.65625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "阅读",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 579.4375,
+        "bottom": 56.125,
+        "left": 528.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "诊断洞察",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 660.4375,
+        "bottom": 56.125,
+        "left": 582.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "迁移验证",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 741.4375,
+        "bottom": 56.125,
+        "left": 663.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "复习",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 795.4375,
+        "bottom": 56.125,
+        "left": 744.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "学习档案",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 19.859375,
+        "right": 876.4375,
+        "bottom": 56.125,
+        "left": 798.4375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "☼ 暖白",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 17.796875,
+        "right": 1243.40625,
+        "bottom": 58.1875,
+        "left": 1174.921875
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "真实",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1300.40625,
+        "bottom": 51.890625,
+        "left": 1258.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "演示",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 24.09375,
+        "right": 1344.40625,
+        "bottom": 51.890625,
+        "left": 1302.40625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "← 返回 Learn",
+      "focusable": true,
+      "hidden": false,
+      "visible": true,
+      "rect": {
+        "top": 134.59375,
+        "right": 281.40625,
+        "bottom": 176.03125,
+        "left": 162.5
+      }
+    }
+  ],
+  "checks": {
+    "keyboardReachability": true,
+    "visibleIndicator": true,
+    "viewportVisibility": true,
+    "fixedNavigationOcclusion": false,
+    "hiddenFocusStealingObserved": false,
+    "shiftTabReverseOrder": true,
+    "spaceSelectionForAllQuestions": true,
+    "enterActivationForActions": true
+  },
+  "failures": []
+}

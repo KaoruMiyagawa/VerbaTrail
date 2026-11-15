@@ -1,0 +1,1177 @@
+{
+  "status": "fail",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "input": "Chrome CDP Input.dispatchTouchEvent touchStart/touchMove/touchEnd; no programmatic scrolling",
+  "themeRuns": [],
+  "gestures": [
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 0,
+      "after": 0,
+      "delta": 0,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 698
+        },
+        {
+          "x": 195,
+          "y": 675
+        },
+        {
+          "x": 195,
+          "y": 652
+        },
+        {
+          "x": 195,
+          "y": 628
+        },
+        {
+          "x": 195,
+          "y": 605
+        },
+        {
+          "x": 195,
+          "y": 582
+        },
+        {
+          "x": 195,
+          "y": 558
+        },
+        {
+          "x": 195,
+          "y": 535
+        }
+      ],
+      "before": 0,
+      "after": 172,
+      "delta": 172,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 172,
+      "after": 339,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 339,
+      "after": 506,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 506,
+      "after": 673,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 673,
+      "after": 840,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 840,
+      "after": 1007,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1007,
+      "after": 1174,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1174,
+      "after": 1341,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1341,
+      "after": 1508,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1508,
+      "after": 1771,
+      "delta": 263,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1771,
+      "after": 1938,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1938,
+      "after": 2105,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2105,
+      "after": 2272,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    }
+  ],
+  "browserRequests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:10583/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:10583/api/v1/assessment-runs",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:10583/api/v1/assessment-runs",
+      "body": "{\"learner_id\":\"default_learner\",\"assessment_version\":\"initial-v2\",\"idempotency_key\":\"d9e61ac7-3f16-46e3-9c02-0f036744566c\"}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:10583/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:10583/api/v1/assessment-runs/asr_d421f0a38b0b4199?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:10583/api/v1/assessment-runs/asr_d421f0a38b0b4199/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:10583/api/v1/assessment-runs/asr_d421f0a38b0b4199/reading/start?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:10583/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    }
+  ],
+  "checks": [
+    {
+      "id": "create-assessment",
+      "type": "touchTap",
+      "x": 100,
+      "y": 397,
+      "hit": {
+        "tag": "BUTTON",
+        "text": "开始新一轮评估",
+        "selector": "<button type=\"button\" class=\"focus-button\" id=\"touch-create-run\">开始新一轮评估</button>"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "assessment-created",
+      "run_id": "asr_d421f0a38b0b4199",
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "start-reading",
+      "type": "touchTap",
+      "x": 96,
+      "y": 689,
+      "hit": {
+        "tag": "BUTTON",
+        "text": "开始 Reading",
+        "selector": "<button class=\"focus-button\" id=\"touch-start-reading\">开始 Reading</button>"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "reading-started",
+      "run_id": "asr_d421f0a38b0b4199",
+      "session_id": null,
+      "version": "reading-initial-community-garden-v2",
+      "status": "pass"
+    },
+    {
+      "id": "passage-start",
+      "type": "touch-reach",
+      "rect": {
+        "top": 810.234375,
+        "bottom": 1990.90625,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 1180.671875,
+        "visible": true
+      },
+      "scrollY": 0,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "passage-gesture-scroll",
+      "before": 0,
+      "after": 172,
+      "direction": "finger-up/content-down",
+      "status": "pass"
+    },
+    {
+      "id": "question-1-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 700.296875,
+        "bottom": 914.578125,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 214.28125,
+        "visible": true
+      },
+      "scrollY": 1341,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-1",
+      "type": "touchTap",
+      "x": 40,
+      "y": 777,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"readgarden-v2-q1\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-1-selected",
+      "input": {
+        "x": 39.5,
+        "y": 777.4609375,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "question-2-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 771.578125,
+        "bottom": 959.46875,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 187.890625,
+        "visible": true
+      },
+      "scrollY": 1508,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-2",
+      "type": "touchTap",
+      "x": 40,
+      "y": 822,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"readgarden-v2-q2\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-2-selected",
+      "input": {
+        "x": 39.5,
+        "y": 822.3515625,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "question-3-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 720.46875,
+        "bottom": 1040.3125,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 319.84375,
+        "visible": true
+      },
+      "scrollY": 1771,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-3",
+      "type": "touchTap",
+      "x": 40,
+      "y": 837,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"readgarden-v2-q3\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-3-selected",
+      "input": {
+        "x": 39.5,
+        "y": 837.21875,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "question-4-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 730.3125,
+        "bottom": 970.984375,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 240.671875,
+        "visible": true
+      },
+      "scrollY": 2105,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-4",
+      "type": "touchTap",
+      "x": 40,
+      "y": 807,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"readgarden-v2-q4\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-4-selected",
+      "input": {
+        "x": 39.5,
+        "y": 807.4765625,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "submit-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 827.984375,
+        "bottom": 871.078125,
+        "left": 33,
+        "right": 125,
+        "width": 92,
+        "height": 43.09375,
+        "visible": true
+      },
+      "scrollY": 2272,
+      "theme": "premium",
+      "status": "pass"
+    }
+  ],
+  "failures": [
+    {
+      "message": "Touch target outside viewport for submit-reading: 79,850",
+      "stack": "AssertionError [ERR_ASSERTION]: Touch target outside viewport for submit-reading: 79,850\n    at tapAt (file:///D:/Projects/VerbaTrail/frontend/scripts/verify-assessment-q2a-touch.mjs:75:10)\n    at touchElement (file:///D:/Projects/VerbaTrail/frontend/scripts/verify-assessment-q2a-touch.mjs:87:9)\n    at async file:///D:/Projects/VerbaTrail/frontend/scripts/verify-assessment-q2a-touch.mjs:168:3"
+    }
+  ],
+  "runId": "asr_d421f0a38b0b4199",
+  "sessionId": null
+}

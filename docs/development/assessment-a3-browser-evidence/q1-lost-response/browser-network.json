@@ -1,0 +1,116 @@
+{
+  "run_id": "asr_4403b37f02824c34",
+  "browser_requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs",
+      "body": "{\"learner_id\":\"default_learner\",\"assessment_version\":\"initial-v2\",\"idempotency_key\":\"d61b49f3-a4bc-4697-9ae3-37d3be5d6526\"}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34/reading/start?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34/reading/submit",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34/reading/submit",
+      "body": "{\"learner_id\":\"default_learner\",\"answers\":{\"readgarden-v2-q1\":\"Vegetables for the café\",\"readgarden-v2-q2\":\"To reduce water loss from the soil\",\"readgarden-v2-q3\":\"It focused only on income from the café\",\"readgarden-v2-q4\":\"To increase the number of plots\"},\"idempotency_key\":\"71ed418d-4c64-4672-86fd-eebbb18226aa\"}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34/reading?learner_id=default_learner",
+      "body": null
+    }
+  ],
+  "intercepts": [
+    {
+      "kind": "submit_response",
+      "status": 200,
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34/reading/submit",
+      "body": "{\"learner_id\":\"default_learner\",\"answers\":{\"readgarden-v2-q1\":\"Vegetables for the café\",\"readgarden-v2-q2\":\"To reduce water loss from the soil\",\"readgarden-v2-q3\":\"It focused only on income from the café\",\"readgarden-v2-q4\":\"To increase the number of plots\"},\"idempotency_key\":\"71ed418d-4c64-4672-86fd-eebbb18226aa\"}"
+    },
+    {
+      "kind": "recovery_response",
+      "status": 200,
+      "url": "http://127.0.0.1:7945/api/v1/assessment-runs/asr_4403b37f02824c34/reading?learner_id=default_learner"
+    }
+  ],
+  "passed": [
+    "upstream success response discarded",
+    "browser showed error before recovery",
+    "recovery fetched original result",
+    "submitted selections remain visible and disabled",
+    "reload restored original result"
+  ],
+  "failed": [],
+  "skipped": [],
+  "retested": [
+    "First run: screenshot timed out after reload; interception disabled before reload.",
+    "Second run: test incorrectly inspected input.disabled instead of inherited fieldset :disabled; assertion corrected and scenario repeated."
+  ]
+}

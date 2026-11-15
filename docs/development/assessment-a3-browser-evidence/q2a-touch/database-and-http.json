@@ -1,0 +1,95 @@
+{
+  "counts": {
+    "AssessmentRun": 1,
+    "LearningSession": 1,
+    "Attempt": 4
+  },
+  "run_id": "asr_eb9138173d494dea",
+  "assessment_version": "initial-v2",
+  "run_status": "in_progress",
+  "tasks": [
+    {
+      "skill_id": "listening",
+      "status": "not_started",
+      "session_id": null,
+      "evidence_reference": null,
+      "content_version": null
+    },
+    {
+      "skill_id": "speaking",
+      "status": "not_started",
+      "session_id": null,
+      "evidence_reference": null,
+      "content_version": null
+    },
+    {
+      "skill_id": "reading",
+      "status": "completed",
+      "session_id": "sess_1a88e94ee6e74087",
+      "evidence_reference": "att_500533cf6a474d46",
+      "content_version": "reading-initial-community-garden-v2"
+    },
+    {
+      "skill_id": "writing",
+      "status": "not_started",
+      "session_id": null,
+      "evidence_reference": null,
+      "content_version": null
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "sess_1a88e94ee6e74087",
+      "learner_id": "default_learner",
+      "status": "completed"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_id": "att_77121cda920244ab",
+      "session_id": "sess_1a88e94ee6e74087",
+      "question_id": "readgarden-v2-q1",
+      "submitted_answer": "Vegetables for the caf\u00e9",
+      "is_correct": false
+    },
+    {
+      "attempt_id": "att_9304177469ea40e4",
+      "session_id": "sess_1a88e94ee6e74087",
+      "question_id": "readgarden-v2-q2",
+      "submitted_answer": "To reduce water loss from the soil",
+      "is_correct": true
+    },
+    {
+      "attempt_id": "att_d83fa4129adb439f",
+      "session_id": "sess_1a88e94ee6e74087",
+      "question_id": "readgarden-v2-q3",
+      "submitted_answer": "It focused only on income from the caf\u00e9",
+      "is_correct": false
+    },
+    {
+      "attempt_id": "att_500533cf6a474d46",
+      "session_id": "sess_1a88e94ee6e74087",
+      "question_id": "readgarden-v2-q4",
+      "submitted_answer": "To increase the number of plots",
+      "is_correct": false
+    }
+  ],
+  "server_received_posts": [
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_eb9138173d494dea/reading/start",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_eb9138173d494dea/reading/submit",
+      "status": 200
+    }
+  ],
+  "temporary_database": "isolated SQLite; temporary directory deleted after runner exits"
+}

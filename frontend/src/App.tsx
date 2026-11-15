@@ -32,6 +32,7 @@ import { plannedSkills } from './learn/skills';
 import { ListeningWorkspace } from './learn/ListeningWorkspace';
 import { WritingWorkspace } from './learn/WritingWorkspace';
 import { SpeakingWorkspace } from './learn/SpeakingWorkspace';
+import { AssessmentWorkspace } from './learn/AssessmentWorkspace';
 
 export const App: React.FC = () => {
   const [dataMode, setDataMode] = useState<'demo' | 'real'>('real');
@@ -188,7 +189,9 @@ export const App: React.FC = () => {
       onChangeUiMode={dataMode === 'demo' ? setUiMode : undefined}
       onResetProgression={dataMode === 'demo' ? handleResetToStageOne : undefined}
     >
-      {activeWorkspace === 'speaking' ? (
+      {activeWorkspace === 'assessment' ? (
+        <AssessmentWorkspace onNavigate={navigateWorkspace} />
+      ) : activeWorkspace === 'speaking' ? (
         <SpeakingWorkspace onNavigate={navigateWorkspace} />
       ) : activeWorkspace === 'writing' ? (
         <WritingWorkspace onNavigate={navigateWorkspace} />

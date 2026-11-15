@@ -40,7 +40,9 @@ def _prior_exposure(db: Session, learner_id: str) -> bool:
         LearningSession.learner_id == learner_id, Attempt.question_id.in_(qids)).limit(1)) is not None
 
 
-def _version_for(task: AssessmentTask) -> dict[str, Any]:
+def _version_for(task: AssessmentTask, run: AssessmentRun) -> dict[str, Any]:
+    if task.content_version is None and run.assessment_version == 'initial-v1':
+        raise HTTPException(409, "This older unstarted assessment has no pinned Reading version; start a new assessment.")
     version = task.content_version or V2_VERSION
     spec = VERSIONS.get(version)
     if spec is None:
@@ -51,7 +53,7 @@ def _version_for(task: AssessmentTask) -> dict[str, Any]:
 def _result(db: Session, run: AssessmentRun, task: AssessmentTask) -> dict[str, Any]:
     if task.learning_session_id is not None and task.content_version is None:
         raise HTTPException(409, "Reading task has no pinned content version and cannot be safely restored.")
-    spec = _version_for(task)
+    spec = _version_for(task, run)
     questions = spec['questions']
     session = db.get(LearningSession, task.learning_session_id) if task.learning_session_id else None
     attempts = db.scalars(select(Attempt).where(Attempt.session_id == task.learning_session_id).order_by(Attempt.submitted_at)).all() if session else []
@@ -67,7 +69,7 @@ def _result(db: Session, run: AssessmentRun, task: AssessmentTask) -> dict[str, 
         "task_version":spec['version'],"rule_version":spec['rule_version'],"task_status":task.status,
         "learning_session_id":task.learning_session_id,"repeated_exposure":task.repeated_exposure,
         "diagnostic_quality":"legacy_answer_position_biased" if spec['position_biased'] else "limited_observation",
-        "evidence_insufficient":True,"limitations":LIMITATIONS,"design_rationale":spec['design_rationale'],
+        "evidence_insufficient":True,"limitations":LIMITATIONS if task.status == 'completed' else ["本次短测评仅观察有限范围的阅读表现，不能推断整体阅读水平或 IELTS 分数。"],"design_rationale":spec['design_rationale'] if task.status == 'completed' else None,
         "passage":spec['passage'] if task.status != "not_started" else None,
         "questions":results if task.status != "not_started" else [],
         "correct_count":sum(bool(a.is_correct) for a in attempts) if task.status == "completed" else None,
@@ -78,7 +80,7 @@ def _result(db: Session, run: AssessmentRun, task: AssessmentTask) -> dict[str, 
 @router.post("/start")
 def start_reading(run_id: str, learner_id: str = LEARNER, db: Session = Depends(get_db)) -> dict[str, Any]:
     run, task = _owned_task(db, run_id, learner_id)
-    spec = _version_for(task)
+    spec = _version_for(task, run)
     if task.status == "completed":
         return _result(db, run, task)
     if task.learning_session_id:
@@ -123,7 +125,7 @@ def get_reading(run_id: str, learner_id: str = LEARNER, db: Session = Depends(ge
 @router.post("/submit")
 def submit_reading(run_id: str, payload: SubmitAnswers, db: Session = Depends(get_db)) -> dict[str, Any]:
     run, task = _owned_task(db,run_id,payload.learner_id)
-    spec = _version_for(task)
+    spec = _version_for(task, run)
     questions = spec['questions']
     if set(payload.answers) != {q['id'] for q in questions}:
         raise HTTPException(422,"Provide one answer for every Reading question.")

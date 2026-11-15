@@ -75,6 +75,8 @@ def test_v2_answer_positions_and_end_to_end_scoring(client, session_factory):
     assert started["task_version"] == V2_VERSION
     assert [q["question_id"] for q in started["questions"]] == [q["id"] for q in V2_QUESTIONS]
     assert all("correct_answer" not in q and "explanation" not in q for q in started["questions"])
+    assert started["design_rationale"] is None
+    assert "第 3、1、4、2" not in str(started)
     first_result = client.post(path + "/submit", json={
         "learner_id": learner, "answers": answers(V2_QUESTIONS, first=True),
         "idempotency_key": "v2-first-option",
@@ -137,6 +139,8 @@ def test_v1_in_progress_and_history_are_version_pinned_and_biased(client, sessio
     old_path = f"{BASE}/{old_run['run_id']}/reading"
 
     restored = client.get(old_path, params={"learner_id": learner}).json()
+    assert restored["design_rationale"] is None
+    assert "正确项全部位于第一" not in str(restored)
     assert restored["task_version"] == V1_VERSION
     assert restored["task_id"] == V1_TASK_ID
     assert [q["question_id"] for q in restored["questions"]] == [q["id"] for q in V1_QUESTIONS]
@@ -233,3 +237,13 @@ def test_unknown_task_content_version_conflicts(client, session_factory):
         db.commit()
     assert client.get(path, params={"learner_id": learner}).status_code == 409
     assert client.post(path + "/start", params={"learner_id": learner}).status_code == 409
+
+
+def test_unstarted_v1_does_not_silently_switch_to_v2(client, migrated_engine):
+    learner = "legacy-unstarted"
+    run = create(client, learner, "legacy-unstarted-key", version="initial-v1")
+    path = f"{BASE}/{run['run_id']}/reading"
+    for response in (client.get(path, params={"learner_id": learner}),
+                     client.post(path + "/start", params={"learner_id": learner})):
+        assert response.status_code == 409
+        assert "older unstarted" in response.json()["message"]

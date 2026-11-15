@@ -1,0 +1,176 @@
+{
+  "counts": {
+    "AssessmentRun": 2,
+    "LearningSession": 2,
+    "Attempt": 8
+  },
+  "runs": [
+    {
+      "run_id": "asr_8abe5d9e5f054529",
+      "learner_id": "default_learner",
+      "assessment_version": "initial-v2",
+      "status": "in_progress"
+    },
+    {
+      "run_id": "asr_4aec27ffcb2341c2",
+      "learner_id": "default_learner",
+      "assessment_version": "initial-v2",
+      "status": "in_progress"
+    }
+  ],
+  "tasks": [
+    {
+      "run_id": "asr_8abe5d9e5f054529",
+      "skill_id": "listening",
+      "status": "not_started",
+      "learning_session_id": null,
+      "evidence_reference": null
+    },
+    {
+      "run_id": "asr_8abe5d9e5f054529",
+      "skill_id": "speaking",
+      "status": "not_started",
+      "learning_session_id": null,
+      "evidence_reference": null
+    },
+    {
+      "run_id": "asr_8abe5d9e5f054529",
+      "skill_id": "reading",
+      "status": "completed",
+      "learning_session_id": "sess_4ac2bdb0bb964e66",
+      "evidence_reference": "att_0d3a7a28ec094429"
+    },
+    {
+      "run_id": "asr_8abe5d9e5f054529",
+      "skill_id": "writing",
+      "status": "not_started",
+      "learning_session_id": null,
+      "evidence_reference": null
+    },
+    {
+      "run_id": "asr_4aec27ffcb2341c2",
+      "skill_id": "listening",
+      "status": "not_started",
+      "learning_session_id": null,
+      "evidence_reference": null
+    },
+    {
+      "run_id": "asr_4aec27ffcb2341c2",
+      "skill_id": "speaking",
+      "status": "not_started",
+      "learning_session_id": null,
+      "evidence_reference": null
+    },
+    {
+      "run_id": "asr_4aec27ffcb2341c2",
+      "skill_id": "reading",
+      "status": "completed",
+      "learning_session_id": "sess_fc21498d965e4a89",
+      "evidence_reference": "att_75c56d0d8c074778"
+    },
+    {
+      "run_id": "asr_4aec27ffcb2341c2",
+      "skill_id": "writing",
+      "status": "not_started",
+      "learning_session_id": null,
+      "evidence_reference": null
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "sess_4ac2bdb0bb964e66",
+      "learner_id": "default_learner",
+      "status": "completed"
+    },
+    {
+      "session_id": "sess_fc21498d965e4a89",
+      "learner_id": "default_learner",
+      "status": "completed"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_id": "att_f6137ca4e4dd4da2",
+      "session_id": "sess_4ac2bdb0bb964e66",
+      "question_id": "readgarden-v2-q1",
+      "submitted_at": "2026-11-15T10:30:04.432808",
+      "is_correct": false
+    },
+    {
+      "attempt_id": "att_588fb196691e4672",
+      "session_id": "sess_4ac2bdb0bb964e66",
+      "question_id": "readgarden-v2-q2",
+      "submitted_at": "2026-11-15T10:30:04.432817",
+      "is_correct": true
+    },
+    {
+      "attempt_id": "att_7e9e9cf7fbea4b3e",
+      "session_id": "sess_4ac2bdb0bb964e66",
+      "question_id": "readgarden-v2-q3",
+      "submitted_at": "2026-11-15T10:30:04.432822",
+      "is_correct": false
+    },
+    {
+      "attempt_id": "att_0d3a7a28ec094429",
+      "session_id": "sess_4ac2bdb0bb964e66",
+      "question_id": "readgarden-v2-q4",
+      "submitted_at": "2026-11-15T10:30:04.432827",
+      "is_correct": false
+    },
+    {
+      "attempt_id": "att_95557e03ebdc47d2",
+      "session_id": "sess_fc21498d965e4a89",
+      "question_id": "readgarden-v2-q1",
+      "submitted_at": "2026-11-15T10:30:25.218053",
+      "is_correct": false
+    },
+    {
+      "attempt_id": "att_8c2270e4bf8e4e58",
+      "session_id": "sess_fc21498d965e4a89",
+      "question_id": "readgarden-v2-q2",
+      "submitted_at": "2026-11-15T10:30:25.218061",
+      "is_correct": true
+    },
+    {
+      "attempt_id": "att_25f796e0c50e4ad3",
+      "session_id": "sess_fc21498d965e4a89",
+      "question_id": "readgarden-v2-q3",
+      "submitted_at": "2026-11-15T10:30:25.218066",
+      "is_correct": false
+    },
+    {
+      "attempt_id": "att_75c56d0d8c074778",
+      "session_id": "sess_fc21498d965e4a89",
+      "question_id": "readgarden-v2-q4",
+      "submitted_at": "2026-11-15T10:30:25.218071",
+      "is_correct": false
+    }
+  ],
+  "server_received_assessment_posts": [
+    {
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/assessment-runs/asr_8abe5d9e5f054529/reading/start",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/assessment-runs/asr_8abe5d9e5f054529/reading/submit",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/assessment-runs/asr_4aec27ffcb2341c2/reading/start",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/assessment-runs/asr_4aec27ffcb2341c2/reading/submit",
+      "status": 200
+    }
+  ],
+  "temporary_database": "isolated SQLite (deleted after this runner exits)"
+}

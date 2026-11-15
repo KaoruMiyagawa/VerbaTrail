@@ -1,0 +1,180 @@
+{
+  "passed": [
+    "unstarted navigation",
+    "in-progress draft restored",
+    "keyboard answer and repeated submit",
+    "completed navigation and reload",
+    "draft isolated by run",
+    "mobile touch answer and submit",
+    "mobile touch theme",
+    "mobile touch return"
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading/start?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading?learner_id=default_learner"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading/submit"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading/submit"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_0ae1a7a3d9a344f3/reading?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_f8158c58f6974e8d?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_f8158c58f6974e8d/reading?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_f8158c58f6974e8d/reading/start?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_f8158c58f6974e8d/reading/submit"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs/asr_f8158c58f6974e8d/reading/submit"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12362/api/v1/assessment-runs?learner_id=default_learner"
+    }
+  ],
+  "button_bursts": {
+    "create": 3,
+    "start": 6,
+    "keyboard_submit": 3
+  },
+  "failed": [],
+  "skipped": [
+    "focus visibility visual audit",
+    "cross-version draft isolation",
+    "physical touch scroll gesture"
+  ],
+  "retested": [
+    "First run Enter lacked character event; corrected CDP input. Subsequent touch events initially missed during animated scrolling; switched to instant scroll and repeated."
+  ]
+}

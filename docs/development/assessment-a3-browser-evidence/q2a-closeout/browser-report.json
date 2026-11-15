@@ -1,0 +1,461 @@
+{
+  "pointer": {
+    "status": "partial",
+    "events": [
+      {
+        "type": "mousePressed",
+        "x": 276.5859375,
+        "y": 499.734375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 276.5859375,
+        "y": 499.734375
+      },
+      {
+        "type": "mousePressed",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mousePressed",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mousePressed",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 268,
+        "y": 357.375
+      },
+      {
+        "type": "mousePressed",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mousePressed",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mousePressed",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 263.8125,
+        "y": 634.8125
+      },
+      {
+        "type": "mousePressed",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mousePressed",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mousePressed",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 239.5,
+        "y": 808.28125
+      },
+      {
+        "type": "mousePressed",
+        "x": 260.5,
+        "y": 357.375
+      },
+      {
+        "type": "mouseReleased",
+        "x": 260.5,
+        "y": 357.375
+      },
+      {
+        "type": "mousePressed",
+        "x": 263.8125,
+        "y": 661.203125
+      },
+      {
+        "type": "mouseReleased",
+        "x": 263.8125,
+        "y": 661.203125
+      },
+      {
+        "type": "mousePressed",
+        "x": 1211.3359375,
+        "y": 37.9921875
+      },
+      {
+        "type": "mouseReleased",
+        "x": 1211.3359375,
+        "y": 37.9921875
+      }
+    ]
+  },
+  "touch": {
+    "status": "partial",
+    "events": [
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchStart",
+        "x": 180,
+        "y": 250
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 450
+      },
+      {
+        "type": "touchMove",
+        "x": 180,
+        "y": 650
+      },
+      {
+        "type": "touchEnd",
+        "x": 180,
+        "y": 650
+      }
+    ],
+    "scroll": [
+      {
+        "before": 760,
+        "after": 1145,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 1145,
+        "after": 1530,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 1530,
+        "after": 1915,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 1915,
+        "after": 2300,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 2300,
+        "after": 2605,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 2605,
+        "after": 2605,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 2605,
+        "after": 2605,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 2605,
+        "after": 2605,
+        "from": 650,
+        "to": 250
+      },
+      {
+        "before": 2605,
+        "after": 2220,
+        "from": 250,
+        "to": 650
+      }
+    ]
+  },
+  "focus": {
+    "status": "partial",
+    "evidence": "focus-styles.json"
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs/asr_0bf542ccc70a4eb5?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs/asr_0bf542ccc70a4eb5/reading?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs/asr_0bf542ccc70a4eb5/reading/start?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs/asr_0bf542ccc70a4eb5/reading/submit"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs/asr_0bf542ccc70a4eb5/reading/submit"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs/asr_826a9a85db314224?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs/asr_826a9a85db314224/reading?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs/asr_826a9a85db314224/reading/start?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:7380/api/v1/assessment-runs?learner_id=default_learner"
+    }
+  ],
+  "failed": [],
+  "skipped": [
+    "full focus audit",
+    "complete touch traversal and result reading"
+  ],
+  "retested": [
+    "first run button replaced during coordinate lookup",
+    "second run theme toggle label selector failed; corrected"
+  ]
+}

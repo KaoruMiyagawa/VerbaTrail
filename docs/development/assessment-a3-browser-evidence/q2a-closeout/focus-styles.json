@@ -1,0 +1,301 @@
+[
+  {
+    "theme": "premium",
+    "tag": "INPUT",
+    "text": "",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 1487.53125,
+      "bottom": 1513.921875
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "INPUT",
+    "text": "",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 1699.421875,
+      "bottom": 1725.8125
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "INPUT",
+    "text": "",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 1911.3125,
+      "bottom": 1937.703125
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "INPUT",
+    "text": "",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 2123.203125,
+      "bottom": 2149.59375
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BODY",
+    "text": "VerbaTrailLearnDiscover规划中Adapt规划中阅读诊断洞察迁移验证复习学习档案☾曜黑真实演示← 返",
+    "outline": "none",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 0,
+      "bottom": 2510.390625
+    },
+    "visible": false
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "VerbaTrail",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 22.328125,
+      "bottom": 53.671875
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "Learn",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 19.859375,
+      "bottom": 56.125
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "阅读",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 19.859375,
+      "bottom": 56.125
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "诊断洞察",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 19.859375,
+      "bottom": 56.125
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "迁移验证",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 19.859375,
+      "bottom": 56.125
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "复习",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 19.859375,
+      "bottom": 56.125
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "学习档案",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 19.859375,
+      "bottom": 56.125
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "☾曜黑",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 17.796875,
+      "bottom": 58.1875
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "真实",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 24.09375,
+      "bottom": 51.890625
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "演示",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 24.09375,
+      "bottom": 51.890625
+    },
+    "visible": true
+  },
+  {
+    "theme": "premium",
+    "tag": "BUTTON",
+    "text": "← 返回 Learn",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 124.59375,
+      "bottom": 166.03125
+    },
+    "visible": true
+  },
+  {
+    "theme": "noir",
+    "tag": "BUTTON",
+    "text": "真实",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 24.09375,
+      "bottom": 51.890625
+    },
+    "visible": true
+  },
+  {
+    "theme": "noir",
+    "tag": "BUTTON",
+    "text": "演示",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 24.09375,
+      "bottom": 51.890625
+    },
+    "visible": true
+  },
+  {
+    "theme": "noir",
+    "tag": "BUTTON",
+    "text": "← 返回 Learn",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": -904.40625,
+      "bottom": -862.96875
+    },
+    "visible": true
+  },
+  {
+    "theme": "noir",
+    "tag": "BUTTON",
+    "text": "开始新一轮评估",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": -703.171875,
+      "bottom": -660.078125
+    },
+    "visible": true
+  },
+  {
+    "theme": "noir",
+    "tag": "BUTTON",
+    "text": "2026/11/15 13:22:40 · initial-v2 · in_progress",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": -660.078125,
+      "bottom": -633.6875
+    },
+    "visible": true
+  },
+  {
+    "theme": "noir",
+    "tag": "BUTTON",
+    "text": "2026/11/15 13:22:38 · initial-v2 · completed",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": -633.6875,
+      "bottom": -607.296875
+    },
+    "visible": true
+  },
+  {
+    "theme": "noir",
+    "tag": "INPUT",
+    "text": "",
+    "outline": "solid",
+    "outlineWidth": "3px",
+    "shadow": "none",
+    "rect": {
+      "top": 448.53125,
+      "bottom": 474.921875
+    },
+    "visible": true
+  }
+]
