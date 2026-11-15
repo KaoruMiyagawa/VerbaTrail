@@ -57,7 +57,7 @@ class LearnerModel(BaseModel):
 
 LIMITS = {
     'listening': ['仅反映具体练习的客观作答，不能推断整体听力水平或 IELTS 分数。'],
-    'reading': ['作答、独立迁移及延迟复习只反映相应题目，不代表整体阅读水平或永久掌握。'],
+    'reading': ['作答、独立迁移及延迟复习只反映相应题目，不代表整体阅读水平或永久掌握。旧版 Reading 初始评估 v1 的正确项全部位于第一选项，保留为历史记录但不作为无偏能力证据。'],
     'writing': ['字数和修订行为不评价写作语义质量；写作水平未评估。'],
     'speaking': ['自查由学习者提供，并非系统语音检测；口语水平未评估。'],
 }
@@ -93,17 +93,22 @@ def learner_model(learner_id: str = Query(default='default_learner', min_length=
                     valid = evidence_status(db, 'review_item', review.id)
                 assessment = a.question_snapshot_json.get('assessment_type') == 'initial_reading'
                 repeated = bool(a.question_snapshot_json.get('repeated_exposure'))
-                kind = ('repeated_assessment' if repeated else 'initial_assessment') if assessment else 'practice_performance'
+                content_version = a.question_snapshot_json.get('content_version')
+                position_biased = assessment and content_version == 'reading-initial-community-garden-v1'
+                kind = ('legacy_assessment_position_biased' if position_biased else
+                        'repeated_assessment' if repeated else 'initial_assessment') if assessment else 'practice_performance'
                 if skill == 'reading' and a.attempt_role == 'transfer_check': kind = 'independent_transfer'
                 if skill == 'reading' and a.attempt_role == 'review' and review and review.retention_eligible and review.retention_verified: kind = 'delayed_review'
                 # A review without verified scheduling is merely a practice observation.
                 version = db.get(ReadingGroupVersion, a.group_version_id) if a.group_version_id else None
                 evaluated = a.evaluation_status == 'evaluated' and a.is_correct is not None
-                add(competency_id=a.question.topic_id, assessment_status='observed' if evaluated and a.is_correct is True and valid == 'eligible' and not repeated else 'not_assessed',
+                add(competency_id=a.question.topic_id, assessment_status='observed' if evaluated and a.is_correct is True and valid == 'eligible' and not repeated and not position_biased else 'not_assessed',
                     evidence_type=kind, evidence_source='attempt', evidence_reference=a.id, evidence_validity=valid,
                     evaluation_method='rule_check' if evaluated else 'not_evaluated', evaluation_rule_version=a.evaluation_rule_version,
                     content_version=version.content_version if version else a.question_snapshot_json.get('content_version') or str(a.question_version),
-                    observed_at=a.submitted_at, observation=('正确' if a.is_correct else '错误') if evaluated else '作答尚未评价')
+                    observed_at=a.submitted_at,
+                    observation=(('旧版 v1 正确项均位于第一选项；固定选择首项可得满分，不作为无偏能力证据。' if position_biased else '') +
+                                 (('正确' if a.is_correct else '错误') if evaluated else '作答尚未评价')))
         if ids and skill == 'writing':
             drafts = db.scalars(select(WritingDraft).where(WritingDraft.session_id.in_(ids))).all()
             for d in drafts:

@@ -18,7 +18,7 @@ SKILLS = ("listening", "speaking", "reading", "writing")
 class CreateRun(BaseModel):
     model_config = ConfigDict(extra="forbid")
     learner_id: str = Field(default="default_learner", min_length=1, max_length=64)
-    assessment_version: str = Field(default="initial-v1", min_length=1, max_length=64)
+    assessment_version: str = Field(default="initial-v2", min_length=1, max_length=64)
     idempotency_key: str = Field(min_length=1, max_length=128)
 
     @field_validator("learner_id", "assessment_version", "idempotency_key")
@@ -76,6 +76,10 @@ def replay(run: AssessmentRun, payload: CreateRun) -> RunView:
 @router.post("", response_model=RunView)
 def create_run(payload: CreateRun, db: Session = Depends(get_db)) -> RunView:
     if prior := find_key(db, payload.learner_id, payload.idempotency_key):
+        # Preserve retries of older clients that omitted this field before the
+        # default advanced; explicit version changes remain a conflict.
+        if "assessment_version" not in payload.model_fields_set:
+            return view(prior)
         return replay(prior, payload)
     run = AssessmentRun(learner_id=payload.learner_id, assessment_version=payload.assessment_version,
                         idempotency_key=payload.idempotency_key,

@@ -5,7 +5,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import httpx
 from app.persistence.migrations_runner import upgrade_database
-from app.content.reading_initial_assessment import QUESTIONS
+from app.content.reading_initial_assessment import QUESTIONS, V2_VERSION
 ROOT=Path(__file__).resolve().parents[2]
 ANS={q['id']:q['answer'] for q in QUESTIONS}
 def main():
@@ -32,7 +32,7 @@ def main():
     def req(label,method,path,**kw):
      r=c.request(method,path,**kw);d=r.json();trace.append({'step':label,'method':method,'path':path,'status':r.status_code,'response':d});assert r.status_code<300,(label,r.text);return d
     run=req('create_run','POST','/api/v1/assessment-runs',json={'learner_id':'http-reading','idempotency_key':'r1'});root=f"/api/v1/assessment-runs/{run['run_id']}/reading";params={'learner_id':'http-reading'}
-    startdata=req('start_reading','POST',root+'/start',params=params);assert all('correct_answer' not in q for q in startdata['questions'])
+    startdata=req('start_reading','POST',root+'/start',params=params);assert startdata['task_version']==V2_VERSION;assert all('correct_answer' not in q and 'explanation' not in q for q in startdata['questions'])
     def concurrent_submit(key):
      with httpx.Client(base_url=base,trust_env=False,timeout=20) as concurrent_client:
       response=concurrent_client.post(root+'/submit',json={'learner_id':'http-reading','answers':ANS,'idempotency_key':key})

@@ -35,6 +35,10 @@ def test_creation_restore_history_and_scope(client, migrated_engine):
     assert client.get(f"{BASE}/{run['run_id']}", params={'learner_id': 'alice'}).json() == run
     assert client.post(BASE, json=body).json() == run
     assert client.post(BASE, json=body | {'assessment_version': 'another'}).status_code == 409
+    legacy_body = {'learner_id': 'legacy-default', 'assessment_version': 'initial-v1', 'idempotency_key': 'legacy-default-key'}
+    legacy = client.post(BASE, json=legacy_body).json()
+    assert legacy['assessment_version'] == 'initial-v1'
+    assert client.post(BASE, json={'learner_id': 'legacy-default', 'idempotency_key': 'legacy-default-key'}).json() == legacy
     assert client.get(f"{BASE}/{run['run_id']}", params={'learner_id': 'bob'}).status_code == 404
     assert client.get(BASE, params={'learner_id': 'bob'}).json() == []
     second = client.post(BASE, json=body | {'idempotency_key': 'second'}).json()
@@ -56,4 +60,5 @@ def test_concurrent_idempotency(client, migrated_engine):
         responses = list(pool.map(lambda _: client.post(BASE, json=body), range(8)))
     assert all(r.status_code == 200 for r in responses)
     assert len({r.json()['run_id'] for r in responses}) == 1
+    assert responses[0].json()['assessment_version'] == 'initial-v2'
     assert len(client.get(BASE, params={'learner_id': 'concurrent'}).json()) == 1
