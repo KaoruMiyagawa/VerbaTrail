@@ -18,7 +18,7 @@ def test_migrate_from_0009(test_settings):
         upgrade_database(database_url=test_settings.database_url, engine=engine)
         assert {'assessment_runs', 'assessment_tasks'} <= set(inspect(engine).get_table_names())
         with engine.connect() as conn:
-            assert conn.scalar(text('select version_num from alembic_version')) == '0010_assessment_runs'
+            assert conn.scalar(text('select version_num from alembic_version')) == '0011_assessment_reading_task'
     finally:
         engine.dispose()
 
