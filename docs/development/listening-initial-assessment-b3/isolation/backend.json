@@ -1,0 +1,1452 @@
+{
+  "status": "pass",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/openapi.json",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409/reading/start",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409/reading/submit",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_dae9d724c43d443a/listening/start",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_dae9d724c43d443a/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_dae9d724c43d443a",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_bc79504475154607/reading/start",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_bc79504475154607/reading/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_bc79504475154607/listening/start",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_bc79504475154607",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_8a363414373e48de/reading/start",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_8a363414373e48de/listening/start",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_8a363414373e48de/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_8a363414373e48de",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/reading/start",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/reading/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/listening/start",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_dae9d724c43d443a",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_dae9d724c43d443a/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_dae9d724c43d443a/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "status": 206
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_bc79504475154607",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_bc79504475154607/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_bc79504475154607/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_8a363414373e48de",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_8a363414373e48de/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_8a363414373e48de/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "status": 206
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d2556594f1e64409/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "status": 206
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0993350d4a894b8b/listening",
+      "status": 200
+    }
+  ],
+  "counts": {
+    "runs": 5,
+    "sessions": 8,
+    "attempts": 30
+  },
+  "tasks": [
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "skill": "listening",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "skill": "reading",
+      "status": "completed",
+      "session_id": "sess_0ea7a3f7a2844c2c"
+    },
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "skill": "listening",
+      "status": "completed",
+      "session_id": "sess_5189297a6b174d5d"
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "skill": "reading",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "skill": "listening",
+      "status": "in_progress",
+      "session_id": "sess_68065ea430e7483d"
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "skill": "reading",
+      "status": "completed",
+      "session_id": "sess_094350a9eb51469e"
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "skill": "listening",
+      "status": "completed",
+      "session_id": "sess_7303f60f3e744a14"
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "skill": "reading",
+      "status": "in_progress",
+      "session_id": "sess_ef563fde90db4d72"
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "skill": "listening",
+      "status": "completed",
+      "session_id": "sess_9e1d4d7d14c14198"
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "skill": "reading",
+      "status": "completed",
+      "session_id": "sess_ebed002ff6cf4718"
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    }
+  ],
+  "fixtures": [
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "reading": "completed",
+      "listening": "not_started",
+      "run_status": "in_progress",
+      "results": {
+        "reading": {
+          "assessment_run_id": "asr_d2556594f1e64409",
+          "learner_id": "default_learner",
+          "skill_id": "reading",
+          "task_id": "reading-community-garden-v2",
+          "task_version": "reading-initial-community-garden-v2",
+          "rule_version": "reading-mcq-evidence-v2",
+          "task_status": "completed",
+          "learning_session_id": "sess_0ea7a3f7a2844c2c",
+          "repeated_exposure": false,
+          "diagnostic_quality": "limited_observation",
+          "evidence_insufficient": true,
+          "limitations": [
+            "\u56db\u9053\u539f\u521b\u5ba2\u89c2\u9898\u53ea\u89c2\u5bdf\u672c\u6750\u6599\u4e2d\u7684\u7ec6\u8282\u3001\u56e0\u679c\u3001\u63a8\u65ad\u548c\u76ee\u7684\u7406\u89e3\uff1b\u9898\u91cf\u4e0d\u8db3\u4ee5\u4f30\u8ba1\u6574\u4f53\u9605\u8bfb\u80fd\u529b\u6216 IELTS Band\u3002\u65e7\u7248 v1 \u56db\u9898\u6b63\u786e\u9879\u5747\u4f4d\u4e8e\u7b2c\u4e00\u9009\u9879\uff0c\u5176\u4f5c\u7b54\u4fdd\u7559\u4f5c\u5386\u53f2\u8bb0\u5f55\uff0c\u4f46\u4e0d\u4f5c\u4e3a\u65e0\u504f\u80fd\u529b\u8bc1\u636e\u3002"
+          ],
+          "design_rationale": "\u56db\u9898\u5747\u4e3a\u5355\u4e00\u6700\u4f73\u7b54\u6848\uff1a\u76f4\u63a5\u5b9a\u4f4d\u3001\u56e0\u679c\u5173\u7cfb\u3001\u8de8\u53e5\u63a8\u65ad\u3001\u65b9\u6848\u76ee\u7684\u3002\u6587\u672c\u7ea6 190 \u8bcd\u3001\u56db\u6bb5\u3001\u5e38\u89c1\u5b66\u672f\u751f\u6d3b\u8bcd\u6c47\uff0c\u65e0\u4e13\u4e1a\u80cc\u666f\u8981\u6c42\uff1b\u8981\u6c42\u8de8\u53e5\u6574\u5408\u4f46\u4e0d\u542b\u590d\u6742\u53e5\u6cd5\u9677\u9631\u3002V2 \u6b63\u786e\u9879\u4f4d\u7f6e\u4f9d\u6b21\u4e3a\u7b2c 3\u30011\u30014\u30012 \u9879\uff0c\u6bcf\u4e2a\u4f4d\u7f6e\u6070\u597d\u4e00\u6b21\uff1b\u4ec5\u6539\u53d8\u9009\u9879\u987a\u5e8f\uff0c\u4e0d\u6539\u53d8\u9898\u5e72\u3001\u6750\u6599\u3001\u7b54\u6848\u542b\u4e49\u6216\u7406\u89e3\u76ee\u6807\u3002\u4f5c\u4e3a\u77ed\u521d\u59cb\u89c2\u5bdf\uff0c\u6807\u8bb0 evidence_insufficient\u3002",
+          "passage": "When the old railway depot became a community garden, residents expected the hardest work to be digging. They soon discovered that deciding how to share the small site took longer. The committee divided the land into twelve plots, but reserved two beds near the entrance for anyone who wanted to grow herbs without renting a plot.\n\nWater was the next concern. A roof tank collected rain, yet it could not supply the garden through a dry August. Instead of buying a larger tank, volunteers placed mulch around young plants. The layer reduced evaporation, so the existing supply lasted longer. The committee also asked plot holders to water before nine in the morning, when less water would be lost to heat.\n\nIn its first season, the garden produced fewer vegetables than the committee had forecast. However, the weekly open mornings attracted families who did not garden. A nearby caf\u00e9 began using some of the surplus herbs, while the library hosted short workshops on seed saving. The committee therefore judged success by more than the weight of the harvest: it also counted visits and workshop attendance.\n\nFor the next season, the residents rejected a proposal to add more plots. They chose instead to widen the central path, because wheelbarrows had difficulty passing when two people worked side by side. The change would reduce the growing area slightly, but make deliveries and shared work easier.",
+          "questions": [
+            {
+              "question_id": "readgarden-v2-q1",
+              "prompt": "What were the two entrance beds intended for?",
+              "options": [
+                "Vegetables for the caf\u00e9",
+                "Tools used by the committee",
+                "Herbs for visitors without a rented plot",
+                "Plants that needed extra water"
+              ],
+              "skill": "explicit_detail",
+              "answer": "Herbs for visitors without a rented plot",
+              "correct_answer": "Herbs for visitors without a rented plot",
+              "is_correct": true,
+              "explanation": "The first paragraph says the two beds were reserved for anyone wanting herbs without renting a plot.",
+              "attempt_id": "att_826a84bcc777424f",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "readgarden-v2-q2",
+              "prompt": "Why did volunteers use mulch?",
+              "options": [
+                "To reduce water loss from the soil",
+                "To collect more rain from the roof",
+                "To make extra room for plots",
+                "To protect the path from wheelbarrows"
+              ],
+              "skill": "cause_effect",
+              "answer": "To reduce water loss from the soil",
+              "correct_answer": "To reduce water loss from the soil",
+              "is_correct": true,
+              "explanation": "The passage states that mulch reduced evaporation, helping the existing water supply last longer.",
+              "attempt_id": "att_d875fa9e808d43f6",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "readgarden-v2-q3",
+              "prompt": "What can be inferred about the committee\u2019s first-season measure of success?",
+              "options": [
+                "It focused only on income from the caf\u00e9",
+                "It was based on the number of rented plots",
+                "It ignored activities outside the garden",
+                "It included community participation as well as produce"
+              ],
+              "skill": "inference",
+              "answer": "It included community participation as well as produce",
+              "correct_answer": "It included community participation as well as produce",
+              "is_correct": true,
+              "explanation": "Although the harvest was below forecast, the committee also counted visits and workshop attendance.",
+              "attempt_id": "att_313857bf03a44a81",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "readgarden-v2-q4",
+              "prompt": "Why did residents choose to widen the central path?",
+              "options": [
+                "To increase the number of plots",
+                "To make shared work and deliveries easier",
+                "To help rain reach the roof tank",
+                "To provide space for more workshops"
+              ],
+              "skill": "purpose_and_reason",
+              "answer": "To make shared work and deliveries easier",
+              "correct_answer": "To make shared work and deliveries easier",
+              "is_correct": true,
+              "explanation": "The final paragraph explains wheelbarrows could not pass easily and says widening would make deliveries and shared work easier.",
+              "attempt_id": "att_cdc1cd55513c4fe3",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "correct_count": 4,
+          "attempt_references": [
+            {
+              "attempt_id": "att_826a84bcc777424f",
+              "question_id": "readgarden-v2-q1",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_d875fa9e808d43f6",
+              "question_id": "readgarden-v2-q2",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_313857bf03a44a81",
+              "question_id": "readgarden-v2-q3",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_cdc1cd55513c4fe3",
+              "question_id": "readgarden-v2-q4",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "unassessed_capabilities": [
+            "\u6574\u4f53\u9605\u8bfb\u6c34\u5e73",
+            "IELTS Band",
+            "\u957f\u671f\u4fdd\u6301",
+            "\u72ec\u7acb\u8fc1\u79fb"
+          ]
+        }
+      }
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "reading": "not_started",
+      "listening": "completed",
+      "run_status": "in_progress",
+      "results": {
+        "listening": {
+          "assessment_run_id": "asr_dae9d724c43d443a",
+          "learner_id": "default_learner",
+          "skill_id": "listening",
+          "task_id": "listening-community-arts-workshop-v1",
+          "task_version": "listening-initial-community-arts-v1",
+          "rule_version": "listening-mcq-exact-choice-v1",
+          "assessment_version": "initial-v2",
+          "task_status": "completed",
+          "learning_session_id": "sess_5189297a6b174d5d",
+          "audio_url": "/audio/listening/initial-community-arts-v1.wav",
+          "audio_sha256": "739E3D1263195E63386E04103B21BD34A1701E86549EA81CE35768482C974CC7",
+          "repeated_exposure": false,
+          "evidence_insufficient": true,
+          "limitations": [
+            "\u516d\u9053\u539f\u521b\u5ba2\u89c2\u9898\u53ea\u89c2\u5bdf\u672c\u6750\u6599\u4e2d\u7684\u7ec6\u8282\u3001\u56e0\u679c\u3001\u884c\u52a8\u63a8\u65ad\u548c\u8bf4\u8bdd\u8005\u76ee\u7684\u7406\u89e3\uff1b\u9898\u91cf\u4e0d\u8db3\u4ee5\u4f30\u8ba1\u6574\u4f53\u542c\u529b\u80fd\u529b\u6216 IELTS Band\u3002",
+            "\u91cd\u590d\u66dd\u5149\u53ea\u4f9d\u636e VerbaTrail \u4e2d\u8bb0\u5f55\u7684\u76f8\u540c\u7248\u672c\u7ec3\u4e60\u4f1a\u8bdd\u548c\u9898\u76ee\uff1b\u65e0\u6cd5\u8bc6\u522b\u5e73\u53f0\u5916\u542c\u8fc7\u7684\u6750\u6599\u3002"
+          ],
+          "questions": [
+            {
+              "question_id": "listening-initial-community-arts-v1-q1",
+              "prompt": "On which day will the printmaking workshop take place?",
+              "options": [
+                "Friday",
+                "Saturday",
+                "Sunday",
+                "Monday"
+              ],
+              "item_type": "explicit_detail",
+              "answer": "Saturday",
+              "correct_answer": "Saturday",
+              "is_correct": true,
+              "explanation": "Rowan confirms that the workshop is still on Saturday.",
+              "attempt_id": "att_d2093bc6e5ff4f3e",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q2",
+              "prompt": "What time will the workshop begin?",
+              "options": [
+                "10:00",
+                "10:15",
+                "10:45",
+                "10:30"
+              ],
+              "item_type": "explicit_detail",
+              "answer": "10:30",
+              "correct_answer": "10:30",
+              "is_correct": true,
+              "explanation": "The revised start time is spoken as ten thirty, half an hour later than the leaflet time.",
+              "attempt_id": "att_008b1192a0304cd8",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q3",
+              "prompt": "Which entrance should the participant use?",
+              "options": [
+                "The side entrance beside the bicycle shelter",
+                "The main doors",
+                "The caf\u00e9 entrance",
+                "The rear delivery entrance"
+              ],
+              "item_type": "explicit_detail",
+              "answer": "The side entrance beside the bicycle shelter",
+              "correct_answer": "The side entrance beside the bicycle shelter",
+              "is_correct": true,
+              "explanation": "Rowan directs participants to the side entrance beside the bicycle shelter and says the main doors will remain locked.",
+              "attempt_id": "att_dd0a010f6f6d4dd9",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q4",
+              "prompt": "Why has the class moved to a different room?",
+              "options": [
+                "The caf\u00e9 needs the studio",
+                "The class has more participants",
+                "Electricians need the main hall",
+                "The bicycle shelter is being repaired"
+              ],
+              "item_type": "cause_effect",
+              "answer": "Electricians need the main hall",
+              "correct_answer": "Electricians need the main hall",
+              "is_correct": true,
+              "explanation": "Rowan says the class moved because electricians need the main hall that morning.",
+              "attempt_id": "att_31930ac1ee71416b",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q5",
+              "prompt": "What should a participant do if a delayed bus makes them arrive after 10:40?",
+              "options": [
+                "Wait until the caf\u00e9 opens",
+                "Ring the bell marked \u201cworkshops\u201d",
+                "Go around to the main doors",
+                "Call the electrician"
+              ],
+              "item_type": "action_inference",
+              "answer": "Ring the bell marked \u201cworkshops\u201d",
+              "correct_answer": "Ring the bell marked \u201cworkshops\u201d",
+              "is_correct": true,
+              "explanation": "For arrivals after ten forty, Rowan says to ring the workshops bell so reception can let the participant in.",
+              "attempt_id": "att_75fc301eb1684b23",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q6",
+              "prompt": "Why did Rowan leave this message?",
+              "options": [
+                "To advertise a different workshop",
+                "To ask the participant to bring paper and ink",
+                "To cancel the Saturday session",
+                "To confirm revised arrangements and ask for a reply only if attendance is no longer possible"
+              ],
+              "item_type": "speaker_purpose",
+              "answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+              "correct_answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+              "is_correct": true,
+              "explanation": "Rowan says the centre needs to confirm the updated arrangements were received and asks for a reply only if the participant cannot attend.",
+              "attempt_id": "att_773a88a25dbb43ed",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "correct_count": 6,
+          "attempt_references": [
+            {
+              "attempt_id": "att_d2093bc6e5ff4f3e",
+              "question_id": "listening-initial-community-arts-v1-q1",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_008b1192a0304cd8",
+              "question_id": "listening-initial-community-arts-v1-q2",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_dd0a010f6f6d4dd9",
+              "question_id": "listening-initial-community-arts-v1-q3",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_31930ac1ee71416b",
+              "question_id": "listening-initial-community-arts-v1-q4",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_75fc301eb1684b23",
+              "question_id": "listening-initial-community-arts-v1-q5",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_773a88a25dbb43ed",
+              "question_id": "listening-initial-community-arts-v1-q6",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "unassessed_capabilities": [
+            "\u6574\u4f53\u542c\u529b\u80fd\u529b",
+            "IELTS Band",
+            "\u957f\u671f\u4fdd\u6301",
+            "\u72ec\u7acb\u8fc1\u79fb"
+          ],
+          "observation": "\u672c\u6b21\u539f\u521b\u542c\u529b\u6750\u6599\u4e2d\u7684\u6709\u9650\u5ba2\u89c2\u4f5c\u7b54\u8868\u73b0\uff1b\u7b54\u9519\u8bb0\u5f55\u4fdd\u7559\u4e3a\u89c2\u5bdf\uff0c\u4e0d\u4ee3\u8868\u80fd\u529b\u8584\u5f31\u6216\u638c\u63e1\u3002"
+        }
+      }
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "reading": "completed",
+      "listening": "in_progress",
+      "run_status": "in_progress",
+      "results": {
+        "reading": {
+          "assessment_run_id": "asr_bc79504475154607",
+          "learner_id": "default_learner",
+          "skill_id": "reading",
+          "task_id": "reading-community-garden-v2",
+          "task_version": "reading-initial-community-garden-v2",
+          "rule_version": "reading-mcq-evidence-v2",
+          "task_status": "completed",
+          "learning_session_id": "sess_094350a9eb51469e",
+          "repeated_exposure": true,
+          "diagnostic_quality": "limited_observation",
+          "evidence_insufficient": true,
+          "limitations": [
+            "\u56db\u9053\u539f\u521b\u5ba2\u89c2\u9898\u53ea\u89c2\u5bdf\u672c\u6750\u6599\u4e2d\u7684\u7ec6\u8282\u3001\u56e0\u679c\u3001\u63a8\u65ad\u548c\u76ee\u7684\u7406\u89e3\uff1b\u9898\u91cf\u4e0d\u8db3\u4ee5\u4f30\u8ba1\u6574\u4f53\u9605\u8bfb\u80fd\u529b\u6216 IELTS Band\u3002\u65e7\u7248 v1 \u56db\u9898\u6b63\u786e\u9879\u5747\u4f4d\u4e8e\u7b2c\u4e00\u9009\u9879\uff0c\u5176\u4f5c\u7b54\u4fdd\u7559\u4f5c\u5386\u53f2\u8bb0\u5f55\uff0c\u4f46\u4e0d\u4f5c\u4e3a\u65e0\u504f\u80fd\u529b\u8bc1\u636e\u3002"
+          ],
+          "design_rationale": "\u56db\u9898\u5747\u4e3a\u5355\u4e00\u6700\u4f73\u7b54\u6848\uff1a\u76f4\u63a5\u5b9a\u4f4d\u3001\u56e0\u679c\u5173\u7cfb\u3001\u8de8\u53e5\u63a8\u65ad\u3001\u65b9\u6848\u76ee\u7684\u3002\u6587\u672c\u7ea6 190 \u8bcd\u3001\u56db\u6bb5\u3001\u5e38\u89c1\u5b66\u672f\u751f\u6d3b\u8bcd\u6c47\uff0c\u65e0\u4e13\u4e1a\u80cc\u666f\u8981\u6c42\uff1b\u8981\u6c42\u8de8\u53e5\u6574\u5408\u4f46\u4e0d\u542b\u590d\u6742\u53e5\u6cd5\u9677\u9631\u3002V2 \u6b63\u786e\u9879\u4f4d\u7f6e\u4f9d\u6b21\u4e3a\u7b2c 3\u30011\u30014\u30012 \u9879\uff0c\u6bcf\u4e2a\u4f4d\u7f6e\u6070\u597d\u4e00\u6b21\uff1b\u4ec5\u6539\u53d8\u9009\u9879\u987a\u5e8f\uff0c\u4e0d\u6539\u53d8\u9898\u5e72\u3001\u6750\u6599\u3001\u7b54\u6848\u542b\u4e49\u6216\u7406\u89e3\u76ee\u6807\u3002\u4f5c\u4e3a\u77ed\u521d\u59cb\u89c2\u5bdf\uff0c\u6807\u8bb0 evidence_insufficient\u3002",
+          "passage": "When the old railway depot became a community garden, residents expected the hardest work to be digging. They soon discovered that deciding how to share the small site took longer. The committee divided the land into twelve plots, but reserved two beds near the entrance for anyone who wanted to grow herbs without renting a plot.\n\nWater was the next concern. A roof tank collected rain, yet it could not supply the garden through a dry August. Instead of buying a larger tank, volunteers placed mulch around young plants. The layer reduced evaporation, so the existing supply lasted longer. The committee also asked plot holders to water before nine in the morning, when less water would be lost to heat.\n\nIn its first season, the garden produced fewer vegetables than the committee had forecast. However, the weekly open mornings attracted families who did not garden. A nearby caf\u00e9 began using some of the surplus herbs, while the library hosted short workshops on seed saving. The committee therefore judged success by more than the weight of the harvest: it also counted visits and workshop attendance.\n\nFor the next season, the residents rejected a proposal to add more plots. They chose instead to widen the central path, because wheelbarrows had difficulty passing when two people worked side by side. The change would reduce the growing area slightly, but make deliveries and shared work easier.",
+          "questions": [
+            {
+              "question_id": "readgarden-v2-q1",
+              "prompt": "What were the two entrance beds intended for?",
+              "options": [
+                "Vegetables for the caf\u00e9",
+                "Tools used by the committee",
+                "Herbs for visitors without a rented plot",
+                "Plants that needed extra water"
+              ],
+              "skill": "explicit_detail",
+              "answer": "Herbs for visitors without a rented plot",
+              "correct_answer": "Herbs for visitors without a rented plot",
+              "is_correct": true,
+              "explanation": "The first paragraph says the two beds were reserved for anyone wanting herbs without renting a plot.",
+              "attempt_id": "att_a055d73c08474082",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "readgarden-v2-q2",
+              "prompt": "Why did volunteers use mulch?",
+              "options": [
+                "To reduce water loss from the soil",
+                "To collect more rain from the roof",
+                "To make extra room for plots",
+                "To protect the path from wheelbarrows"
+              ],
+              "skill": "cause_effect",
+              "answer": "To reduce water loss from the soil",
+              "correct_answer": "To reduce water loss from the soil",
+              "is_correct": true,
+              "explanation": "The passage states that mulch reduced evaporation, helping the existing water supply last longer.",
+              "attempt_id": "att_4b30f70f14b5400f",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "readgarden-v2-q3",
+              "prompt": "What can be inferred about the committee\u2019s first-season measure of success?",
+              "options": [
+                "It focused only on income from the caf\u00e9",
+                "It was based on the number of rented plots",
+                "It ignored activities outside the garden",
+                "It included community participation as well as produce"
+              ],
+              "skill": "inference",
+              "answer": "It included community participation as well as produce",
+              "correct_answer": "It included community participation as well as produce",
+              "is_correct": true,
+              "explanation": "Although the harvest was below forecast, the committee also counted visits and workshop attendance.",
+              "attempt_id": "att_330af7f6d75540da",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "readgarden-v2-q4",
+              "prompt": "Why did residents choose to widen the central path?",
+              "options": [
+                "To increase the number of plots",
+                "To make shared work and deliveries easier",
+                "To help rain reach the roof tank",
+                "To provide space for more workshops"
+              ],
+              "skill": "purpose_and_reason",
+              "answer": "To make shared work and deliveries easier",
+              "correct_answer": "To make shared work and deliveries easier",
+              "is_correct": true,
+              "explanation": "The final paragraph explains wheelbarrows could not pass easily and says widening would make deliveries and shared work easier.",
+              "attempt_id": "att_c2d9e678859b4ff5",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "correct_count": 4,
+          "attempt_references": [
+            {
+              "attempt_id": "att_a055d73c08474082",
+              "question_id": "readgarden-v2-q1",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_4b30f70f14b5400f",
+              "question_id": "readgarden-v2-q2",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_330af7f6d75540da",
+              "question_id": "readgarden-v2-q3",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_c2d9e678859b4ff5",
+              "question_id": "readgarden-v2-q4",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "unassessed_capabilities": [
+            "\u6574\u4f53\u9605\u8bfb\u6c34\u5e73",
+            "IELTS Band",
+            "\u957f\u671f\u4fdd\u6301",
+            "\u72ec\u7acb\u8fc1\u79fb"
+          ]
+        }
+      }
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "reading": "in_progress",
+      "listening": "completed",
+      "run_status": "in_progress",
+      "results": {
+        "listening": {
+          "assessment_run_id": "asr_8a363414373e48de",
+          "learner_id": "default_learner",
+          "skill_id": "listening",
+          "task_id": "listening-community-arts-workshop-v1",
+          "task_version": "listening-initial-community-arts-v1",
+          "rule_version": "listening-mcq-exact-choice-v1",
+          "assessment_version": "initial-v2",
+          "task_status": "completed",
+          "learning_session_id": "sess_7303f60f3e744a14",
+          "audio_url": "/audio/listening/initial-community-arts-v1.wav",
+          "audio_sha256": "739E3D1263195E63386E04103B21BD34A1701E86549EA81CE35768482C974CC7",
+          "repeated_exposure": true,
+          "evidence_insufficient": true,
+          "limitations": [
+            "\u516d\u9053\u539f\u521b\u5ba2\u89c2\u9898\u53ea\u89c2\u5bdf\u672c\u6750\u6599\u4e2d\u7684\u7ec6\u8282\u3001\u56e0\u679c\u3001\u884c\u52a8\u63a8\u65ad\u548c\u8bf4\u8bdd\u8005\u76ee\u7684\u7406\u89e3\uff1b\u9898\u91cf\u4e0d\u8db3\u4ee5\u4f30\u8ba1\u6574\u4f53\u542c\u529b\u80fd\u529b\u6216 IELTS Band\u3002",
+            "\u91cd\u590d\u66dd\u5149\u53ea\u4f9d\u636e VerbaTrail \u4e2d\u8bb0\u5f55\u7684\u76f8\u540c\u7248\u672c\u7ec3\u4e60\u4f1a\u8bdd\u548c\u9898\u76ee\uff1b\u65e0\u6cd5\u8bc6\u522b\u5e73\u53f0\u5916\u542c\u8fc7\u7684\u6750\u6599\u3002"
+          ],
+          "questions": [
+            {
+              "question_id": "listening-initial-community-arts-v1-q1",
+              "prompt": "On which day will the printmaking workshop take place?",
+              "options": [
+                "Friday",
+                "Saturday",
+                "Sunday",
+                "Monday"
+              ],
+              "item_type": "explicit_detail",
+              "answer": "Saturday",
+              "correct_answer": "Saturday",
+              "is_correct": true,
+              "explanation": "Rowan confirms that the workshop is still on Saturday.",
+              "attempt_id": "att_7c8a638ce5a04e0a",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q2",
+              "prompt": "What time will the workshop begin?",
+              "options": [
+                "10:00",
+                "10:15",
+                "10:45",
+                "10:30"
+              ],
+              "item_type": "explicit_detail",
+              "answer": "10:30",
+              "correct_answer": "10:30",
+              "is_correct": true,
+              "explanation": "The revised start time is spoken as ten thirty, half an hour later than the leaflet time.",
+              "attempt_id": "att_6b8f8047d7d540f6",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q3",
+              "prompt": "Which entrance should the participant use?",
+              "options": [
+                "The side entrance beside the bicycle shelter",
+                "The main doors",
+                "The caf\u00e9 entrance",
+                "The rear delivery entrance"
+              ],
+              "item_type": "explicit_detail",
+              "answer": "The side entrance beside the bicycle shelter",
+              "correct_answer": "The side entrance beside the bicycle shelter",
+              "is_correct": true,
+              "explanation": "Rowan directs participants to the side entrance beside the bicycle shelter and says the main doors will remain locked.",
+              "attempt_id": "att_edc7bb67b68d4efe",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q4",
+              "prompt": "Why has the class moved to a different room?",
+              "options": [
+                "The caf\u00e9 needs the studio",
+                "The class has more participants",
+                "Electricians need the main hall",
+                "The bicycle shelter is being repaired"
+              ],
+              "item_type": "cause_effect",
+              "answer": "Electricians need the main hall",
+              "correct_answer": "Electricians need the main hall",
+              "is_correct": true,
+              "explanation": "Rowan says the class moved because electricians need the main hall that morning.",
+              "attempt_id": "att_fa6efa23f89c431e",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q5",
+              "prompt": "What should a participant do if a delayed bus makes them arrive after 10:40?",
+              "options": [
+                "Wait until the caf\u00e9 opens",
+                "Ring the bell marked \u201cworkshops\u201d",
+                "Go around to the main doors",
+                "Call the electrician"
+              ],
+              "item_type": "action_inference",
+              "answer": "Ring the bell marked \u201cworkshops\u201d",
+              "correct_answer": "Ring the bell marked \u201cworkshops\u201d",
+              "is_correct": true,
+              "explanation": "For arrivals after ten forty, Rowan says to ring the workshops bell so reception can let the participant in.",
+              "attempt_id": "att_47fc149e74104717",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q6",
+              "prompt": "Why did Rowan leave this message?",
+              "options": [
+                "To advertise a different workshop",
+                "To ask the participant to bring paper and ink",
+                "To cancel the Saturday session",
+                "To confirm revised arrangements and ask for a reply only if attendance is no longer possible"
+              ],
+              "item_type": "speaker_purpose",
+              "answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+              "correct_answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+              "is_correct": true,
+              "explanation": "Rowan says the centre needs to confirm the updated arrangements were received and asks for a reply only if the participant cannot attend.",
+              "attempt_id": "att_2eec8b8d7ff0433c",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "correct_count": 6,
+          "attempt_references": [
+            {
+              "attempt_id": "att_7c8a638ce5a04e0a",
+              "question_id": "listening-initial-community-arts-v1-q1",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_6b8f8047d7d540f6",
+              "question_id": "listening-initial-community-arts-v1-q2",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_edc7bb67b68d4efe",
+              "question_id": "listening-initial-community-arts-v1-q3",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_fa6efa23f89c431e",
+              "question_id": "listening-initial-community-arts-v1-q4",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_47fc149e74104717",
+              "question_id": "listening-initial-community-arts-v1-q5",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_2eec8b8d7ff0433c",
+              "question_id": "listening-initial-community-arts-v1-q6",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "unassessed_capabilities": [
+            "\u6574\u4f53\u542c\u529b\u80fd\u529b",
+            "IELTS Band",
+            "\u957f\u671f\u4fdd\u6301",
+            "\u72ec\u7acb\u8fc1\u79fb"
+          ],
+          "observation": "\u672c\u6b21\u539f\u521b\u542c\u529b\u6750\u6599\u4e2d\u7684\u6709\u9650\u5ba2\u89c2\u4f5c\u7b54\u8868\u73b0\uff1b\u7b54\u9519\u8bb0\u5f55\u4fdd\u7559\u4e3a\u89c2\u5bdf\uff0c\u4e0d\u4ee3\u8868\u80fd\u529b\u8584\u5f31\u6216\u638c\u63e1\u3002"
+        }
+      }
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "reading": "completed",
+      "listening": "completed",
+      "run_status": "in_progress",
+      "results": {
+        "reading": {
+          "assessment_run_id": "asr_0993350d4a894b8b",
+          "learner_id": "default_learner",
+          "skill_id": "reading",
+          "task_id": "reading-community-garden-v2",
+          "task_version": "reading-initial-community-garden-v2",
+          "rule_version": "reading-mcq-evidence-v2",
+          "task_status": "completed",
+          "learning_session_id": "sess_ebed002ff6cf4718",
+          "repeated_exposure": true,
+          "diagnostic_quality": "limited_observation",
+          "evidence_insufficient": true,
+          "limitations": [
+            "\u56db\u9053\u539f\u521b\u5ba2\u89c2\u9898\u53ea\u89c2\u5bdf\u672c\u6750\u6599\u4e2d\u7684\u7ec6\u8282\u3001\u56e0\u679c\u3001\u63a8\u65ad\u548c\u76ee\u7684\u7406\u89e3\uff1b\u9898\u91cf\u4e0d\u8db3\u4ee5\u4f30\u8ba1\u6574\u4f53\u9605\u8bfb\u80fd\u529b\u6216 IELTS Band\u3002\u65e7\u7248 v1 \u56db\u9898\u6b63\u786e\u9879\u5747\u4f4d\u4e8e\u7b2c\u4e00\u9009\u9879\uff0c\u5176\u4f5c\u7b54\u4fdd\u7559\u4f5c\u5386\u53f2\u8bb0\u5f55\uff0c\u4f46\u4e0d\u4f5c\u4e3a\u65e0\u504f\u80fd\u529b\u8bc1\u636e\u3002"
+          ],
+          "design_rationale": "\u56db\u9898\u5747\u4e3a\u5355\u4e00\u6700\u4f73\u7b54\u6848\uff1a\u76f4\u63a5\u5b9a\u4f4d\u3001\u56e0\u679c\u5173\u7cfb\u3001\u8de8\u53e5\u63a8\u65ad\u3001\u65b9\u6848\u76ee\u7684\u3002\u6587\u672c\u7ea6 190 \u8bcd\u3001\u56db\u6bb5\u3001\u5e38\u89c1\u5b66\u672f\u751f\u6d3b\u8bcd\u6c47\uff0c\u65e0\u4e13\u4e1a\u80cc\u666f\u8981\u6c42\uff1b\u8981\u6c42\u8de8\u53e5\u6574\u5408\u4f46\u4e0d\u542b\u590d\u6742\u53e5\u6cd5\u9677\u9631\u3002V2 \u6b63\u786e\u9879\u4f4d\u7f6e\u4f9d\u6b21\u4e3a\u7b2c 3\u30011\u30014\u30012 \u9879\uff0c\u6bcf\u4e2a\u4f4d\u7f6e\u6070\u597d\u4e00\u6b21\uff1b\u4ec5\u6539\u53d8\u9009\u9879\u987a\u5e8f\uff0c\u4e0d\u6539\u53d8\u9898\u5e72\u3001\u6750\u6599\u3001\u7b54\u6848\u542b\u4e49\u6216\u7406\u89e3\u76ee\u6807\u3002\u4f5c\u4e3a\u77ed\u521d\u59cb\u89c2\u5bdf\uff0c\u6807\u8bb0 evidence_insufficient\u3002",
+          "passage": "When the old railway depot became a community garden, residents expected the hardest work to be digging. They soon discovered that deciding how to share the small site took longer. The committee divided the land into twelve plots, but reserved two beds near the entrance for anyone who wanted to grow herbs without renting a plot.\n\nWater was the next concern. A roof tank collected rain, yet it could not supply the garden through a dry August. Instead of buying a larger tank, volunteers placed mulch around young plants. The layer reduced evaporation, so the existing supply lasted longer. The committee also asked plot holders to water before nine in the morning, when less water would be lost to heat.\n\nIn its first season, the garden produced fewer vegetables than the committee had forecast. However, the weekly open mornings attracted families who did not garden. A nearby caf\u00e9 began using some of the surplus herbs, while the library hosted short workshops on seed saving. The committee therefore judged success by more than the weight of the harvest: it also counted visits and workshop attendance.\n\nFor the next season, the residents rejected a proposal to add more plots. They chose instead to widen the central path, because wheelbarrows had difficulty passing when two people worked side by side. The change would reduce the growing area slightly, but make deliveries and shared work easier.",
+          "questions": [
+            {
+              "question_id": "readgarden-v2-q1",
+              "prompt": "What were the two entrance beds intended for?",
+              "options": [
+                "Vegetables for the caf\u00e9",
+                "Tools used by the committee",
+                "Herbs for visitors without a rented plot",
+                "Plants that needed extra water"
+              ],
+              "skill": "explicit_detail",
+              "answer": "Herbs for visitors without a rented plot",
+              "correct_answer": "Herbs for visitors without a rented plot",
+              "is_correct": true,
+              "explanation": "The first paragraph says the two beds were reserved for anyone wanting herbs without renting a plot.",
+              "attempt_id": "att_9979b59ba9204add",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "readgarden-v2-q2",
+              "prompt": "Why did volunteers use mulch?",
+              "options": [
+                "To reduce water loss from the soil",
+                "To collect more rain from the roof",
+                "To make extra room for plots",
+                "To protect the path from wheelbarrows"
+              ],
+              "skill": "cause_effect",
+              "answer": "To reduce water loss from the soil",
+              "correct_answer": "To reduce water loss from the soil",
+              "is_correct": true,
+              "explanation": "The passage states that mulch reduced evaporation, helping the existing water supply last longer.",
+              "attempt_id": "att_88e0377a92bb4749",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "readgarden-v2-q3",
+              "prompt": "What can be inferred about the committee\u2019s first-season measure of success?",
+              "options": [
+                "It focused only on income from the caf\u00e9",
+                "It was based on the number of rented plots",
+                "It ignored activities outside the garden",
+                "It included community participation as well as produce"
+              ],
+              "skill": "inference",
+              "answer": "It included community participation as well as produce",
+              "correct_answer": "It included community participation as well as produce",
+              "is_correct": true,
+              "explanation": "Although the harvest was below forecast, the committee also counted visits and workshop attendance.",
+              "attempt_id": "att_93ad447c79c94dc6",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "readgarden-v2-q4",
+              "prompt": "Why did residents choose to widen the central path?",
+              "options": [
+                "To increase the number of plots",
+                "To make shared work and deliveries easier",
+                "To help rain reach the roof tank",
+                "To provide space for more workshops"
+              ],
+              "skill": "purpose_and_reason",
+              "answer": "To make shared work and deliveries easier",
+              "correct_answer": "To make shared work and deliveries easier",
+              "is_correct": true,
+              "explanation": "The final paragraph explains wheelbarrows could not pass easily and says widening would make deliveries and shared work easier.",
+              "attempt_id": "att_95602fffc49c431d",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "correct_count": 4,
+          "attempt_references": [
+            {
+              "attempt_id": "att_9979b59ba9204add",
+              "question_id": "readgarden-v2-q1",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_88e0377a92bb4749",
+              "question_id": "readgarden-v2-q2",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_93ad447c79c94dc6",
+              "question_id": "readgarden-v2-q3",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_95602fffc49c431d",
+              "question_id": "readgarden-v2-q4",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "unassessed_capabilities": [
+            "\u6574\u4f53\u9605\u8bfb\u6c34\u5e73",
+            "IELTS Band",
+            "\u957f\u671f\u4fdd\u6301",
+            "\u72ec\u7acb\u8fc1\u79fb"
+          ]
+        },
+        "listening": {
+          "assessment_run_id": "asr_0993350d4a894b8b",
+          "learner_id": "default_learner",
+          "skill_id": "listening",
+          "task_id": "listening-community-arts-workshop-v1",
+          "task_version": "listening-initial-community-arts-v1",
+          "rule_version": "listening-mcq-exact-choice-v1",
+          "assessment_version": "initial-v2",
+          "task_status": "completed",
+          "learning_session_id": "sess_9e1d4d7d14c14198",
+          "audio_url": "/audio/listening/initial-community-arts-v1.wav",
+          "audio_sha256": "739E3D1263195E63386E04103B21BD34A1701E86549EA81CE35768482C974CC7",
+          "repeated_exposure": true,
+          "evidence_insufficient": true,
+          "limitations": [
+            "\u516d\u9053\u539f\u521b\u5ba2\u89c2\u9898\u53ea\u89c2\u5bdf\u672c\u6750\u6599\u4e2d\u7684\u7ec6\u8282\u3001\u56e0\u679c\u3001\u884c\u52a8\u63a8\u65ad\u548c\u8bf4\u8bdd\u8005\u76ee\u7684\u7406\u89e3\uff1b\u9898\u91cf\u4e0d\u8db3\u4ee5\u4f30\u8ba1\u6574\u4f53\u542c\u529b\u80fd\u529b\u6216 IELTS Band\u3002",
+            "\u91cd\u590d\u66dd\u5149\u53ea\u4f9d\u636e VerbaTrail \u4e2d\u8bb0\u5f55\u7684\u76f8\u540c\u7248\u672c\u7ec3\u4e60\u4f1a\u8bdd\u548c\u9898\u76ee\uff1b\u65e0\u6cd5\u8bc6\u522b\u5e73\u53f0\u5916\u542c\u8fc7\u7684\u6750\u6599\u3002"
+          ],
+          "questions": [
+            {
+              "question_id": "listening-initial-community-arts-v1-q1",
+              "prompt": "On which day will the printmaking workshop take place?",
+              "options": [
+                "Friday",
+                "Saturday",
+                "Sunday",
+                "Monday"
+              ],
+              "item_type": "explicit_detail",
+              "answer": "Saturday",
+              "correct_answer": "Saturday",
+              "is_correct": true,
+              "explanation": "Rowan confirms that the workshop is still on Saturday.",
+              "attempt_id": "att_340d2847d4874221",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q2",
+              "prompt": "What time will the workshop begin?",
+              "options": [
+                "10:00",
+                "10:15",
+                "10:45",
+                "10:30"
+              ],
+              "item_type": "explicit_detail",
+              "answer": "10:30",
+              "correct_answer": "10:30",
+              "is_correct": true,
+              "explanation": "The revised start time is spoken as ten thirty, half an hour later than the leaflet time.",
+              "attempt_id": "att_de92521199b3460a",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q3",
+              "prompt": "Which entrance should the participant use?",
+              "options": [
+                "The side entrance beside the bicycle shelter",
+                "The main doors",
+                "The caf\u00e9 entrance",
+                "The rear delivery entrance"
+              ],
+              "item_type": "explicit_detail",
+              "answer": "The side entrance beside the bicycle shelter",
+              "correct_answer": "The side entrance beside the bicycle shelter",
+              "is_correct": true,
+              "explanation": "Rowan directs participants to the side entrance beside the bicycle shelter and says the main doors will remain locked.",
+              "attempt_id": "att_5f52c75373214c05",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q4",
+              "prompt": "Why has the class moved to a different room?",
+              "options": [
+                "The caf\u00e9 needs the studio",
+                "The class has more participants",
+                "Electricians need the main hall",
+                "The bicycle shelter is being repaired"
+              ],
+              "item_type": "cause_effect",
+              "answer": "Electricians need the main hall",
+              "correct_answer": "Electricians need the main hall",
+              "is_correct": true,
+              "explanation": "Rowan says the class moved because electricians need the main hall that morning.",
+              "attempt_id": "att_300a313f519b40cc",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q5",
+              "prompt": "What should a participant do if a delayed bus makes them arrive after 10:40?",
+              "options": [
+                "Wait until the caf\u00e9 opens",
+                "Ring the bell marked \u201cworkshops\u201d",
+                "Go around to the main doors",
+                "Call the electrician"
+              ],
+              "item_type": "action_inference",
+              "answer": "Ring the bell marked \u201cworkshops\u201d",
+              "correct_answer": "Ring the bell marked \u201cworkshops\u201d",
+              "is_correct": true,
+              "explanation": "For arrivals after ten forty, Rowan says to ring the workshops bell so reception can let the participant in.",
+              "attempt_id": "att_5ca2672d3cd8403d",
+              "evidence_validity": "eligible"
+            },
+            {
+              "question_id": "listening-initial-community-arts-v1-q6",
+              "prompt": "Why did Rowan leave this message?",
+              "options": [
+                "To advertise a different workshop",
+                "To ask the participant to bring paper and ink",
+                "To cancel the Saturday session",
+                "To confirm revised arrangements and ask for a reply only if attendance is no longer possible"
+              ],
+              "item_type": "speaker_purpose",
+              "answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+              "correct_answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+              "is_correct": true,
+              "explanation": "Rowan says the centre needs to confirm the updated arrangements were received and asks for a reply only if the participant cannot attend.",
+              "attempt_id": "att_66bfdf6bbdff4143",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "correct_count": 6,
+          "attempt_references": [
+            {
+              "attempt_id": "att_340d2847d4874221",
+              "question_id": "listening-initial-community-arts-v1-q1",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_de92521199b3460a",
+              "question_id": "listening-initial-community-arts-v1-q2",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_5f52c75373214c05",
+              "question_id": "listening-initial-community-arts-v1-q3",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_300a313f519b40cc",
+              "question_id": "listening-initial-community-arts-v1-q4",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_5ca2672d3cd8403d",
+              "question_id": "listening-initial-community-arts-v1-q5",
+              "evidence_validity": "eligible"
+            },
+            {
+              "attempt_id": "att_66bfdf6bbdff4143",
+              "question_id": "listening-initial-community-arts-v1-q6",
+              "evidence_validity": "eligible"
+            }
+          ],
+          "unassessed_capabilities": [
+            "\u6574\u4f53\u542c\u529b\u80fd\u529b",
+            "IELTS Band",
+            "\u957f\u671f\u4fdd\u6301",
+            "\u72ec\u7acb\u8fc1\u79fb"
+          ],
+          "observation": "\u672c\u6b21\u539f\u521b\u542c\u529b\u6750\u6599\u4e2d\u7684\u6709\u9650\u5ba2\u89c2\u4f5c\u7b54\u8868\u73b0\uff1b\u7b54\u9519\u8bb0\u5f55\u4fdd\u7559\u4e3a\u89c2\u5bdf\uff0c\u4e0d\u4ee3\u8868\u80fd\u529b\u8584\u5f31\u6216\u638c\u63e1\u3002"
+        }
+      }
+    }
+  ],
+  "restored": {
+    "reading": {
+      "correct_count": 4,
+      "attempt_references": [
+        {
+          "attempt_id": "att_9979b59ba9204add",
+          "question_id": "readgarden-v2-q1",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_88e0377a92bb4749",
+          "question_id": "readgarden-v2-q2",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_93ad447c79c94dc6",
+          "question_id": "readgarden-v2-q3",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_95602fffc49c431d",
+          "question_id": "readgarden-v2-q4",
+          "evidence_validity": "eligible"
+        }
+      ]
+    },
+    "listening": {
+      "correct_count": 6,
+      "attempt_references": [
+        {
+          "attempt_id": "att_340d2847d4874221",
+          "question_id": "listening-initial-community-arts-v1-q1",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_de92521199b3460a",
+          "question_id": "listening-initial-community-arts-v1-q2",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_5f52c75373214c05",
+          "question_id": "listening-initial-community-arts-v1-q3",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_300a313f519b40cc",
+          "question_id": "listening-initial-community-arts-v1-q4",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_5ca2672d3cd8403d",
+          "question_id": "listening-initial-community-arts-v1-q5",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_66bfdf6bbdff4143",
+          "question_id": "listening-initial-community-arts-v1-q6",
+          "evidence_validity": "eligible"
+        }
+      ]
+    }
+  },
+  "formal_database_sha256": "bc4656aa2bc624f0a257254ba25597db3031126fdfcbe79e5f3bb0cb607793e0"
+}

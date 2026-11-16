@@ -1,0 +1,380 @@
+{
+  "status": "pass",
+  "checks": [
+    "six questions, no pre-submit feedback",
+    "native audio play advances time",
+    "switch preserves listening draft and does not start Reading",
+    "server score 5/6 restored after refresh",
+    "same run Reading completes with genuine 1/4",
+    "mobile no horizontal overflow",
+    "both themes retain results",
+    "ordinary Listening starts and loads audio"
+  ],
+  "playback": {
+    "time": 0.346745,
+    "duration": 58.805261,
+    "src": "http://127.0.0.1:5965/audio/listening/initial-community-arts-v1.wav"
+  },
+  "themeButtons": [
+    {
+      "text": "☾曜黑",
+      "label": "切换至曜黑香槟金主题"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/exams/catalog"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/profile/exam-preparation?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/health"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/exams/catalog"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/profile/exam-preparation?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/health"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening?learner_id=default_learner"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening/start?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/audio/listening/initial-community-arts-v1.wav"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/audio/listening/initial-community-arts-v1.wav"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening/submit"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening/submit"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/health"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/health"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/audio/listening/initial-community-arts-v1.wav"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading/start?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading/submit"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading/submit"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/exams/catalog"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/profile/exam-preparation?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/exams/catalog"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/profile/exam-preparation?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/listening/history?learner_id=default_learner"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5965/api/v1/listening/history?learner_id=default_learner"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:5965/api/v1/listening/sessions"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5965/api/v1/listening/sessions"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5966/audio/listening/study-group.wav"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:5965/api/v1/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/exams/catalog",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening/start?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/audio/listening/initial-community-arts-v1.wav",
+      "status": 206
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/audio/listening/initial-community-arts-v1.wav",
+      "status": 206
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening/submit",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening/submit",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/listening?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/audio/listening/initial-community-arts-v1.wav",
+      "status": 206
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading/start?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading/submit",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45/reading/submit",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs/asr_f9f477604a504d45?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/assessment-runs?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/exams/catalog",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/profile/exam-preparation?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/listening/history?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/listening/history?learner_id=default_learner",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/listening/sessions",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5965/api/v1/listening/sessions",
+      "status": 201
+    },
+    {
+      "url": "http://127.0.0.1:5966/audio/listening/study-group.wav",
+      "status": 206
+    }
+  ],
+  "screenshots": [
+    "desktop-audio.png",
+    "desktop-result.png",
+    "mobile-result.png",
+    "mobile-noir.png",
+    "desktop-noir.png"
+  ],
+  "failed": []
+}

@@ -1,0 +1,143 @@
+{
+  "status": "pass",
+  "A": "asr_51cedfc62e204646",
+  "B": "asr_64693faee45e4a19",
+  "task_version": "listening-initial-community-arts-v1",
+  "tasks": [
+    {
+      "run_id": "asr_51cedfc62e204646",
+      "skill": "listening",
+      "status": "completed",
+      "session_id": "sess_cd476abdd5f348d7",
+      "attempt_count": 6
+    },
+    {
+      "run_id": "asr_51cedfc62e204646",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_51cedfc62e204646",
+      "skill": "reading",
+      "status": "in_progress",
+      "session_id": "sess_7a57ca5a90c44cdb",
+      "attempt_count": 0
+    },
+    {
+      "run_id": "asr_51cedfc62e204646",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_64693faee45e4a19",
+      "skill": "listening",
+      "status": "in_progress",
+      "session_id": "sess_ac24461977214610",
+      "attempt_count": 0
+    },
+    {
+      "run_id": "asr_64693faee45e4a19",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_64693faee45e4a19",
+      "skill": "reading",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_64693faee45e4a19",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    }
+  ],
+  "counts": {
+    "runs": 2,
+    "sessions": 3,
+    "attempts": 6
+  },
+  "browser_post_counts": {
+    "/assessment-runs": 2,
+    "/assessment-runs/asr_51cedfc62e204646/listening/start": 1,
+    "/assessment-runs/asr_64693faee45e4a19/listening/start": 1,
+    "/assessment-runs/asr_51cedfc62e204646/reading/start": 1,
+    "/assessment-runs/asr_51cedfc62e204646/listening/submit": 1
+  },
+  "server_post_counts": {
+    "/assessment-runs": 2,
+    "/assessment-runs/asr_51cedfc62e204646/listening/start": 1,
+    "/assessment-runs/asr_64693faee45e4a19/listening/start": 1,
+    "/assessment-runs/asr_51cedfc62e204646/reading/start": 1,
+    "/assessment-runs/asr_51cedfc62e204646/listening/submit": 1
+  },
+  "draft_keys": [
+    "assessment:draft:default_learner:asr_51cedfc62e204646:reading:reading-initial-community-garden-v2",
+    "assessment:draft:default_learner:asr_51cedfc62e204646:listening:listening-initial-community-arts-v1",
+    "assessment:draft:default_learner:asr_64693faee45e4a19:listening:listening-initial-community-arts-v1"
+  ],
+  "timeline": [
+    {
+      "event": "response_held",
+      "run": "asr_51cedfc62e204646",
+      "status": 200,
+      "at": 1794802381539
+    },
+    {
+      "event": "target_selected",
+      "run": "asr_64693faee45e4a19",
+      "at": 1794802381821
+    },
+    {
+      "event": "released",
+      "run": "asr_51cedfc62e204646",
+      "at": 1794802381822
+    },
+    {
+      "event": "response_held",
+      "run": "asr_64693faee45e4a19",
+      "status": 200,
+      "at": 1794802382736
+    },
+    {
+      "event": "target_selected",
+      "run": "asr_51cedfc62e204646",
+      "at": 1794802383047
+    },
+    {
+      "event": "released",
+      "run": "asr_64693faee45e4a19",
+      "at": 1794802383048
+    }
+  ],
+  "checks": [
+    "A and B draft isolation, A refresh, Reading separation",
+    "delayed real responses cannot overwrite selected run in both directions",
+    "server result overrides conflicting draft; B draft retained"
+  ],
+  "retest": [
+    {
+      "status": "failed",
+      "reason": "Second interception selected the already active run, so React did not issue a new GET.",
+      "fix": "Select the other run before triggering each delayed request."
+    },
+    {
+      "status": "pass",
+      "reason": "Both directions captured actual upstream 200 and released after target selection."
+    }
+  ],
+  "limitations": [
+    "The current interface identifies selected history through its pressed state and saved run ID; it does not display run IDs as text.",
+    "The test validates task GET response races; it does not claim broader network failure coverage."
+  ],
+  "quality": {
+    "affected_tests": "4 passed",
+    "alembic_head": "0011_assessment_reading_task",
+    "git_diff_check": "pass",
+    "formal_sqlite_sha256": "bc4656aa2bc624f0a257254ba25597db3031126fdfcbe79e5f3bb0cb607793e0"
+  }
+}

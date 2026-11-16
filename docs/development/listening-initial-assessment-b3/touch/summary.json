@@ -1,0 +1,193 @@
+{
+  "status": "pass",
+  "run_id": "asr_2596ed31644940cd",
+  "audio_failure_run_id": "asr_6778b63e5e8c4ac2",
+  "score": "本次答对 1 / 6 题",
+  "touch_gestures": 61,
+  "questions_selected": [
+    "question-1-selected",
+    "question-2-selected",
+    "question-3-selected",
+    "question-4-selected",
+    "question-5-selected",
+    "question-6-selected"
+  ],
+  "result_explanations": [
+    {
+      "question": 1,
+      "text": "Rowan confirms that the workshop is still on Saturday.",
+      "top": 231.6875,
+      "bottom": 284.46875,
+      "navBottom": 160,
+      "fullyVisible": true
+    },
+    {
+      "question": 2,
+      "text": "The revised start time is spoken as ten thirty, half an hour later than the leaflet time.",
+      "top": 575.53125,
+      "bottom": 654.703125,
+      "navBottom": 160,
+      "fullyVisible": true
+    },
+    {
+      "question": 3,
+      "text": "Rowan directs participants to the side entrance beside the bicycle shelter and says the main doors will remain locked.",
+      "top": 720.328125,
+      "bottom": 799.5,
+      "navBottom": 160,
+      "fullyVisible": true
+    },
+    {
+      "question": 4,
+      "text": "Rowan says the class moved because electricians need the main hall that morning.",
+      "top": 720.953125,
+      "bottom": 800.125,
+      "navBottom": 160,
+      "fullyVisible": true
+    },
+    {
+      "question": 5,
+      "text": "For arrivals after ten forty, Rowan says to ring the workshops bell so reception can let the participant in.",
+      "top": 698.359375,
+      "bottom": 777.53125,
+      "navBottom": 160,
+      "fullyVisible": true
+    },
+    {
+      "question": 6,
+      "text": "Rowan says the centre needs to confirm the updated arrangements were received and asks for a reply only if the participant cannot attend.",
+      "top": 695.9375,
+      "bottom": 801.5,
+      "navBottom": 160,
+      "fullyVisible": true
+    }
+  ],
+  "themes": [
+    {
+      "theme": "premium",
+      "scenario": "full-listening-assessment",
+      "status": "pass",
+      "run_id": "asr_2596ed31644940cd",
+      "score": "本次答对 1 / 6 题"
+    },
+    {
+      "theme": "noir",
+      "scenario": "post-switch-touch-scroll",
+      "status": "pass",
+      "scroll_before": 342,
+      "scroll_after": 489
+    }
+  ],
+  "premium_submit_focus": {
+    "text": "提交作答",
+    "outline": "rgb(196, 172, 126) solid 3px",
+    "top": 800.484375,
+    "bottom": 843.578125,
+    "navBottom": 160
+  },
+  "noir_radio_focus": {
+    "tag": "INPUT",
+    "outline": "rgb(210, 183, 127) solid 3px",
+    "top": 409.15625,
+    "bottom": 435.546875,
+    "navBottom": 160
+  },
+  "audio_failure": {
+    "id": "audio-failure-recovery",
+    "faults": [
+      {
+        "url": "http://127.0.0.1:9036/audio/listening/initial-community-arts-v1.wav",
+        "action": "ConnectionReset",
+        "at": 1794803687069
+      }
+    ],
+    "draft_count": 1,
+    "run_id": "asr_6778b63e5e8c4ac2",
+    "status": "pass"
+  },
+  "database_counts": {
+    "runs": 2,
+    "sessions": 2,
+    "attempts": 6
+  },
+  "database_tasks": [
+    {
+      "run_id": "asr_2596ed31644940cd",
+      "skill": "listening",
+      "status": "completed",
+      "session_id": "sess_92002fab04c348f7",
+      "attempt_count": 6
+    },
+    {
+      "run_id": "asr_2596ed31644940cd",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_2596ed31644940cd",
+      "skill": "reading",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_2596ed31644940cd",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_6778b63e5e8c4ac2",
+      "skill": "listening",
+      "status": "in_progress",
+      "session_id": "sess_4be08380ec324eaf",
+      "attempt_count": 0
+    },
+    {
+      "run_id": "asr_6778b63e5e8c4ac2",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_6778b63e5e8c4ac2",
+      "skill": "reading",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_6778b63e5e8c4ac2",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    }
+  ],
+  "formal_database_sha256": "bc4656aa2bc624f0a257254ba25597db3031126fdfcbe79e5f3bb0cb607793e0",
+  "quality": {
+    "affected_tests": "4 passed",
+    "typecheck": "pass",
+    "production_build": "pass",
+    "alembic_head": "0011_assessment_reading_task",
+    "git_diff_check": "pass"
+  },
+  "retests": [
+    {
+      "status": "failed",
+      "reason": "Script incorrectly expected 4-question score despite 6-question listening; request succeeded."
+    },
+    {
+      "status": "pass",
+      "reason": "Score pattern corrected."
+    },
+    {
+      "status": "pass",
+      "reason": "Waited for native keyboard focus scrolling to settle and checked geometry."
+    }
+  ],
+  "limitations": [
+    "Premium submit focus indicator is discernible, with its lower edge near the bottom of the mobile viewport.",
+    "Windows asyncio logged connection reset during intentional audio failure.",
+    "No physical speaker output was checked."
+  ],
+  "product_code_modified": false
+}

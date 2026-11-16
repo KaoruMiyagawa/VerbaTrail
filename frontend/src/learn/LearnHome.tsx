@@ -50,7 +50,7 @@ export function LearnHome({ onNavigate }: { onNavigate: Navigate }) {
         <p>选择一项技能，进入练习或查看学习计划。</p>
       </div>
     </header>
-    <section className="focus-card focus-card-quiet"><h2>初始能力评估</h2><p>通过简短任务了解已有证据。目前开放 Reading。</p><button className="focus-button" type="button" onClick={() => onNavigate('assessment')}>进入初始能力评估 →</button></section>
+    <section className="focus-card focus-card-quiet"><h2>初始能力评估</h2><p>通过简短任务了解已有证据。目前开放 Reading 和 Listening。</p><button className="focus-button" type="button" onClick={() => onNavigate('assessment')}>进入初始能力评估 →</button></section>
     <section className="learn-skill-grid" aria-label="IELTS 四项技能">
       {skills.map(skill => <SkillCard key={skill.id} skill={skill} onNavigate={onNavigate} />)}
     </section>

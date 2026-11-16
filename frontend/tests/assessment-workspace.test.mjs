@@ -1,23 +1,20 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
-
-const workspace = await readFile(new URL('../src/learn/AssessmentWorkspace.tsx', import.meta.url), 'utf8');
-const api = await readFile(new URL('../src/api/assessment.ts', import.meta.url), 'utf8');
-
-test('assessment keeps browser drafts scoped by learner, run and content version', () => {
-  assert.match(workspace, /assessment:draft:\$\{learner\}:\$\{run\}:\$\{version\}/);
-  assert.match(workspace, /loadDraft\(id,task\.task_version\)/);
+import {draftKey,loadDraft,submitWithRecovery} from '../src/learn/assessmentState.ts';
+const storage=()=>{const m=new Map();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,v)};};
+test('drafts isolate learner run skill and version and migrate legacy Reading only',()=>{
+ const s=storage();s.setItem(draftKey('a','r','reading','v'),JSON.stringify({q:'A'}));
+ assert.deepEqual(loadDraft(s,'a','r','reading','v'),{q:'A'});
+ for(const args of [['b','r','reading','v'],['a','s','reading','v'],['a','r','listening','v'],['a','r','reading','v2']])assert.deepEqual(loadDraft(s,...args),{});
+ s.setItem('assessment:draft:a:old:v',JSON.stringify({q:'legacy'}));assert.deepEqual(loadDraft(s,'a','old','reading','v'),{q:'legacy'});assert.deepEqual(loadDraft(s,'a','old','listening','v'),{});
 });
-
-test('failed submit checks server state before returning control to the learner', () => {
-  assert.match(workspace, /catch \(e\) \{ try \{ const result=await assessmentApi\.reading\(run\.run_id,learner\)/);
-  assert.match(workspace, /result\.task_status==='completed'/);
-  assert.match(workspace, /if \(gate\.current\) return/);
+test('lost submit response restores server result without another write',async()=>{
+ const calls=[];const result={task_status:'completed',correct_count:5};
+ assert.equal(await submitWithRecovery(async()=>{calls.push('read');return result;},async()=>{calls.push('write');throw Error('lost');},false),result);assert.deepEqual(calls,['write','read']);
+ calls.length=0;assert.equal(await submitWithRecovery(async()=>{calls.push('read');return result;},async()=>{calls.push('write');},true),result);assert.deepEqual(calls,['read']);
 });
-
-test('creation requests initial-v2 with a persistent retry key', () => {
-  assert.match(api, /assessment_version:'initial-v2'/);
-  assert.match(workspace, /localStorage\.getItem\(createKey\)/);
-  assert.match(workspace, /localStorage\.removeItem\(createKey\)/);
+test('pending retry requires successful read before writing and keeps errors actionable',async()=>{
+ let writes=0;await assert.rejects(submitWithRecovery(async()=>{throw Error('offline');},async()=>{writes++;},true),/offline/);assert.equal(writes,0);
+ const events=[];await submitWithRecovery(async()=>{events.push('read');return {task_status:'in_progress'};},async()=>{events.push('write');return {task_status:'completed'};},true);assert.deepEqual(events,['read','write']);
 });
+test('corrupt local draft cannot replace server result or crash task loading',()=>{const s=storage();s.setItem(draftKey('a','r','listening','v'),'null');assert.deepEqual(loadDraft(s,'a','r','listening','v'),{});s.setItem(draftKey('a','r','listening','v'),'not json');assert.deepEqual(loadDraft(s,'a','r','listening','v'),{});});

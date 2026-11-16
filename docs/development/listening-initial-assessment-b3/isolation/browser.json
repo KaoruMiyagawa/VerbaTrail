@@ -1,0 +1,298 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "reading": "completed",
+      "listening": "not_started",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "reading": "not_started",
+      "listening": "completed",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "reading": "completed",
+      "listening": "in_progress",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "reading": "in_progress",
+      "listening": "completed",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "reading": "completed",
+      "listening": "completed",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    },
+    {
+      "fault": "reading",
+      "healthy": "listening",
+      "alert": "无法连接后端服务，请确认后端已启动并监听对应端口。 重新连接 Reading",
+      "recovered_score": "4 / 4",
+      "blocked_requests": 2,
+      "status": "pass"
+    },
+    {
+      "fault": "listening",
+      "healthy": "reading",
+      "alert": "无法连接后端服务，请确认后端已启动并监听对应端口。 重新连接 Listening",
+      "recovered_score": "6 / 6",
+      "blocked_requests": 2,
+      "status": "pass"
+    }
+  ],
+  "faults": [
+    {
+      "skill": "reading",
+      "at": 1794802860355,
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner",
+      "action": "failRequest",
+      "error": "ConnectionReset"
+    },
+    {
+      "skill": "reading",
+      "at": 1794802860839,
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner",
+      "action": "failRequest",
+      "error": "ConnectionReset"
+    },
+    {
+      "skill": "listening",
+      "at": 1794802861764,
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner",
+      "action": "failRequest",
+      "error": "ConnectionReset"
+    },
+    {
+      "skill": "listening",
+      "at": 1794802862175,
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner",
+      "action": "failRequest",
+      "error": "ConnectionReset"
+    }
+  ],
+  "requests": [
+    {
+      "at": 1794802858787,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802858925,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_d2556594f1e64409?learner_id=default_learner"
+    },
+    {
+      "at": 1794802858932,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_d2556594f1e64409/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802858932,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_d2556594f1e64409/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859145,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_dae9d724c43d443a?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859163,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_dae9d724c43d443a/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859163,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_dae9d724c43d443a/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859362,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_bc79504475154607?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859380,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_bc79504475154607/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859380,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_bc79504475154607/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859582,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_8a363414373e48de?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859595,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_8a363414373e48de/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859595,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_8a363414373e48de/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859798,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859812,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802859812,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860094,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_d2556594f1e64409?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860100,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_d2556594f1e64409/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860100,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_d2556594f1e64409/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860340,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860355,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860355,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860808,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860828,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860839,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802860839,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802861250,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802861266,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b?learner_id=default_learner"
+    },
+    {
+      "at": 1794802861272,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802861535,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_d2556594f1e64409?learner_id=default_learner"
+    },
+    {
+      "at": 1794802861550,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_d2556594f1e64409/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802861550,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_d2556594f1e64409/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802861752,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b?learner_id=default_learner"
+    },
+    {
+      "at": 1794802861764,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802861764,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802862156,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802862167,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b?learner_id=default_learner"
+    },
+    {
+      "at": 1794802862175,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802862175,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802862573,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802862599,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b?learner_id=default_learner"
+    },
+    {
+      "at": 1794802862607,
+      "method": "GET",
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs?learner_id=default_learner"
+    }
+  ]
+}

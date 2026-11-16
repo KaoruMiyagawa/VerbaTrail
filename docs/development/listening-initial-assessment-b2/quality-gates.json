@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "backend_pytest": {
+    "passed": 187,
+    "failed": 0
+  },
+  "frontend_tests": {
+    "passed": 54,
+    "failed": 0
+  },
+  "typecheck": "pass",
+  "production_build": "pass",
+  "alembic_heads": [
+    "0011_assessment_reading_task"
+  ],
+  "git_diff_check": "pass",
+  "browser_report": "browser.json",
+  "backend_report": "backend.json",
+  "test_harness_retries": [
+    {
+      "attempt": 1,
+      "reason": "button targeted before initial loading completed",
+      "fix": "wait for enabled visible button"
+    },
+    {
+      "attempt": 2,
+      "reason": "pointer coordinates read before smooth scrolling settled",
+      "fix": "instant scroll and settle before coordinate measurement"
+    },
+    {
+      "attempt": 3,
+      "reason": "ordinary Listening audio expected before clicking existing Start practice",
+      "fix": "follow existing start practice flow"
+    },
+    {
+      "attempt": 4,
+      "status": "pass"
+    }
+  ],
+  "limitations": [
+    "Complex network fault and legacy version matrix deferred to B3",
+    "Mobile viewport smoke only; not comprehensive touch/accessibility audit",
+    "Audio playback verified through Chrome media time advancement, not physical speaker output"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "backend_requests": [
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening/start",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening/submit",
+      "body": {
+        "learner_id": "default_learner",
+        "answers": {
+          "listening-initial-community-arts-v1-q1": "Friday",
+          "listening-initial-community-arts-v1-q2": "10:00",
+          "listening-initial-community-arts-v1-q3": "The side entrance beside the bicycle shelter",
+          "listening-initial-community-arts-v1-q4": "The café needs the studio",
+          "listening-initial-community-arts-v1-q5": "Wait until the café opens",
+          "listening-initial-community-arts-v1-q6": "To advertise a different workshop"
+        },
+        "idempotency_key": "8563d32b-4f7d-474c-ad9f-2961c7fb68c5"
+      },
+      "attempt_count_before": 0,
+      "status": 200,
+      "attempt_count_after": 6
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening",
+      "status": 200
+    }
+  ],
+  "proxy": "none: Chrome DevTools response interception",
+  "database": {
+    "run_id": "asr_3af39bb6c74b4d12",
+    "task_status": "completed",
+    "session_id": "sess_18f84394637d4e6e",
+    "session_status": "completed",
+    "attempt_ids": [
+      "att_9b00d1dbf6104dc2",
+      "att_8b734ae685d24abc",
+      "att_c1b968cd3c4a4160",
+      "att_29d22e163c664432",
+      "att_efe3079d8f6c4e5a",
+      "att_ac4cc99f176b4763"
+    ],
+    "assessment_runs": 1,
+    "learning_sessions": 1,
+    "attempts": 6,
+    "answers_match": true
+  }
+}

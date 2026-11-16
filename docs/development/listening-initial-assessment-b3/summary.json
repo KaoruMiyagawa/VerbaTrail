@@ -1,0 +1,39 @@
+{
+  "overall": "incomplete",
+  "scenarios": {
+    "lost_response": {
+      "status": "pass",
+      "browser": "browser-loss.json",
+      "server": "backend-evidence.json",
+      "retest": "Initial script expected 2/6 for all-first options; corrected expected actual score 1/6 and reran."
+    },
+    "legacy_and_independent": {
+      "status": "partial",
+      "browser": "v1-browser.json",
+      "passed": [
+        "V1 completed Reading restored",
+        "Listening version conflict shown",
+        "Reading remains available"
+      ],
+      "pending": [
+        "V2 mixed completion status and failed task read with completed other task"
+      ]
+    },
+    "switch_race_and_drafts": {
+      "status": "not_verified",
+      "note": "Behavior tests passed; real two-run racing and duplicate-click browser scenario not executed."
+    },
+    "mobile_and_audio_failure": {
+      "status": "not_verified",
+      "note": "B2 mobile viewport evidence is insufficient for B3 real touch gestures and failed audio."
+    }
+  },
+  "quality": {
+    "affected_tests": "4 passed",
+    "typescript": "pass",
+    "build": "pass",
+    "alembic": "0011_assessment_reading_task",
+    "diff_check": "pass"
+  },
+  "product_code_modified": false
+}

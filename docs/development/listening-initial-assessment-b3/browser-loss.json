@@ -1,0 +1,130 @@
+{
+  "run_id": "asr_3af39bb6c74b4d12",
+  "browser_requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs",
+      "body": "{\"learner_id\":\"default_learner\",\"assessment_version\":\"initial-v2\",\"idempotency_key\":\"f2bc42df-47bd-4018-a794-162553026314\"}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening/start?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening/submit",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening/submit",
+      "body": "{\"learner_id\":\"default_learner\",\"answers\":{\"listening-initial-community-arts-v1-q1\":\"Friday\",\"listening-initial-community-arts-v1-q2\":\"10:00\",\"listening-initial-community-arts-v1-q3\":\"The side entrance beside the bicycle shelter\",\"listening-initial-community-arts-v1-q4\":\"The café needs the studio\",\"listening-initial-community-arts-v1-q5\":\"Wait until the café opens\",\"listening-initial-community-arts-v1-q6\":\"To advertise a different workshop\"},\"idempotency_key\":\"8563d32b-4f7d-474c-ad9f-2961c7fb68c5\"}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening?learner_id=default_learner",
+      "body": null
+    }
+  ],
+  "intercepts": [
+    {
+      "kind": "submit_response",
+      "status": 200,
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening/submit",
+      "body": "{\"learner_id\":\"default_learner\",\"answers\":{\"listening-initial-community-arts-v1-q1\":\"Friday\",\"listening-initial-community-arts-v1-q2\":\"10:00\",\"listening-initial-community-arts-v1-q3\":\"The side entrance beside the bicycle shelter\",\"listening-initial-community-arts-v1-q4\":\"The café needs the studio\",\"listening-initial-community-arts-v1-q5\":\"Wait until the café opens\",\"listening-initial-community-arts-v1-q6\":\"To advertise a different workshop\"},\"idempotency_key\":\"8563d32b-4f7d-474c-ad9f-2961c7fb68c5\"}"
+    },
+    {
+      "kind": "recovery_response",
+      "status": 200,
+      "url": "http://127.0.0.1:12040/api/v1/assessment-runs/asr_3af39bb6c74b4d12/listening?learner_id=default_learner"
+    }
+  ],
+  "passed": [
+    "upstream success response discarded",
+    "browser showed error before recovery",
+    "recovery fetched original result",
+    "submitted selections remain visible and disabled",
+    "reload restored original result"
+  ],
+  "failed": [],
+  "skipped": [],
+  "retested": [
+    "initial run: Chrome screenshot timed out after reload; interception disabled before reload and run repeated"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "run_id": "asr_52b5190dc44d4221",
+  "checks": [
+    "V1 Reading completed recovered",
+    "Listening 409 displayed",
+    "Reading remains visible after 409"
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:1803/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:1803/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:1803/api/v1/assessment-runs/asr_52b5190dc44d4221?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:1803/api/v1/assessment-runs/asr_52b5190dc44d4221/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:1803/api/v1/assessment-runs/asr_52b5190dc44d4221/listening?learner_id=default_learner",
+      "body": null
+    }
+  ]
+}

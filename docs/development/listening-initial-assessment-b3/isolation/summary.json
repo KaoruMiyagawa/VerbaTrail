@@ -1,0 +1,291 @@
+{
+  "status": "pass",
+  "state_combinations": [
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "reading": "completed",
+      "listening": "not_started",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "reading": "not_started",
+      "listening": "completed",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "reading": "completed",
+      "listening": "in_progress",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "reading": "in_progress",
+      "listening": "completed",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "reading": "completed",
+      "listening": "completed",
+      "ui_status": "pass",
+      "run_status": "in_progress"
+    }
+  ],
+  "faults": [
+    {
+      "fault": "reading",
+      "healthy": "listening",
+      "alert": "无法连接后端服务，请确认后端已启动并监听对应端口。 重新连接 Reading",
+      "recovered_score": "4 / 4",
+      "blocked_requests": 2,
+      "status": "pass"
+    },
+    {
+      "fault": "listening",
+      "healthy": "reading",
+      "alert": "无法连接后端服务，请确认后端已启动并监听对应端口。 重新连接 Listening",
+      "recovered_score": "6 / 6",
+      "blocked_requests": 2,
+      "status": "pass"
+    }
+  ],
+  "fault_injections": [
+    {
+      "skill": "reading",
+      "at": 1794802860355,
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner",
+      "action": "failRequest",
+      "error": "ConnectionReset"
+    },
+    {
+      "skill": "reading",
+      "at": 1794802860839,
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/reading?learner_id=default_learner",
+      "action": "failRequest",
+      "error": "ConnectionReset"
+    },
+    {
+      "skill": "listening",
+      "at": 1794802861764,
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner",
+      "action": "failRequest",
+      "error": "ConnectionReset"
+    },
+    {
+      "skill": "listening",
+      "at": 1794802862175,
+      "url": "http://127.0.0.1:4503/api/v1/assessment-runs/asr_0993350d4a894b8b/listening?learner_id=default_learner",
+      "action": "failRequest",
+      "error": "ConnectionReset"
+    }
+  ],
+  "restored_results": {
+    "reading": {
+      "correct_count": 4,
+      "attempt_references": [
+        {
+          "attempt_id": "att_9979b59ba9204add",
+          "question_id": "readgarden-v2-q1",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_88e0377a92bb4749",
+          "question_id": "readgarden-v2-q2",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_93ad447c79c94dc6",
+          "question_id": "readgarden-v2-q3",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_95602fffc49c431d",
+          "question_id": "readgarden-v2-q4",
+          "evidence_validity": "eligible"
+        }
+      ]
+    },
+    "listening": {
+      "correct_count": 6,
+      "attempt_references": [
+        {
+          "attempt_id": "att_340d2847d4874221",
+          "question_id": "listening-initial-community-arts-v1-q1",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_de92521199b3460a",
+          "question_id": "listening-initial-community-arts-v1-q2",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_5f52c75373214c05",
+          "question_id": "listening-initial-community-arts-v1-q3",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_300a313f519b40cc",
+          "question_id": "listening-initial-community-arts-v1-q4",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_5ca2672d3cd8403d",
+          "question_id": "listening-initial-community-arts-v1-q5",
+          "evidence_validity": "eligible"
+        },
+        {
+          "attempt_id": "att_66bfdf6bbdff4143",
+          "question_id": "listening-initial-community-arts-v1-q6",
+          "evidence_validity": "eligible"
+        }
+      ]
+    }
+  },
+  "database_counts": {
+    "runs": 5,
+    "sessions": 8,
+    "attempts": 30
+  },
+  "database_tasks": [
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "skill": "listening",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "skill": "reading",
+      "status": "completed",
+      "session_id": "sess_0ea7a3f7a2844c2c"
+    },
+    {
+      "run_id": "asr_d2556594f1e64409",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "skill": "listening",
+      "status": "completed",
+      "session_id": "sess_5189297a6b174d5d"
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "skill": "reading",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_dae9d724c43d443a",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "skill": "listening",
+      "status": "in_progress",
+      "session_id": "sess_68065ea430e7483d"
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "skill": "reading",
+      "status": "completed",
+      "session_id": "sess_094350a9eb51469e"
+    },
+    {
+      "run_id": "asr_bc79504475154607",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "skill": "listening",
+      "status": "completed",
+      "session_id": "sess_7303f60f3e744a14"
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "skill": "reading",
+      "status": "in_progress",
+      "session_id": "sess_ef563fde90db4d72"
+    },
+    {
+      "run_id": "asr_8a363414373e48de",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "skill": "listening",
+      "status": "completed",
+      "session_id": "sess_9e1d4d7d14c14198"
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "skill": "speaking",
+      "status": "not_started",
+      "session_id": null
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "skill": "reading",
+      "status": "completed",
+      "session_id": "sess_ebed002ff6cf4718"
+    },
+    {
+      "run_id": "asr_0993350d4a894b8b",
+      "skill": "writing",
+      "status": "not_started",
+      "session_id": null
+    }
+  ],
+  "environment": "real Chrome, Vite, Uvicorn and isolated SQLite",
+  "notes": [
+    "Each failure was injected at Chrome request stage using ConnectionReset; failed requests did not reach Uvicorn.",
+    "An unaffected skill GET reached Uvicorn and its real saved result was displayed during each failure and after refresh.",
+    "After reconnect the actual result and attempt references match the originally submitted result.",
+    "Windows asyncio logged ConnectionResetError while Chrome closed intercepted connections; both test runs completed successfully."
+  ],
+  "quality": {
+    "affected_tests": "4 passed",
+    "alembic_head": "0011_assessment_reading_task",
+    "git_diff_check": "pass",
+    "formal_database_sha256": "bc4656aa2bc624f0a257254ba25597db3031126fdfcbe79e5f3bb0cb607793e0"
+  },
+  "product_code_changed": false
+}

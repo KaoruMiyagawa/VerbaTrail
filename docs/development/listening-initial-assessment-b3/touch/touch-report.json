@@ -1,0 +1,4662 @@
+{
+  "status": "pass",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "input": "Chrome CDP Input.dispatchTouchEvent touchStart/touchMove/touchEnd; no programmatic scrolling",
+  "themeRuns": [
+    {
+      "theme": "premium",
+      "scenario": "full-listening-assessment",
+      "status": "pass",
+      "run_id": "asr_2596ed31644940cd",
+      "score": "本次答对 1 / 6 题"
+    },
+    {
+      "theme": "noir",
+      "scenario": "post-switch-touch-scroll",
+      "status": "pass",
+      "scroll_before": 342,
+      "scroll_after": 489
+    }
+  ],
+  "gestures": [
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 0,
+      "after": 69,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 69,
+      "after": 236,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 236,
+      "after": 305,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 700
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 632
+        },
+        {
+          "x": 195,
+          "y": 609
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 564
+        },
+        {
+          "x": 195,
+          "y": 541
+        }
+      ],
+      "before": 305,
+      "after": 471,
+      "delta": 166,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 471,
+      "after": 624,
+      "delta": 153,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 702
+        },
+        {
+          "x": 195,
+          "y": 681
+        },
+        {
+          "x": 195,
+          "y": 660
+        },
+        {
+          "x": 195,
+          "y": 639
+        },
+        {
+          "x": 195,
+          "y": 617
+        },
+        {
+          "x": 195,
+          "y": 596
+        }
+      ],
+      "before": 624,
+      "after": 737,
+      "delta": 113,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 737,
+      "after": 806,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 806,
+      "after": 973,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 973,
+      "after": 1042,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1042,
+      "after": 1209,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 1209,
+      "after": 1365,
+      "delta": 156,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 723
+        },
+        {
+          "x": 195,
+          "y": 700
+        },
+        {
+          "x": 195,
+          "y": 678
+        },
+        {
+          "x": 195,
+          "y": 655
+        },
+        {
+          "x": 195,
+          "y": 633
+        },
+        {
+          "x": 195,
+          "y": 610
+        },
+        {
+          "x": 195,
+          "y": 588
+        },
+        {
+          "x": 195,
+          "y": 565
+        },
+        {
+          "x": 195,
+          "y": 543
+        }
+      ],
+      "before": 1365,
+      "after": 1530,
+      "delta": 165,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 1530,
+      "after": 1599,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 1623,
+      "after": 1692,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2758,
+      "after": 2591,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2591,
+      "after": 2424,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2424,
+      "after": 2257,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2257,
+      "after": 2090,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2090,
+      "after": 1923,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1923,
+      "after": 1756,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1756,
+      "after": 1589,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1589,
+      "after": 1422,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1422,
+      "after": 1255,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1255,
+      "after": 1088,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 356
+        },
+        {
+          "x": 195,
+          "y": 377
+        },
+        {
+          "x": 195,
+          "y": 398
+        },
+        {
+          "x": 195,
+          "y": 419
+        },
+        {
+          "x": 195,
+          "y": 440
+        }
+      ],
+      "before": 1088,
+      "after": 1019,
+      "delta": -69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 356
+        },
+        {
+          "x": 195,
+          "y": 377
+        },
+        {
+          "x": 195,
+          "y": 398
+        },
+        {
+          "x": 195,
+          "y": 419
+        },
+        {
+          "x": 195,
+          "y": 440
+        }
+      ],
+      "before": 1019,
+      "after": 950,
+      "delta": -69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 950,
+      "after": 1117,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 723
+        },
+        {
+          "x": 195,
+          "y": 701
+        },
+        {
+          "x": 195,
+          "y": 679
+        },
+        {
+          "x": 195,
+          "y": 657
+        },
+        {
+          "x": 195,
+          "y": 635
+        },
+        {
+          "x": 195,
+          "y": 613
+        }
+      ],
+      "before": 1117,
+      "after": 1212,
+      "delta": 95,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 1212,
+      "after": 1281,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1281,
+      "after": 1448,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 723
+        },
+        {
+          "x": 195,
+          "y": 701
+        },
+        {
+          "x": 195,
+          "y": 679
+        },
+        {
+          "x": 195,
+          "y": 657
+        },
+        {
+          "x": 195,
+          "y": 636
+        },
+        {
+          "x": 195,
+          "y": 614
+        },
+        {
+          "x": 195,
+          "y": 592
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 195,
+          "y": 548
+        }
+      ],
+      "before": 1448,
+      "after": 1608,
+      "delta": 160,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 1608,
+      "after": 1677,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1677,
+      "after": 1844,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1844,
+      "after": 2011,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 2011,
+      "after": 2080,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 2080,
+      "after": 2149,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2149,
+      "after": 2316,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2316,
+      "after": 2483,
+      "delta": 167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 721
+        },
+        {
+          "x": 195,
+          "y": 697
+        },
+        {
+          "x": 195,
+          "y": 673
+        },
+        {
+          "x": 195,
+          "y": 650
+        },
+        {
+          "x": 195,
+          "y": 626
+        },
+        {
+          "x": 195,
+          "y": 602
+        },
+        {
+          "x": 195,
+          "y": 578
+        }
+      ],
+      "before": 2483,
+      "after": 2611,
+      "delta": 128,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 2611,
+      "after": 2680,
+      "delta": 69,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2680,
+      "after": 2513,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2513,
+      "after": 2346,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2346,
+      "after": 2179,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2179,
+      "after": 2012,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 2012,
+      "after": 1845,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1845,
+      "after": 1678,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1678,
+      "after": 1511,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1511,
+      "after": 1344,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1344,
+      "after": 1177,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1177,
+      "after": 1010,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 1010,
+      "after": 843,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 843,
+      "after": 676,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 676,
+      "after": 509,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 403
+        },
+        {
+          "x": 195,
+          "y": 426
+        },
+        {
+          "x": 195,
+          "y": 449
+        },
+        {
+          "x": 195,
+          "y": 472
+        },
+        {
+          "x": 195,
+          "y": 494
+        },
+        {
+          "x": 195,
+          "y": 517
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 509,
+      "after": 342,
+      "delta": -167,
+      "theme": "premium",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 676
+        },
+        {
+          "x": 195,
+          "y": 653
+        },
+        {
+          "x": 195,
+          "y": 629
+        },
+        {
+          "x": 195,
+          "y": 606
+        },
+        {
+          "x": 195,
+          "y": 583
+        },
+        {
+          "x": 195,
+          "y": 560
+        }
+      ],
+      "before": 342,
+      "after": 489,
+      "delta": 147,
+      "theme": "noir",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "down",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 335
+        },
+        {
+          "x": 195,
+          "y": 358
+        },
+        {
+          "x": 195,
+          "y": 381
+        },
+        {
+          "x": 195,
+          "y": 404
+        },
+        {
+          "x": 195,
+          "y": 428
+        },
+        {
+          "x": 195,
+          "y": 451
+        },
+        {
+          "x": 195,
+          "y": 474
+        },
+        {
+          "x": 195,
+          "y": 497
+        },
+        {
+          "x": 195,
+          "y": 520
+        }
+      ],
+      "before": 489,
+      "after": 342,
+      "delta": -147,
+      "theme": "noir",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 722
+        },
+        {
+          "x": 195,
+          "y": 699
+        },
+        {
+          "x": 195,
+          "y": 677
+        },
+        {
+          "x": 195,
+          "y": 654
+        },
+        {
+          "x": 195,
+          "y": 631
+        },
+        {
+          "x": 195,
+          "y": 608
+        },
+        {
+          "x": 195,
+          "y": 586
+        },
+        {
+          "x": 195,
+          "y": 563
+        },
+        {
+          "x": 195,
+          "y": 540
+        }
+      ],
+      "before": 0,
+      "after": 167,
+      "delta": 167,
+      "theme": "noir",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 723
+        },
+        {
+          "x": 195,
+          "y": 700
+        },
+        {
+          "x": 195,
+          "y": 678
+        },
+        {
+          "x": 195,
+          "y": 655
+        },
+        {
+          "x": 195,
+          "y": 633
+        }
+      ],
+      "before": 167,
+      "after": 242,
+      "delta": 75,
+      "theme": "noir",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 242,
+      "after": 311,
+      "delta": 69,
+      "theme": "noir",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 721
+        },
+        {
+          "x": 195,
+          "y": 697
+        },
+        {
+          "x": 195,
+          "y": 673
+        },
+        {
+          "x": 195,
+          "y": 650
+        },
+        {
+          "x": 195,
+          "y": 626
+        },
+        {
+          "x": 195,
+          "y": 602
+        },
+        {
+          "x": 195,
+          "y": 578
+        },
+        {
+          "x": 195,
+          "y": 554
+        }
+      ],
+      "before": 0,
+      "after": 152,
+      "delta": 152,
+      "theme": "noir",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "direction": "up",
+      "events": [
+        "touchStart",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchMove",
+        "touchEnd"
+      ],
+      "points": [
+        {
+          "x": 195,
+          "y": 745
+        },
+        {
+          "x": 195,
+          "y": 724
+        },
+        {
+          "x": 195,
+          "y": 703
+        },
+        {
+          "x": 195,
+          "y": 682
+        },
+        {
+          "x": 195,
+          "y": 661
+        },
+        {
+          "x": 195,
+          "y": 640
+        }
+      ],
+      "before": 152,
+      "after": 221,
+      "delta": 69,
+      "theme": "noir",
+      "scrollWidth": 390,
+      "clientWidth": 390
+    }
+  ],
+  "screenshots": [
+    "assessment-entry-mobile.png",
+    "audio-playing.png",
+    "premium-submit-focus.png",
+    "server-result-first-view.png",
+    "result-returned-up-by-touch.png",
+    "alternate-theme-touch-scroll.png",
+    "refreshed-result-restored.png",
+    "audio-error.png",
+    "keyboard-focus.png"
+  ],
+  "browserRequests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs",
+      "body": "{\"learner_id\":\"default_learner\",\"assessment_version\":\"initial-v2\",\"idempotency_key\":\"872be1f5-3d91-48ed-a266-130da93d4ae5\"}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd/listening?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd/listening/start?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/audio/listening/initial-community-arts-v1.wav",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/audio/listening/initial-community-arts-v1.wav",
+      "body": null
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd/listening/submit",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd/listening/submit",
+      "body": "{\"learner_id\":\"default_learner\",\"answers\":{\"listening-initial-community-arts-v1-q1\":\"Friday\",\"listening-initial-community-arts-v1-q2\":\"10:00\",\"listening-initial-community-arts-v1-q3\":\"The side entrance beside the bicycle shelter\",\"listening-initial-community-arts-v1-q4\":\"The café needs the studio\",\"listening-initial-community-arts-v1-q5\":\"Wait until the café opens\",\"listening-initial-community-arts-v1-q6\":\"To advertise a different workshop\"},\"idempotency_key\":\"a649642b-36f7-4726-88a1-31af3f792e5f\"}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_2596ed31644940cd/listening?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/audio/listening/initial-community-arts-v1.wav",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs",
+      "body": "{\"learner_id\":\"default_learner\",\"assessment_version\":\"initial-v2\",\"idempotency_key\":\"122ce170-d3f5-4b14-af5a-fe7a96879b62\"}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2/listening?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2/listening/start?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2/listening?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/audio/listening/initial-community-arts-v1.wav",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/audio/listening/initial-community-arts-v1.wav",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/audio/listening/initial-community-arts-v1.wav",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2/reading?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/api/v1/assessment-runs/asr_6778b63e5e8c4ac2/listening?learner_id=default_learner",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9036/audio/listening/initial-community-arts-v1.wav",
+      "body": null
+    }
+  ],
+  "checks": [
+    {
+      "id": "create-assessment",
+      "type": "touchTap",
+      "x": 100,
+      "y": 397,
+      "hit": {
+        "tag": "BUTTON",
+        "text": "开始新一轮评估",
+        "selector": "<button class=\"focus-button\" id=\"touch-create-run\">开始新一轮评估</button>"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "listening-selector",
+      "type": "touch-reach",
+      "rect": {
+        "top": 561.5,
+        "bottom": 587.890625,
+        "left": 33,
+        "right": 205.125,
+        "width": 172.125,
+        "height": 26.390625,
+        "visible": true
+      },
+      "scrollY": 0,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-listening",
+      "type": "touchTap",
+      "x": 119,
+      "y": 575,
+      "hit": {
+        "tag": "BUTTON",
+        "text": "Listening：not_started",
+        "selector": "<button aria-pressed=\"false\" id=\"touch-select-listening\">Listening：not_started</button>"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "assessment-created",
+      "run_id": "asr_2596ed31644940cd",
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "start-listening-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 690.0625,
+        "bottom": 733.15625,
+        "left": 14,
+        "right": 146.359375,
+        "width": 132.359375,
+        "height": 43.09375,
+        "visible": true
+      },
+      "scrollY": 0,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "start-listening",
+      "type": "touchTap",
+      "x": 80,
+      "y": 712,
+      "hit": {
+        "tag": "BUTTON",
+        "text": "开始 Listening",
+        "selector": "<button class=\"focus-button\" id=\"touch-start-listening\">开始 Listening</button>"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "listening-started",
+      "run_id": "asr_2596ed31644940cd",
+      "session_id": null,
+      "version": "listening-initial-community-arts-v1",
+      "status": "pass"
+    },
+    {
+      "id": "audio-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 741.234375,
+        "bottom": 795.234375,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 54,
+        "visible": true
+      },
+      "scrollY": 69,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "play-audio",
+      "type": "touchTap",
+      "x": 56,
+      "y": 768,
+      "hit": {
+        "tag": "AUDIO",
+        "text": "",
+        "selector": null
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "audio-played-by-touch",
+      "time": 0.333792,
+      "status": "pass"
+    },
+    {
+      "id": "question-1-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 609.625,
+        "bottom": 823.90625,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 214.28125,
+        "visible": true
+      },
+      "scrollY": 305,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-1",
+      "type": "touchTap",
+      "x": 40,
+      "y": 687,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"listening-initial-community-arts-v1-q1\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-1-selected",
+      "input": {
+        "x": 39.5,
+        "y": 686.7890625,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "question-2-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 528.90625,
+        "bottom": 716.796875,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 187.890625,
+        "visible": true
+      },
+      "scrollY": 624,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-2",
+      "type": "touchTap",
+      "x": 40,
+      "y": 580,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"listening-initial-community-arts-v1-q2\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-2-selected",
+      "input": {
+        "x": 39.5,
+        "y": 579.6796875,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "question-3-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 558.796875,
+        "bottom": 799.46875,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 240.671875,
+        "visible": true
+      },
+      "scrollY": 806,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-3",
+      "type": "touchTap",
+      "x": 40,
+      "y": 649,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"listening-initial-community-arts-v1-q3\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-3-selected",
+      "input": {
+        "x": 39.5,
+        "y": 649.15625,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "question-4-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 587.46875,
+        "bottom": 801.75,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 214.28125,
+        "visible": true
+      },
+      "scrollY": 1042,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-4",
+      "type": "touchTap",
+      "x": 40,
+      "y": 665,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"listening-initial-community-arts-v1-q4\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-4-selected",
+      "input": {
+        "x": 39.5,
+        "y": 664.6328125,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "question-5-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 502.75,
+        "bottom": 743.421875,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 240.671875,
+        "visible": true
+      },
+      "scrollY": 1365,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-5",
+      "type": "touchTap",
+      "x": 40,
+      "y": 606,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"listening-initial-community-arts-v1-q5\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-5-selected",
+      "input": {
+        "x": 39.5,
+        "y": 606.3046875,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "question-6-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 533.421875,
+        "bottom": 800.484375,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 267.0625,
+        "visible": true
+      },
+      "scrollY": 1599,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "select-question-6",
+      "type": "touchTap",
+      "x": 40,
+      "y": 584,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"listening-initial-community-arts-v1-q6\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "question-6-selected",
+      "input": {
+        "x": 39.5,
+        "y": 584.1953125,
+        "checked": false,
+        "disabled": false
+      },
+      "selected": "on",
+      "status": "pass"
+    },
+    {
+      "id": "submit-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 731.484375,
+        "bottom": 774.578125,
+        "left": 33,
+        "right": 125,
+        "width": 92,
+        "height": 43.09375,
+        "visible": true
+      },
+      "scrollY": 1692,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "submit-listening",
+      "type": "touchTap",
+      "x": 79,
+      "y": 753,
+      "hit": {
+        "tag": "BUTTON",
+        "text": "提交作答",
+        "selector": "<button class=\"focus-button\" id=\"touch-submit-listening\">提交作答</button>"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "server-submission-result",
+      "run_id": "asr_2596ed31644940cd",
+      "score": "本次答对 1 / 6 题",
+      "submit_scroll_y": 1692,
+      "result_scroll_y": 2758,
+      "status": "pass"
+    },
+    {
+      "id": "result-explanation-1",
+      "type": "touch-reach",
+      "rect": {
+        "top": 231.6875,
+        "bottom": 284.46875,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 52.78125,
+        "visible": true
+      },
+      "scrollY": 950,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "result-explanation-2",
+      "type": "touch-reach",
+      "rect": {
+        "top": 575.53125,
+        "bottom": 654.703125,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 79.171875,
+        "visible": true
+      },
+      "scrollY": 950,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "result-explanation-3",
+      "type": "touch-reach",
+      "rect": {
+        "top": 720.328125,
+        "bottom": 799.5,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 79.171875,
+        "visible": true
+      },
+      "scrollY": 1281,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "result-explanation-4",
+      "type": "touch-reach",
+      "rect": {
+        "top": 720.953125,
+        "bottom": 800.125,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 79.171875,
+        "visible": true
+      },
+      "scrollY": 1677,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "result-explanation-5",
+      "type": "touch-reach",
+      "rect": {
+        "top": 698.359375,
+        "bottom": 777.53125,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 79.171875,
+        "visible": true
+      },
+      "scrollY": 2149,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "result-explanation-6",
+      "type": "touch-reach",
+      "rect": {
+        "top": 695.9375,
+        "bottom": 801.5,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 105.5625,
+        "visible": true
+      },
+      "scrollY": 2680,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "all-result-explanations-touch-read",
+      "explanations": [
+        {
+          "question": 1,
+          "text": "Rowan confirms that the workshop is still on Saturday.",
+          "top": 231.6875,
+          "bottom": 284.46875,
+          "navBottom": 160,
+          "fullyVisible": true
+        },
+        {
+          "question": 2,
+          "text": "The revised start time is spoken as ten thirty, half an hour later than the leaflet time.",
+          "top": 575.53125,
+          "bottom": 654.703125,
+          "navBottom": 160,
+          "fullyVisible": true
+        },
+        {
+          "question": 3,
+          "text": "Rowan directs participants to the side entrance beside the bicycle shelter and says the main doors will remain locked.",
+          "top": 720.328125,
+          "bottom": 799.5,
+          "navBottom": 160,
+          "fullyVisible": true
+        },
+        {
+          "question": 4,
+          "text": "Rowan says the class moved because electricians need the main hall that morning.",
+          "top": 720.953125,
+          "bottom": 800.125,
+          "navBottom": 160,
+          "fullyVisible": true
+        },
+        {
+          "question": 5,
+          "text": "For arrivals after ten forty, Rowan says to ring the workshops bell so reception can let the participant in.",
+          "top": 698.359375,
+          "bottom": 777.53125,
+          "navBottom": 160,
+          "fullyVisible": true
+        },
+        {
+          "question": 6,
+          "text": "Rowan says the centre needs to confirm the updated arrangements were received and asks for a reply only if the participant cannot attend.",
+          "top": 695.9375,
+          "bottom": 801.5,
+          "navBottom": 160,
+          "fullyVisible": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "reverse-touch-scroll",
+      "before": 2680,
+      "after": 342,
+      "direction": "finger-down/content-up",
+      "status": "pass"
+    },
+    {
+      "id": "theme-toggle-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 10,
+        "bottom": 54,
+        "left": 207.859375,
+        "right": 272,
+        "width": 64.140625,
+        "height": 44,
+        "visible": true
+      },
+      "scrollY": 342,
+      "theme": "premium",
+      "status": "pass"
+    },
+    {
+      "id": "switch-theme",
+      "type": "touchTap",
+      "x": 240,
+      "y": 32,
+      "hit": {
+        "tag": "SPAN",
+        "text": "曜黑",
+        "selector": "<button type=\"button\" class=\"focus-theme-toggle\" aria-label=\"切换至曜黑香槟金主题\" aria-pressed=\"false\" title=\"当前：Premium Academic；切换主题\"><span aria-hidden=\"true\">☾</span><span>曜黑</span></but"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "alternate-theme-scroll",
+      "before_theme": "premium",
+      "after_theme": "noir",
+      "before": 342,
+      "after": 489,
+      "status": "pass"
+    },
+    {
+      "id": "refresh-restores-server-result",
+      "runId": "asr_2596ed31644940cd",
+      "score": "本次答对 1 / 6 题",
+      "theme": "noir",
+      "same_run": true,
+      "same_score": true,
+      "status": "pass"
+    },
+    {
+      "id": "audio-failure-top",
+      "type": "touch-reach",
+      "rect": {
+        "top": 10,
+        "bottom": 54,
+        "left": 203.515625,
+        "right": 272,
+        "width": 68.484375,
+        "height": 44,
+        "visible": true
+      },
+      "scrollY": 0,
+      "theme": "noir",
+      "status": "pass"
+    },
+    {
+      "id": "new-run-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 375.234375,
+        "bottom": 418.328125,
+        "left": 33,
+        "right": 167,
+        "width": 134,
+        "height": 43.09375,
+        "visible": true
+      },
+      "scrollY": 0,
+      "theme": "noir",
+      "status": "pass"
+    },
+    {
+      "id": "create-second-run",
+      "type": "touchTap",
+      "x": 100,
+      "y": 397,
+      "hit": {
+        "tag": "BUTTON",
+        "text": "开始新一轮评估",
+        "selector": "<button class=\"focus-button\" id=\"touch-create-second\">开始新一轮评估</button>"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "start-second-reachable",
+      "type": "touch-reach",
+      "rect": {
+        "top": 742.84375,
+        "bottom": 785.9375,
+        "left": 14,
+        "right": 146.359375,
+        "width": 132.359375,
+        "height": 43.09375,
+        "visible": true
+      },
+      "scrollY": 0,
+      "theme": "noir",
+      "status": "pass"
+    },
+    {
+      "id": "start-second",
+      "type": "touchTap",
+      "x": 80,
+      "y": 764,
+      "hit": {
+        "tag": "BUTTON",
+        "text": "开始 Listening",
+        "selector": "<button class=\"focus-button\" id=\"touch-start-second\">开始 Listening</button>"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "failure-draft-option",
+      "type": "touch-reach",
+      "rect": {
+        "top": 773.15625,
+        "bottom": 799.546875,
+        "left": 33,
+        "right": 46,
+        "width": 13,
+        "height": 26.390625,
+        "visible": true
+      },
+      "scrollY": 311,
+      "theme": "noir",
+      "status": "pass"
+    },
+    {
+      "id": "failure-draft-select",
+      "type": "touchTap",
+      "x": 40,
+      "y": 786,
+      "hit": {
+        "tag": "INPUT",
+        "text": "",
+        "selector": "<input type=\"radio\" name=\"listening-initial-community-arts-v1-q1\">"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "audio-error",
+      "type": "touch-reach",
+      "rect": {
+        "top": 748.796875,
+        "bottom": 801.578125,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 52.78125,
+        "visible": true
+      },
+      "scrollY": 221,
+      "theme": "noir",
+      "status": "pass"
+    },
+    {
+      "id": "audio-retry",
+      "type": "touchTap",
+      "x": 81,
+      "y": 788,
+      "hit": {
+        "tag": "BUTTON",
+        "text": "重新加载音频",
+        "selector": "<button id=\"audio-retry\">重新加载音频</button>"
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "audio-recovered",
+      "type": "touch-reach",
+      "rect": {
+        "top": 694.796875,
+        "bottom": 748.796875,
+        "left": 33,
+        "right": 357,
+        "width": 324,
+        "height": 54,
+        "visible": true
+      },
+      "scrollY": 221,
+      "theme": "noir",
+      "status": "pass"
+    },
+    {
+      "id": "replay-after-error",
+      "type": "touchTap",
+      "x": 56,
+      "y": 722,
+      "hit": {
+        "tag": "AUDIO",
+        "text": "",
+        "selector": null
+      },
+      "status": "input-sent"
+    },
+    {
+      "id": "audio-failure-recovery",
+      "faults": [
+        {
+          "url": "http://127.0.0.1:9036/audio/listening/initial-community-arts-v1.wav",
+          "action": "ConnectionReset",
+          "at": 1794803687069
+        }
+      ],
+      "draft_count": 1,
+      "run_id": "asr_6778b63e5e8c4ac2",
+      "status": "pass"
+    }
+  ],
+  "failures": [],
+  "runId": "asr_2596ed31644940cd",
+  "sessionId": null,
+  "premiumSubmitFocus": {
+    "text": "提交作答",
+    "outline": "rgb(196, 172, 126) solid 3px",
+    "top": 800.484375,
+    "bottom": 843.578125,
+    "navBottom": 160
+  },
+  "score": "本次答对 1 / 6 题",
+  "failureRunId": "asr_6778b63e5e8c4ac2",
+  "keyboardFocus": [
+    {
+      "tag": "BUTTON",
+      "text": "VerbaTrail",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 10,
+      "bottom": 54,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Learn",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 62,
+      "bottom": 106,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "阅读",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 111,
+      "bottom": 155,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "诊断洞察",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 111,
+      "bottom": 155,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "迁移验证",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 111,
+      "bottom": 155,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "复习",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 111,
+      "bottom": 155,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "学习档案",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 111,
+      "bottom": 155,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "☼\n暖白",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 10,
+      "bottom": 54,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "真实",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 10,
+      "bottom": 54,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "演示",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 10,
+      "bottom": 54,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "← 返回 Learn",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 180,
+      "bottom": 221.4375,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "开始新一轮评估",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 375.234375,
+      "bottom": 418.328125,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/16 12:34:43 · initial-v2 · listening: in_progress / reading: not_started",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 418.328125,
+      "bottom": 471.109375,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "2026/11/16 12:33:54 · initial-v2 · listening: completed / reading: not_started",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 471.109375,
+      "bottom": 523.890625,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Listening：in_progress",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 614.28125,
+      "bottom": 640.671875,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Reading：not_started",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 667.0625,
+      "bottom": 693.453125,
+      "visible": true
+    },
+    {
+      "tag": "AUDIO",
+      "text": "Listening 初始评估音频",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 915.796875,
+      "bottom": 969.796875,
+      "visible": true
+    },
+    {
+      "tag": "AUDIO",
+      "text": "Listening 初始评估音频",
+      "outline": "rgb(237, 232, 220) none 3px",
+      "boxShadow": "none",
+      "top": 915.796875,
+      "bottom": 969.796875,
+      "visible": true
+    },
+    {
+      "tag": "AUDIO",
+      "text": "Listening 初始评估音频",
+      "outline": "rgb(237, 232, 220) none 3px",
+      "boxShadow": "none",
+      "top": 915.796875,
+      "bottom": 969.796875,
+      "visible": true
+    },
+    {
+      "tag": "AUDIO",
+      "text": "Listening 初始评估音频",
+      "outline": "rgb(237, 232, 220) none 3px",
+      "boxShadow": "none",
+      "top": 915.796875,
+      "bottom": 969.796875,
+      "visible": true
+    },
+    {
+      "tag": "AUDIO",
+      "text": "Listening 初始评估音频",
+      "outline": "rgb(237, 232, 220) none 3px",
+      "boxShadow": "none",
+      "top": 915.796875,
+      "bottom": 969.796875,
+      "visible": true
+    },
+    {
+      "tag": "AUDIO",
+      "text": "Listening 初始评估音频",
+      "outline": "rgb(237, 232, 220) none 3px",
+      "boxShadow": "none",
+      "top": 915.796875,
+      "bottom": 969.796875,
+      "visible": true
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "boxShadow": "none",
+      "top": 1084.15625,
+      "bottom": 1110.546875,
+      "visible": true
+    },
+    {
+      "tag": "INPUT",
+      "outline": "rgb(210, 183, 127) solid 3px",
+      "top": 409.15625,
+      "bottom": 435.546875,
+      "navBottom": 160
+    }
+  ]
+}

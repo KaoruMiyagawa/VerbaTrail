@@ -1,0 +1,518 @@
+{
+  "status": "pass",
+  "A": "asr_51cedfc62e204646",
+  "B": "asr_64693faee45e4a19",
+  "keys": [
+    "assessment:draft:default_learner:asr_51cedfc62e204646:reading:reading-initial-community-garden-v2",
+    "assessment:draft:default_learner:asr_51cedfc62e204646:listening:listening-initial-community-arts-v1",
+    "assessment:draft:default_learner:asr_64693faee45e4a19:listening:listening-initial-community-arts-v1"
+  ],
+  "checks": [
+    "A and B draft isolation, A refresh, Reading separation",
+    "delayed real responses cannot overwrite selected run in both directions",
+    "server result overrides conflicting draft; B draft retained"
+  ],
+  "timeline": [
+    {
+      "event": "pointer",
+      "expr": "Array.from(document.querySelectorAll('button')).find(x=>x.textContent.includes(\"开始新一轮评估\")&&!x.disabled&&x.getClientRects().length)",
+      "count": 1,
+      "at": 1794802377864
+    },
+    {
+      "event": "pointer",
+      "expr": "Array.from(document.querySelectorAll('button')).find(x=>x.textContent.includes(\"Listening：\")&&!x.disabled&&x.getClientRects().length)",
+      "count": 1,
+      "at": 1794802378099
+    },
+    {
+      "event": "pointer",
+      "expr": "Array.from(document.querySelectorAll('button')).find(x=>x.textContent.includes(\"开始 Listening\")&&!x.disabled&&x.getClientRects().length)",
+      "count": 3,
+      "at": 1794802378239
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[0].querySelectorAll('input')[0]",
+      "count": 1,
+      "at": 1794802378472
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[1].querySelectorAll('input')[0]",
+      "count": 1,
+      "at": 1794802378612
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[2].querySelectorAll('input')[0]",
+      "count": 1,
+      "at": 1794802378748
+    },
+    {
+      "event": "pointer",
+      "expr": "Array.from(document.querySelectorAll('button')).find(x=>x.textContent.includes(\"开始新一轮评估\")&&!x.disabled&&x.getClientRects().length)",
+      "count": 1,
+      "at": 1794802378888
+    },
+    {
+      "event": "pointer",
+      "expr": "Array.from(document.querySelectorAll('button')).find(x=>x.textContent.includes(\"开始 Listening\")&&!x.disabled&&x.getClientRects().length)",
+      "count": 3,
+      "at": 1794802379121
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[0].querySelectorAll('input')[1]",
+      "count": 1,
+      "at": 1794802379362
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[1].querySelectorAll('input')[1]",
+      "count": 1,
+      "at": 1794802379491
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[2].querySelectorAll('input')[1]",
+      "count": 1,
+      "at": 1794802379635
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('.assessment-page section ul').querySelectorAll('button')[1]",
+      "count": 1,
+      "at": 1794802379774
+    },
+    {
+      "event": "pointer",
+      "expr": "Array.from(document.querySelectorAll('button')).find(x=>x.textContent.includes(\"Reading：\")&&!x.disabled&&x.getClientRects().length)",
+      "count": 1,
+      "at": 1794802380269
+    },
+    {
+      "event": "pointer",
+      "expr": "Array.from(document.querySelectorAll('button')).find(x=>x.textContent.includes(\"开始 Reading\")&&!x.disabled&&x.getClientRects().length)",
+      "count": 1,
+      "at": 1794802380407
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[0].querySelectorAll('input')[2]",
+      "count": 1,
+      "at": 1794802380641
+    },
+    {
+      "event": "pointer",
+      "expr": "Array.from(document.querySelectorAll('button')).find(x=>x.textContent.includes(\"Listening：\")&&!x.disabled&&x.getClientRects().length)",
+      "count": 1,
+      "at": 1794802380783
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('.assessment-page section ul').querySelectorAll('button')[0]",
+      "count": 1,
+      "at": 1794802380923
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('.assessment-page section ul').querySelectorAll('button')[1]",
+      "count": 1,
+      "at": 1794802381483
+    },
+    {
+      "event": "response_held",
+      "run": "asr_51cedfc62e204646",
+      "status": 200,
+      "at": 1794802381539
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('.assessment-page section ul').querySelectorAll('button')[0]",
+      "count": 1,
+      "at": 1794802381717
+    },
+    {
+      "event": "target_selected",
+      "run": "asr_64693faee45e4a19",
+      "at": 1794802381821
+    },
+    {
+      "event": "released",
+      "run": "asr_51cedfc62e204646",
+      "at": 1794802381822
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('.assessment-page section ul').querySelectorAll('button')[1]",
+      "count": 1,
+      "at": 1794802382464
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('.assessment-page section ul').querySelectorAll('button')[0]",
+      "count": 1,
+      "at": 1794802382712
+    },
+    {
+      "event": "response_held",
+      "run": "asr_64693faee45e4a19",
+      "status": 200,
+      "at": 1794802382736
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('.assessment-page section ul').querySelectorAll('button')[1]",
+      "count": 1,
+      "at": 1794802382941
+    },
+    {
+      "event": "target_selected",
+      "run": "asr_51cedfc62e204646",
+      "at": 1794802383047
+    },
+    {
+      "event": "released",
+      "run": "asr_64693faee45e4a19",
+      "at": 1794802383048
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[3].querySelectorAll('input')[0]",
+      "count": 1,
+      "at": 1794802383691
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[4].querySelectorAll('input')[0]",
+      "count": 1,
+      "at": 1794802383829
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('[data-assessment-skill]:not([hidden])').querySelectorAll('fieldset')[5].querySelectorAll('input')[0]",
+      "count": 1,
+      "at": 1794802383984
+    },
+    {
+      "event": "pointer",
+      "expr": "Array.from(document.querySelectorAll('button')).find(x=>x.textContent.includes(\"提交作答\")&&!x.disabled&&x.getClientRects().length)",
+      "count": 3,
+      "at": 1794802384127
+    },
+    {
+      "event": "pointer",
+      "expr": "document.querySelector('.assessment-page section ul').querySelectorAll('button')[0]",
+      "count": 1,
+      "at": 1794802384560
+    }
+  ],
+  "requests": [
+    {
+      "at": 1794802377602,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802377864,
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs"
+    },
+    {
+      "at": 1794802377865,
+      "method": "POST",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs"
+    },
+    {
+      "at": 1794802377885,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802377891,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802377900,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802377900,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802378237,
+      "method": "POST",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening/start?learner_id=default_learner"
+    },
+    {
+      "at": 1794802378272,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802378290,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802378888,
+      "method": "POST",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs"
+    },
+    {
+      "at": 1794802378897,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802378905,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19?learner_id=default_learner"
+    },
+    {
+      "at": 1794802378912,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802378912,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802379119,
+      "method": "POST",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/listening/start?learner_id=default_learner"
+    },
+    {
+      "at": 1794802379146,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19?learner_id=default_learner"
+    },
+    {
+      "at": 1794802379154,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802379775,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802379784,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802379784,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380023,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380034,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380043,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380043,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380407,
+      "method": "POST",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/reading/start?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380430,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380441,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380923,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380932,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802380932,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381142,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381158,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381169,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381169,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381483,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381500,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381502,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381717,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381731,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802381731,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802382464,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802382474,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802382474,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802382712,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19?learner_id=default_learner"
+    },
+    {
+      "at": 1794802382721,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802382721,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802382942,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802382951,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802382951,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802384124,
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening/submit"
+    },
+    {
+      "at": 1794802384125,
+      "method": "POST",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening/submit"
+    },
+    {
+      "at": 1794802384155,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802384163,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802384379,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs?learner_id=default_learner"
+    },
+    {
+      "at": 1794802384388,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646?learner_id=default_learner"
+    },
+    {
+      "at": 1794802384397,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802384397,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_51cedfc62e204646/listening?learner_id=default_learner"
+    },
+    {
+      "at": 1794802384560,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19?learner_id=default_learner"
+    },
+    {
+      "at": 1794802384565,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/reading?learner_id=default_learner"
+    },
+    {
+      "at": 1794802384565,
+      "method": "GET",
+      "url": "http://127.0.0.1:10697/api/v1/assessment-runs/asr_64693faee45e4a19/listening?learner_id=default_learner"
+    }
+  ]
+}
