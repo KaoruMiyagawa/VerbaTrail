@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "backend": {
+    "command": "python -m pytest -q",
+    "collected": 187,
+    "passed": 187,
+    "failed": 0,
+    "database": "pytest isolated SQLite per test"
+  },
+  "frontend_tests": {
+    "command": "node --test tests/*.test.mjs",
+    "passed": 53,
+    "failed": 0
+  },
+  "typescript_typecheck": "pass",
+  "production_build": "pass",
+  "alembic_heads": ["0011_assessment_reading_task"],
+  "git_diff_check": "pass",
+  "formal_database": {
+    "path": "backend/unlearnloop.db",
+    "sha256": "BC4656AA2BC624F0A257254BA25597DB3031126FDFCBE79E5F3BB0CB607793E0",
+    "modified": false
+  },
+  "live_http_evidence": "http-evidence.json"
+}

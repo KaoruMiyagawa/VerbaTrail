@@ -1,0 +1,342 @@
+{
+  "status": "pass",
+  "environment": "real Uvicorn HTTP + isolated SQLite; no browser/API mocks",
+  "learner_id": "b1-http-learner",
+  "content_version": "listening-initial-community-arts-v1",
+  "rule_version": "listening-mcq-exact-choice-v1",
+  "audio_url": "/audio/listening/initial-community-arts-v1.wav",
+  "audio_expected_sha256": "739E3D1263195E63386E04103B21BD34A1701E86549EA81CE35768482C974CC7",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening?learner_id=b1-http-learner",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/start?learner_id=b1-http-learner",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/start?learner_id=b1-http-learner",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/submit",
+      "status": 409
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening?learner_id=another-learner",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/start?learner_id=another-learner",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/submit",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/reading/start?learner_id=b1-http-learner",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/reading/submit",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a?learner_id=b1-http-learner",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening?learner_id=b1-http-learner",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_1344f57f55944f1d/listening/start?learner_id=b1-http-learner",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_1344f57f55944f1d/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs?learner_id=b1-http-learner",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_ffd65f05b360403b/listening?learner_id=b1-http-learner",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_ffd65f05b360403b/listening/start?learner_id=b1-http-learner",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/listening/sessions",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/listening/sessions/sess_746e14afb4fa4ad0/submit?learner_id=b1-http-learner",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/learner-model?learner_id=b1-http-learner",
+      "status": 200
+    }
+  ],
+  "checks": {
+    "create_run": {
+      "status": "pass",
+      "details": 200
+    },
+    "not_started_is_empty": {
+      "status": "pass",
+      "details": 200
+    },
+    "start_and_pin": {
+      "status": "pass",
+      "details": 200
+    },
+    "repeated_start_reuses_original_session": {
+      "status": "pass",
+      "details": 200
+    },
+    "pre_submit_no_answer_leak": {
+      "status": "pass",
+      "details": true
+    },
+    "audio_is_playable_resource": {
+      "status": "pass",
+      "details": {
+        "sample_rate": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "duration_seconds": 58.80526077097505,
+        "non_silent": true,
+        "http_status": 200,
+        "sha256": "739E3D1263195E63386E04103B21BD34A1701E86549EA81CE35768482C974CC7"
+      }
+    },
+    "concurrent_duplicate_submission": {
+      "status": "pass",
+      "details": [
+        200,
+        200
+      ]
+    },
+    "same_request_retry": {
+      "status": "pass",
+      "details": 200
+    },
+    "different_answer_conflict": {
+      "status": "pass",
+      "details": 409
+    },
+    "cross_learner_boundary": {
+      "status": "pass",
+      "details": [
+        404,
+        404,
+        404
+      ]
+    },
+    "reading_assessment_regression": {
+      "status": "pass",
+      "details": {
+        "start": 200,
+        "submit": 200
+      }
+    },
+    "skill_tasks_remain_independent": {
+      "status": "pass",
+      "details": {
+        "reading_started": "in_progress"
+      }
+    },
+    "restart_restores_result": {
+      "status": "pass",
+      "details": [
+        200,
+        200
+      ]
+    },
+    "second_run_repeated_exposure": {
+      "status": "pass",
+      "details": [
+        200,
+        200
+      ]
+    },
+    "second_run_keeps_real_wrong_observations": {
+      "status": "pass",
+      "details": 200
+    },
+    "history_keeps_both_runs": {
+      "status": "pass",
+      "details": [
+        "asr_1344f57f55944f1d",
+        "asr_04fb0b10e4cc412a"
+      ]
+    },
+    "legacy_unpinned_v1_conflicts_without_mutation": {
+      "status": "pass",
+      "details": [
+        409,
+        409
+      ]
+    },
+    "ordinary_listening_remains_separate": {
+      "status": "pass",
+      "details": [
+        201,
+        200
+      ]
+    },
+    "learner_model_maps_assessment_and_practice": {
+      "status": "pass",
+      "details": {
+        "evidence": 17,
+        "levels": [
+          "practice_performance",
+          "initial_assessment"
+        ]
+      }
+    },
+    "database_persistence_counts": {
+      "status": "pass",
+      "details": {
+        "assessment_runs": 3,
+        "assessment_tasks": 12,
+        "learning_sessions": 4,
+        "attempts": 21
+      }
+    }
+  },
+  "failed": [],
+  "audio": {
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "duration_seconds": 58.80526077097505,
+    "non_silent": true,
+    "http_status": 200,
+    "sha256": "739E3D1263195E63386E04103B21BD34A1701E86549EA81CE35768482C974CC7"
+  },
+  "first_run": {
+    "run_id": "asr_04fb0b10e4cc412a",
+    "learning_session_id": "sess_6cf851fe8cbc451a",
+    "score": 6,
+    "repeated_exposure": false,
+    "attempt_ids": [
+      "att_f56be90ce67f4e91",
+      "att_091e71f70d164ae6",
+      "att_66f8aa36c7004951",
+      "att_40bb1657d33b440b",
+      "att_45f84dcb5a2d4caf",
+      "att_3109287c5ae94c80"
+    ]
+  },
+  "database": {
+    "counts": {
+      "assessment_runs": 3,
+      "assessment_tasks": 12,
+      "learning_sessions": 4,
+      "attempts": 21
+    },
+    "attempts_by_session": {
+      "sess_6cf851fe8cbc451a": 6,
+      "sess_c2bced472c7d4e0b": 6,
+      "sess_746e14afb4fa4ad0": 5,
+      "sess_afbf1b853b5c4d82": 4
+    },
+    "temporary_database_location": "system temp directory; not inside the repository",
+    "isolated_database_deleted_after_run": true
+  },
+  "request_counts": {
+    "GET /api/v1/health 200": 2,
+    "POST /api/v1/assessment-runs 200": 3,
+    "GET /api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening 200": 2,
+    "POST /api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/start 200": 2,
+    "GET /audio/listening/initial-community-arts-v1.wav 200": 1,
+    "POST /api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/submit 200": 3,
+    "POST /api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/submit 409": 1,
+    "GET /api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening 404": 1,
+    "POST /api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/start 404": 1,
+    "POST /api/v1/assessment-runs/asr_04fb0b10e4cc412a/listening/submit 404": 1,
+    "POST /api/v1/assessment-runs/asr_04fb0b10e4cc412a/reading/start 200": 1,
+    "POST /api/v1/assessment-runs/asr_04fb0b10e4cc412a/reading/submit 200": 1,
+    "GET /api/v1/assessment-runs/asr_04fb0b10e4cc412a 200": 1,
+    "POST /api/v1/assessment-runs/asr_1344f57f55944f1d/listening/start 200": 1,
+    "POST /api/v1/assessment-runs/asr_1344f57f55944f1d/listening/submit 200": 1,
+    "GET /api/v1/assessment-runs 200": 1,
+    "GET /api/v1/assessment-runs/asr_ffd65f05b360403b/listening 409": 1,
+    "POST /api/v1/assessment-runs/asr_ffd65f05b360403b/listening/start 409": 1,
+    "POST /api/v1/listening/sessions 201": 1,
+    "POST /api/v1/listening/sessions/sess_746e14afb4fa4ad0/submit 200": 1,
+    "GET /api/v1/learner-model 200": 1
+  }
+}

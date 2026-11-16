@@ -87,11 +87,11 @@ def learner_model(learner_id: str = Query(default='default_learner', min_length=
             for a in attempts:
                 if skill == 'listening' and (a.item_evaluation_json or {}).get('evaluation_source') != 'rule_check':
                     continue
-                valid = evidence_status(db, 'attempt', a.id) if skill == 'reading' else 'eligible'
+                valid = evidence_status(db, 'attempt', a.id)
                 review = review_by_attempt.get(a.id)
                 if review and evidence_status(db, 'review_item', review.id) != 'eligible':
                     valid = evidence_status(db, 'review_item', review.id)
-                assessment = a.question_snapshot_json.get('assessment_type') == 'initial_reading'
+                assessment = a.question_snapshot_json.get('assessment_type') in ('initial_reading', 'initial_listening')
                 repeated = bool(a.question_snapshot_json.get('repeated_exposure'))
                 content_version = a.question_snapshot_json.get('content_version')
                 position_biased = assessment and content_version == 'reading-initial-community-garden-v1'
@@ -102,7 +102,7 @@ def learner_model(learner_id: str = Query(default='default_learner', min_length=
                 # A review without verified scheduling is merely a practice observation.
                 version = db.get(ReadingGroupVersion, a.group_version_id) if a.group_version_id else None
                 evaluated = a.evaluation_status == 'evaluated' and a.is_correct is not None
-                add(competency_id=a.question.topic_id, assessment_status='observed' if evaluated and a.is_correct is True and valid == 'eligible' and not repeated and not position_biased else 'not_assessed',
+                add(competency_id=a.question_snapshot_json.get('competency_id') or a.question.topic_id, assessment_status='observed' if evaluated and a.is_correct is True and valid == 'eligible' and not repeated and not position_biased else 'not_assessed',
                     evidence_type=kind, evidence_source='attempt', evidence_reference=a.id, evidence_validity=valid,
                     evaluation_method='rule_check' if evaluated else 'not_evaluated', evaluation_rule_version=a.evaluation_rule_version,
                     content_version=version.content_version if version else a.question_snapshot_json.get('content_version') or str(a.question_version),
@@ -122,7 +122,7 @@ def learner_model(learner_id: str = Query(default='default_learner', min_length=
             for p in practices:
                 add(competency_id='speaking_expression', assessment_status='not_assessed', evidence_type='practice_activity', evidence_source='speaking_practice', evidence_reference=p.recording_id, evidence_validity='not_evaluated', evaluation_method='learner_self_check', content_version=p.prompt_version, observed_at=p.completed_at, observation=f'录音练习 {p.duration_seconds:g} 秒；用户自查 {len(p.self_check)} 项')
         levels = []
-        if ids: levels.append('practice_activity')
+        if any(e.evidence_type == 'practice_activity' for e in records): levels.append('practice_activity')
         for level in ('practice_performance', 'initial_assessment', 'independent_transfer', 'delayed_review'):
             if any(e.evidence_type == level and e.assessment_status == 'observed' for e in records): levels.append(level)
         result.append(Skill(skill_id=skill, assessment_status='observed' if any(e.assessment_status == 'observed' for e in records) else 'not_assessed', has_learning_record=bool(ids), evidence_levels=levels, evidence=records, limitations=LIMITS[skill]))

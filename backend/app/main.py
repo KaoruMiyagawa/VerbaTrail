@@ -12,6 +12,7 @@ from fastapi.responses import JSONResponse
 
 from app.api.v1.dependencies import get_or_create_engine_and_factory
 from app.api.v1.router import api_v1_router
+from app.api.v1.assessment_listening import audio_router as assessment_listening_audio_router
 from app.application.exceptions import ApplicationError
 from app.config import Settings, get_settings
 from app.decision import IllegalAgentToolCallError
@@ -228,6 +229,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         )
 
     app.include_router(api_v1_router, prefix=resolved_settings.api_v1_prefix)
+    app.include_router(assessment_listening_audio_router)
     return app
 
 
