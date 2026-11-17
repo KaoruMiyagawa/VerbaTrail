@@ -17,11 +17,13 @@ from app.api.v1.learner_model import router as learner_model_router
 from app.api.v1.assessment_runs import router as assessment_runs_router
 from app.api.v1.assessment_reading import router as assessment_reading_router
 from app.api.v1.assessment_listening import router as assessment_listening_router
+from app.api.v1.assessment_speaking import router as assessment_speaking_router
 
 api_v1_router = APIRouter()
 api_v1_router.include_router(assessment_runs_router)
 api_v1_router.include_router(assessment_reading_router)
 api_v1_router.include_router(assessment_listening_router)
+api_v1_router.include_router(assessment_speaking_router)
 api_v1_router.include_router(learner_model_router)
 api_v1_router.include_router(health_router)
 api_v1_router.include_router(topics_router)

@@ -1188,3 +1188,19 @@ class AssessmentTask(Base):
     evidence_source: Mapped[str | None] = mapped_column(String(32), nullable=True)
     evidence_reference: Mapped[str | None] = mapped_column(String(64), nullable=True)
     run: Mapped["AssessmentRun"] = relationship(back_populates="tasks")
+
+
+class SpeakingAssessmentRecording(Base):
+    """Client-reported registration for one Speaking task, with no audio or evaluation."""
+
+    __tablename__ = "speaking_assessment_recordings"
+    __table_args__ = (
+        UniqueConstraint("assessment_task_id", name="uq_speaking_assessment_recording_task"),
+        CheckConstraint("duration_seconds > 0 AND duration_seconds <= 600", name="ck_speaking_assessment_recording_duration"),
+    )
+    recording_id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    assessment_task_id: Mapped[str] = mapped_column(ForeignKey("assessment_tasks.id", ondelete="CASCADE"), nullable=False)
+    duration_seconds: Mapped[float] = mapped_column(Float, nullable=False)
+    recorded_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    registered_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
+    idempotency_key: Mapped[str] = mapped_column(String(128), nullable=False)

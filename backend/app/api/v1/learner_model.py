@@ -9,8 +9,10 @@ from sqlalchemy.orm import Session
 
 from app.api.v1.dependencies import get_db
 from app.application.evidence_validity import evidence_status
-from app.persistence.models import (Attempt, ExamPreparationProfile, KnowledgeTopic, LearningSession,
-    ReadingGroupVersion, ReviewItem, SpeakingPractice, WritingDraft, WritingRevision)
+from app.content.speaking_initial_assessment import RECORDING_SOURCE, TASK_VERSION
+from app.persistence.models import (AssessmentRun, AssessmentTask, Attempt, ExamPreparationProfile,
+    KnowledgeTopic, LearningSession, ReadingGroupVersion, ReviewItem, SpeakingAssessmentRecording,
+    SpeakingPractice, WritingDraft, WritingRevision)
 
 router = APIRouter(tags=["learner-model"])
 
@@ -59,7 +61,8 @@ LIMITS = {
     'listening': ['仅反映具体练习的客观作答，不能推断整体听力水平或 IELTS 分数。'],
     'reading': ['作答、独立迁移及延迟复习只反映相应题目，不代表整体阅读水平或永久掌握。旧版 Reading 初始评估 v1 的正确项全部位于第一选项，保留为历史记录但不作为无偏能力证据。'],
     'writing': ['字数和修订行为不评价写作语义质量；写作水平未评估。'],
-    'speaking': ['自查由学习者提供，并非系统语音检测；口语水平未评估。'],
+    'speaking': ['自查由学习者提供，并非系统语音检测；口语水平未评估。',
+                 '初始评估只登记客户端申报的录音元数据，服务器无法验证录音是否存在，也无法确认本机录音是否仍可用。'],
 }
 
 
@@ -121,11 +124,36 @@ def learner_model(learner_id: str = Query(default='default_learner', min_length=
             practices = db.scalars(select(SpeakingPractice).where(SpeakingPractice.session_id.in_(ids)).order_by(SpeakingPractice.completed_at)).all()
             for p in practices:
                 add(competency_id='speaking_expression', assessment_status='not_assessed', evidence_type='practice_activity', evidence_source='speaking_practice', evidence_reference=p.recording_id, evidence_validity='not_evaluated', evaluation_method='learner_self_check', content_version=p.prompt_version, observed_at=p.completed_at, observation=f'录音练习 {p.duration_seconds:g} 秒；用户自查 {len(p.self_check)} 项')
+        if skill == 'speaking':
+            registrations = db.execute(
+                select(SpeakingAssessmentRecording, AssessmentTask)
+                .join(AssessmentTask, AssessmentTask.id == SpeakingAssessmentRecording.assessment_task_id)
+                .join(AssessmentRun, AssessmentRun.id == AssessmentTask.run_id)
+                .where(
+                    AssessmentRun.learner_id == learner_id,
+                    AssessmentTask.skill_id == 'speaking',
+                    AssessmentTask.status == 'completed',
+                    AssessmentTask.content_version == TASK_VERSION,
+                    AssessmentTask.evidence_source == RECORDING_SOURCE,
+                    AssessmentTask.evidence_reference == SpeakingAssessmentRecording.recording_id,
+                )
+                .order_by(SpeakingAssessmentRecording.registered_at)
+            ).all()
+            for recording, task in registrations:
+                add(
+                    competency_id='speaking_expression', assessment_status='not_assessed',
+                    evidence_type='assessment_activity', evidence_source=RECORDING_SOURCE,
+                    evidence_reference=recording.recording_id, evidence_validity='not_evaluated',
+                    evaluation_method='client_reported_metadata', content_version=task.content_version,
+                    observed_at=recording.registered_at,
+                    observation='已登记口语初始任务的客户端录音元数据，语音未核验。'
+                                + ('同一学习者此前已开始过相同版本的任务。' if task.repeated_exposure else ''),
+                )
         levels = []
         if any(e.evidence_type == 'practice_activity' for e in records): levels.append('practice_activity')
         for level in ('practice_performance', 'initial_assessment', 'independent_transfer', 'delayed_review'):
             if any(e.evidence_type == level and e.assessment_status == 'observed' for e in records): levels.append(level)
-        result.append(Skill(skill_id=skill, assessment_status='observed' if any(e.assessment_status == 'observed' for e in records) else 'not_assessed', has_learning_record=bool(ids), evidence_levels=levels, evidence=records, limitations=LIMITS[skill]))
+        result.append(Skill(skill_id=skill, assessment_status='observed' if any(e.assessment_status == 'observed' for e in records) else 'not_assessed', has_learning_record=bool(ids or records), evidence_levels=levels, evidence=records, limitations=LIMITS[skill]))
     goal = db.get(ExamPreparationProfile, learner_id)
     return LearnerModel(learner_id=learner_id, skills=result, learning_goal={
         'exam_variant': goal.exam_variant, 'goal_type': goal.goal_type,

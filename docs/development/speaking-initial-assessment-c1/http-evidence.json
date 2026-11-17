@@ -1,0 +1,2084 @@
+{
+  "status": "pass",
+  "requests": [
+    {
+      "check": "create_v2",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "idempotency_key": "c1-run"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "status": "in_progress",
+        "created_at": "2026-11-17T03:10:52.297204Z",
+        "updated_at": "2026-11-17T03:10:52.297206Z",
+        "completed_at": null,
+        "tasks": [
+          {
+            "skill_id": "listening",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "speaking",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "reading",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "writing",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          }
+        ]
+      }
+    },
+    {
+      "check": "read_run",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "status": "in_progress",
+        "created_at": "2026-11-17T03:10:52.297204Z",
+        "updated_at": "2026-11-17T03:10:52.297206Z",
+        "completed_at": null,
+        "tasks": [
+          {
+            "skill_id": "listening",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "speaking",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "reading",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "writing",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          }
+        ]
+      }
+    },
+    {
+      "check": "start_reading",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/reading/start",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "skill_id": "reading",
+        "task_id": "reading-community-garden-v2",
+        "task_version": "reading-initial-community-garden-v2",
+        "rule_version": "reading-mcq-evidence-v2",
+        "task_status": "in_progress",
+        "learning_session_id": "sess_f4746674684e41ed",
+        "repeated_exposure": false,
+        "diagnostic_quality": "limited_observation",
+        "evidence_insufficient": true,
+        "limitations": [
+          "本次短测评仅观察有限范围的阅读表现，不能推断整体阅读水平或 IELTS 分数。"
+        ],
+        "design_rationale": null,
+        "passage": "When the old railway depot became a community garden, residents expected the hardest work to be digging. They soon discovered that deciding how to share the small site took longer. The committee divided the land into twelve plots, but reserved two beds near the entrance for anyone who wanted to grow herbs without renting a plot.\n\nWater was the next concern. A roof tank collected rain, yet it could not supply the garden through a dry August. Instead of buying a larger tank, volunteers placed mulch around young plants. The layer reduced evaporation, so the existing supply lasted longer. The committee also asked plot holders to water before nine in the morning, when less water would be lost to heat.\n\nIn its first season, the garden produced fewer vegetables than the committee had forecast. However, the weekly open mornings attracted families who did not garden. A nearby café began using some of the surplus herbs, while the library hosted short workshops on seed saving. The committee therefore judged success by more than the weight of the harvest: it also counted visits and workshop attendance.\n\nFor the next season, the residents rejected a proposal to add more plots. They chose instead to widen the central path, because wheelbarrows had difficulty passing when two people worked side by side. The change would reduce the growing area slightly, but make deliveries and shared work easier.",
+        "questions": [
+          {
+            "question_id": "readgarden-v2-q1",
+            "prompt": "What were the two entrance beds intended for?",
+            "options": [
+              "Vegetables for the café",
+              "Tools used by the committee",
+              "Herbs for visitors without a rented plot",
+              "Plants that needed extra water"
+            ],
+            "skill": "explicit_detail"
+          },
+          {
+            "question_id": "readgarden-v2-q2",
+            "prompt": "Why did volunteers use mulch?",
+            "options": [
+              "To reduce water loss from the soil",
+              "To collect more rain from the roof",
+              "To make extra room for plots",
+              "To protect the path from wheelbarrows"
+            ],
+            "skill": "cause_effect"
+          },
+          {
+            "question_id": "readgarden-v2-q3",
+            "prompt": "What can be inferred about the committee’s first-season measure of success?",
+            "options": [
+              "It focused only on income from the café",
+              "It was based on the number of rented plots",
+              "It ignored activities outside the garden",
+              "It included community participation as well as produce"
+            ],
+            "skill": "inference"
+          },
+          {
+            "question_id": "readgarden-v2-q4",
+            "prompt": "Why did residents choose to widen the central path?",
+            "options": [
+              "To increase the number of plots",
+              "To make shared work and deliveries easier",
+              "To help rain reach the roof tank",
+              "To provide space for more workshops"
+            ],
+            "skill": "purpose_and_reason"
+          }
+        ],
+        "correct_count": null,
+        "attempt_references": [],
+        "unassessed_capabilities": [
+          "整体阅读水平",
+          "IELTS Band",
+          "长期保持",
+          "独立迁移"
+        ]
+      }
+    },
+    {
+      "check": "submit_reading",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/reading/submit",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "answers": {
+            "readgarden-v2-q1": "Herbs for visitors without a rented plot",
+            "readgarden-v2-q2": "To reduce water loss from the soil",
+            "readgarden-v2-q3": "It included community participation as well as produce",
+            "readgarden-v2-q4": "To make shared work and deliveries easier"
+          },
+          "idempotency_key": "c1-regression-reading"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "skill_id": "reading",
+        "task_id": "reading-community-garden-v2",
+        "task_version": "reading-initial-community-garden-v2",
+        "rule_version": "reading-mcq-evidence-v2",
+        "task_status": "completed",
+        "learning_session_id": "sess_f4746674684e41ed",
+        "repeated_exposure": false,
+        "diagnostic_quality": "limited_observation",
+        "evidence_insufficient": true,
+        "limitations": [
+          "四道原创客观题只观察本材料中的细节、因果、推断和目的理解；题量不足以估计整体阅读能力或 IELTS Band。旧版 v1 四题正确项均位于第一选项，其作答保留作历史记录，但不作为无偏能力证据。"
+        ],
+        "design_rationale": "四题均为单一最佳答案：直接定位、因果关系、跨句推断、方案目的。文本约 190 词、四段、常见学术生活词汇，无专业背景要求；要求跨句整合但不含复杂句法陷阱。V2 正确项位置依次为第 3、1、4、2 项，每个位置恰好一次；仅改变选项顺序，不改变题干、材料、答案含义或理解目标。作为短初始观察，标记 evidence_insufficient。",
+        "passage": "When the old railway depot became a community garden, residents expected the hardest work to be digging. They soon discovered that deciding how to share the small site took longer. The committee divided the land into twelve plots, but reserved two beds near the entrance for anyone who wanted to grow herbs without renting a plot.\n\nWater was the next concern. A roof tank collected rain, yet it could not supply the garden through a dry August. Instead of buying a larger tank, volunteers placed mulch around young plants. The layer reduced evaporation, so the existing supply lasted longer. The committee also asked plot holders to water before nine in the morning, when less water would be lost to heat.\n\nIn its first season, the garden produced fewer vegetables than the committee had forecast. However, the weekly open mornings attracted families who did not garden. A nearby café began using some of the surplus herbs, while the library hosted short workshops on seed saving. The committee therefore judged success by more than the weight of the harvest: it also counted visits and workshop attendance.\n\nFor the next season, the residents rejected a proposal to add more plots. They chose instead to widen the central path, because wheelbarrows had difficulty passing when two people worked side by side. The change would reduce the growing area slightly, but make deliveries and shared work easier.",
+        "questions": [
+          {
+            "question_id": "readgarden-v2-q1",
+            "prompt": "What were the two entrance beds intended for?",
+            "options": [
+              "Vegetables for the café",
+              "Tools used by the committee",
+              "Herbs for visitors without a rented plot",
+              "Plants that needed extra water"
+            ],
+            "skill": "explicit_detail",
+            "answer": "Herbs for visitors without a rented plot",
+            "correct_answer": "Herbs for visitors without a rented plot",
+            "is_correct": true,
+            "explanation": "The first paragraph says the two beds were reserved for anyone wanting herbs without renting a plot.",
+            "attempt_id": "att_7e347b59d37e4ed1",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "readgarden-v2-q2",
+            "prompt": "Why did volunteers use mulch?",
+            "options": [
+              "To reduce water loss from the soil",
+              "To collect more rain from the roof",
+              "To make extra room for plots",
+              "To protect the path from wheelbarrows"
+            ],
+            "skill": "cause_effect",
+            "answer": "To reduce water loss from the soil",
+            "correct_answer": "To reduce water loss from the soil",
+            "is_correct": true,
+            "explanation": "The passage states that mulch reduced evaporation, helping the existing water supply last longer.",
+            "attempt_id": "att_406e6d001d814a05",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "readgarden-v2-q3",
+            "prompt": "What can be inferred about the committee’s first-season measure of success?",
+            "options": [
+              "It focused only on income from the café",
+              "It was based on the number of rented plots",
+              "It ignored activities outside the garden",
+              "It included community participation as well as produce"
+            ],
+            "skill": "inference",
+            "answer": "It included community participation as well as produce",
+            "correct_answer": "It included community participation as well as produce",
+            "is_correct": true,
+            "explanation": "Although the harvest was below forecast, the committee also counted visits and workshop attendance.",
+            "attempt_id": "att_dee8b7b07d254f29",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "readgarden-v2-q4",
+            "prompt": "Why did residents choose to widen the central path?",
+            "options": [
+              "To increase the number of plots",
+              "To make shared work and deliveries easier",
+              "To help rain reach the roof tank",
+              "To provide space for more workshops"
+            ],
+            "skill": "purpose_and_reason",
+            "answer": "To make shared work and deliveries easier",
+            "correct_answer": "To make shared work and deliveries easier",
+            "is_correct": true,
+            "explanation": "The final paragraph explains wheelbarrows could not pass easily and says widening would make deliveries and shared work easier.",
+            "attempt_id": "att_017f723b0e034d41",
+            "evidence_validity": "eligible"
+          }
+        ],
+        "correct_count": 4,
+        "attempt_references": [
+          {
+            "attempt_id": "att_7e347b59d37e4ed1",
+            "question_id": "readgarden-v2-q1",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_406e6d001d814a05",
+            "question_id": "readgarden-v2-q2",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_dee8b7b07d254f29",
+            "question_id": "readgarden-v2-q3",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_017f723b0e034d41",
+            "question_id": "readgarden-v2-q4",
+            "evidence_validity": "eligible"
+          }
+        ],
+        "unassessed_capabilities": [
+          "整体阅读水平",
+          "IELTS Band",
+          "长期保持",
+          "独立迁移"
+        ]
+      }
+    },
+    {
+      "check": "start_listening",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/listening/start",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "skill_id": "listening",
+        "task_id": "listening-community-arts-workshop-v1",
+        "task_version": "listening-initial-community-arts-v1",
+        "rule_version": "listening-mcq-exact-choice-v1",
+        "assessment_version": "initial-v2",
+        "task_status": "in_progress",
+        "learning_session_id": "sess_17f2d51b3dc74088",
+        "audio_url": "/audio/listening/initial-community-arts-v1.wav",
+        "audio_sha256": "739E3D1263195E63386E04103B21BD34A1701E86549EA81CE35768482C974CC7",
+        "repeated_exposure": false,
+        "evidence_insufficient": true,
+        "limitations": [
+          "六道原创客观题只观察本材料中的细节、因果、行动推断和说话者目的理解；题量不足以估计整体听力能力或 IELTS Band。",
+          "重复曝光只依据 VerbaTrail 中记录的相同版本练习会话和题目；无法识别平台外听过的材料。"
+        ],
+        "questions": [
+          {
+            "question_id": "listening-initial-community-arts-v1-q1",
+            "prompt": "On which day will the printmaking workshop take place?",
+            "options": [
+              "Friday",
+              "Saturday",
+              "Sunday",
+              "Monday"
+            ],
+            "item_type": "explicit_detail"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q2",
+            "prompt": "What time will the workshop begin?",
+            "options": [
+              "10:00",
+              "10:15",
+              "10:45",
+              "10:30"
+            ],
+            "item_type": "explicit_detail"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q3",
+            "prompt": "Which entrance should the participant use?",
+            "options": [
+              "The side entrance beside the bicycle shelter",
+              "The main doors",
+              "The café entrance",
+              "The rear delivery entrance"
+            ],
+            "item_type": "explicit_detail"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q4",
+            "prompt": "Why has the class moved to a different room?",
+            "options": [
+              "The café needs the studio",
+              "The class has more participants",
+              "Electricians need the main hall",
+              "The bicycle shelter is being repaired"
+            ],
+            "item_type": "cause_effect"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q5",
+            "prompt": "What should a participant do if a delayed bus makes them arrive after 10:40?",
+            "options": [
+              "Wait until the café opens",
+              "Ring the bell marked “workshops”",
+              "Go around to the main doors",
+              "Call the electrician"
+            ],
+            "item_type": "action_inference"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q6",
+            "prompt": "Why did Rowan leave this message?",
+            "options": [
+              "To advertise a different workshop",
+              "To ask the participant to bring paper and ink",
+              "To cancel the Saturday session",
+              "To confirm revised arrangements and ask for a reply only if attendance is no longer possible"
+            ],
+            "item_type": "speaker_purpose"
+          }
+        ],
+        "correct_count": null,
+        "attempt_references": [],
+        "unassessed_capabilities": [
+          "整体听力能力",
+          "IELTS Band",
+          "长期保持",
+          "独立迁移"
+        ]
+      }
+    },
+    {
+      "check": "submit_listening",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/listening/submit",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "answers": {
+            "listening-initial-community-arts-v1-q1": "Saturday",
+            "listening-initial-community-arts-v1-q2": "10:30",
+            "listening-initial-community-arts-v1-q3": "The side entrance beside the bicycle shelter",
+            "listening-initial-community-arts-v1-q4": "Electricians need the main hall",
+            "listening-initial-community-arts-v1-q5": "Ring the bell marked “workshops”",
+            "listening-initial-community-arts-v1-q6": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible"
+          },
+          "idempotency_key": "c1-regression-listening"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "skill_id": "listening",
+        "task_id": "listening-community-arts-workshop-v1",
+        "task_version": "listening-initial-community-arts-v1",
+        "rule_version": "listening-mcq-exact-choice-v1",
+        "assessment_version": "initial-v2",
+        "task_status": "completed",
+        "learning_session_id": "sess_17f2d51b3dc74088",
+        "audio_url": "/audio/listening/initial-community-arts-v1.wav",
+        "audio_sha256": "739E3D1263195E63386E04103B21BD34A1701E86549EA81CE35768482C974CC7",
+        "repeated_exposure": false,
+        "evidence_insufficient": true,
+        "limitations": [
+          "六道原创客观题只观察本材料中的细节、因果、行动推断和说话者目的理解；题量不足以估计整体听力能力或 IELTS Band。",
+          "重复曝光只依据 VerbaTrail 中记录的相同版本练习会话和题目；无法识别平台外听过的材料。"
+        ],
+        "questions": [
+          {
+            "question_id": "listening-initial-community-arts-v1-q1",
+            "prompt": "On which day will the printmaking workshop take place?",
+            "options": [
+              "Friday",
+              "Saturday",
+              "Sunday",
+              "Monday"
+            ],
+            "item_type": "explicit_detail",
+            "answer": "Saturday",
+            "correct_answer": "Saturday",
+            "is_correct": true,
+            "explanation": "Rowan confirms that the workshop is still on Saturday.",
+            "attempt_id": "att_5a2fe760acec4150",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q2",
+            "prompt": "What time will the workshop begin?",
+            "options": [
+              "10:00",
+              "10:15",
+              "10:45",
+              "10:30"
+            ],
+            "item_type": "explicit_detail",
+            "answer": "10:30",
+            "correct_answer": "10:30",
+            "is_correct": true,
+            "explanation": "The revised start time is spoken as ten thirty, half an hour later than the leaflet time.",
+            "attempt_id": "att_ebd2b3e7bd2b494a",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q3",
+            "prompt": "Which entrance should the participant use?",
+            "options": [
+              "The side entrance beside the bicycle shelter",
+              "The main doors",
+              "The café entrance",
+              "The rear delivery entrance"
+            ],
+            "item_type": "explicit_detail",
+            "answer": "The side entrance beside the bicycle shelter",
+            "correct_answer": "The side entrance beside the bicycle shelter",
+            "is_correct": true,
+            "explanation": "Rowan directs participants to the side entrance beside the bicycle shelter and says the main doors will remain locked.",
+            "attempt_id": "att_aba3858b8b804ff1",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q4",
+            "prompt": "Why has the class moved to a different room?",
+            "options": [
+              "The café needs the studio",
+              "The class has more participants",
+              "Electricians need the main hall",
+              "The bicycle shelter is being repaired"
+            ],
+            "item_type": "cause_effect",
+            "answer": "Electricians need the main hall",
+            "correct_answer": "Electricians need the main hall",
+            "is_correct": true,
+            "explanation": "Rowan says the class moved because electricians need the main hall that morning.",
+            "attempt_id": "att_2a7ed12d2b1e4118",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q5",
+            "prompt": "What should a participant do if a delayed bus makes them arrive after 10:40?",
+            "options": [
+              "Wait until the café opens",
+              "Ring the bell marked “workshops”",
+              "Go around to the main doors",
+              "Call the electrician"
+            ],
+            "item_type": "action_inference",
+            "answer": "Ring the bell marked “workshops”",
+            "correct_answer": "Ring the bell marked “workshops”",
+            "is_correct": true,
+            "explanation": "For arrivals after ten forty, Rowan says to ring the workshops bell so reception can let the participant in.",
+            "attempt_id": "att_52563134e33e4301",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q6",
+            "prompt": "Why did Rowan leave this message?",
+            "options": [
+              "To advertise a different workshop",
+              "To ask the participant to bring paper and ink",
+              "To cancel the Saturday session",
+              "To confirm revised arrangements and ask for a reply only if attendance is no longer possible"
+            ],
+            "item_type": "speaker_purpose",
+            "answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+            "correct_answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+            "is_correct": true,
+            "explanation": "Rowan says the centre needs to confirm the updated arrangements were received and asks for a reply only if the participant cannot attend.",
+            "attempt_id": "att_866071180dd34874",
+            "evidence_validity": "eligible"
+          }
+        ],
+        "correct_count": 6,
+        "attempt_references": [
+          {
+            "attempt_id": "att_5a2fe760acec4150",
+            "question_id": "listening-initial-community-arts-v1-q1",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_ebd2b3e7bd2b494a",
+            "question_id": "listening-initial-community-arts-v1-q2",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_aba3858b8b804ff1",
+            "question_id": "listening-initial-community-arts-v1-q3",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_2a7ed12d2b1e4118",
+            "question_id": "listening-initial-community-arts-v1-q4",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_52563134e33e4301",
+            "question_id": "listening-initial-community-arts-v1-q5",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_866071180dd34874",
+            "question_id": "listening-initial-community-arts-v1-q6",
+            "evidence_validity": "eligible"
+          }
+        ],
+        "unassessed_capabilities": [
+          "整体听力能力",
+          "IELTS Band",
+          "长期保持",
+          "独立迁移"
+        ],
+        "observation": "本次原创听力材料中的有限客观作答表现；答错记录保留为观察，不代表能力薄弱或掌握。"
+      }
+    },
+    {
+      "check": "practice_prompts",
+      "method": "GET",
+      "path": "/api/v1/speaking/prompts",
+      "request": {},
+      "status": 200,
+      "expected": 200,
+      "response": [
+        {
+          "id": "daily-routine",
+          "text": "What part of your daily routine do you enjoy most, and why?",
+          "version": "speaking-part1-v1",
+          "part": 1,
+          "suggested_seconds": 30
+        },
+        {
+          "id": "study-place",
+          "text": "Where do you prefer to study, and what makes that place helpful?",
+          "version": "speaking-part1-v1",
+          "part": 1,
+          "suggested_seconds": 30
+        },
+        {
+          "id": "hobby",
+          "text": "What hobby would you like to spend more time on?",
+          "version": "speaking-part1-v1",
+          "part": 1,
+          "suggested_seconds": 30
+        }
+      ]
+    },
+    {
+      "check": "ordinary_practice",
+      "method": "POST",
+      "path": "/api/v1/speaking/practices",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "recording_id": "c1-ordinary-practice",
+          "prompt_id": "daily-routine",
+          "prompt_version": "speaking-part1-v1",
+          "duration_seconds": 20,
+          "recorded_at": "2026-11-17T04:05:00Z",
+          "self_check": [
+            "direct"
+          ]
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "recording_id": "c1-ordinary-practice",
+        "session_id": "speak_5e4e87c12abaa0798eb05a890163b599d04df785",
+        "prompt_id": "daily-routine",
+        "prompt_version": "speaking-part1-v1",
+        "prompt_text": "What part of your daily routine do you enjoy most, and why?",
+        "duration_seconds": 20.0,
+        "recorded_at": "2026-11-17T04:05:00+00:00",
+        "completed_at": "2026-11-17T03:10:52.411204+00:00",
+        "self_check": [
+          "direct"
+        ],
+        "evaluation_status": "not_assessed",
+        "evidence_type": "practice_only",
+        "note": "录音未上传。练习完成不证明口语水平、迁移或长期保持。"
+      }
+    },
+    {
+      "check": "ordinary_practice_does_not_complete_assessment",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "not_started",
+        "task_version": null,
+        "prompt": null,
+        "repeated_exposure": false,
+        "metadata_status": "not_registered",
+        "recording": null,
+        "evidence_source": null,
+        "evidence_reference": null,
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      }
+    },
+    {
+      "check": "pin_original_prompt",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking/start",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "in_progress",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": false,
+        "metadata_status": "not_registered",
+        "recording": null,
+        "evidence_source": null,
+        "evidence_reference": null,
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      }
+    },
+    {
+      "check": "repeat_start",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking/start",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "in_progress",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": false,
+        "metadata_status": "not_registered",
+        "recording": null,
+        "evidence_source": null,
+        "evidence_reference": null,
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      }
+    },
+    {
+      "check": "reject_audio_field",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking/complete",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "recording_id": "c1-http-synthetic-metadata",
+          "task_version": "speaking-initial-community-skill-v1",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T12:05:00+08:00",
+          "idempotency_key": "c1-http-registration",
+          "audio": "test-sentinel"
+        }
+      },
+      "status": 422,
+      "expected": 422,
+      "response": {
+        "code": "VALIDATION_ERROR",
+        "message": "请求参数校验失败",
+        "request_id": "req_4e679a2b5391",
+        "details": [
+          {
+            "type": "extra_forbidden",
+            "loc": [
+              "body",
+              "audio"
+            ],
+            "msg": "Extra inputs are not permitted"
+          }
+        ]
+      }
+    },
+    {
+      "check": "register_metadata",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking/complete",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "recording_id": "c1-http-synthetic-metadata",
+          "task_version": "speaking-initial-community-skill-v1",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T12:05:00+08:00",
+          "idempotency_key": "c1-http-registration"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "completed",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": false,
+        "metadata_status": "registered",
+        "recording": {
+          "recording_id": "c1-http-synthetic-metadata",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T04:05:00Z",
+          "registered_at": "2026-11-17T03:10:52.434793Z",
+          "provenance": "client_reported"
+        },
+        "evidence_source": "speaking_assessment_recording",
+        "evidence_reference": "c1-http-synthetic-metadata",
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      }
+    },
+    {
+      "check": "replay_completion",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking/complete",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "recording_id": "c1-http-synthetic-metadata",
+          "task_version": "speaking-initial-community-skill-v1",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T12:05:00+08:00",
+          "idempotency_key": "c1-http-registration"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "completed",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": false,
+        "metadata_status": "registered",
+        "recording": {
+          "recording_id": "c1-http-synthetic-metadata",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T04:05:00Z",
+          "registered_at": "2026-11-17T03:10:52.434793Z",
+          "provenance": "client_reported"
+        },
+        "evidence_source": "speaking_assessment_recording",
+        "evidence_reference": "c1-http-synthetic-metadata",
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      }
+    },
+    {
+      "check": "conflicting_retry",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking/complete",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "recording_id": "c1-http-synthetic-metadata",
+          "task_version": "speaking-initial-community-skill-v1",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "duration_seconds": 49,
+          "recorded_at": "2026-11-17T12:05:00+08:00",
+          "idempotency_key": "c1-http-registration"
+        }
+      },
+      "status": 409,
+      "expected": 409,
+      "response": {
+        "code": "HTTP_409",
+        "message": "Speaking task already has a different recording registration.",
+        "request_id": "req_8534c8b4e060"
+      }
+    },
+    {
+      "check": "foreign_learner_GET",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking",
+      "request": {
+        "params": {
+          "learner_id": "c1-other-learner"
+        }
+      },
+      "status": 404,
+      "expected": 404,
+      "response": {
+        "code": "HTTP_404",
+        "message": "Speaking assessment task was not found.",
+        "request_id": "req_861f9483ba98"
+      }
+    },
+    {
+      "check": "foreign_learner_POST/start",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking/start",
+      "request": {
+        "params": {
+          "learner_id": "c1-other-learner"
+        }
+      },
+      "status": 404,
+      "expected": 404,
+      "response": {
+        "code": "HTTP_404",
+        "message": "Speaking assessment task was not found.",
+        "request_id": "req_c0f30d810def"
+      }
+    },
+    {
+      "check": "foreign_learner_POST/complete",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking/complete",
+      "request": {
+        "json": {
+          "learner_id": "c1-other-learner",
+          "recording_id": "c1-http-synthetic-metadata",
+          "task_version": "speaking-initial-community-skill-v1",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T12:05:00+08:00",
+          "idempotency_key": "c1-http-registration"
+        }
+      },
+      "status": 404,
+      "expected": 404,
+      "response": {
+        "code": "HTTP_404",
+        "message": "Speaking assessment task was not found.",
+        "request_id": "req_d9b2a46f9aac"
+      }
+    },
+    {
+      "check": "create_legacy",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "assessment_version": "initial-v1",
+          "idempotency_key": "c1-legacy-run"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "run_id": "asr_f86684db6787480f",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v1",
+        "status": "in_progress",
+        "created_at": "2026-11-17T03:10:52.451100Z",
+        "updated_at": "2026-11-17T03:10:52.451102Z",
+        "completed_at": null,
+        "tasks": [
+          {
+            "skill_id": "listening",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "speaking",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "reading",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "writing",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          }
+        ]
+      }
+    },
+    {
+      "check": "legacy_read_conflict",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_f86684db6787480f/speaking",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 409,
+      "expected": 409,
+      "response": {
+        "code": "HTTP_409",
+        "message": "This assessment has no pinned Speaking version and cannot enable this task.",
+        "request_id": "req_cb85709a06dd"
+      }
+    },
+    {
+      "check": "legacy_start_conflict",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_f86684db6787480f/speaking/start",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 409,
+      "expected": 409,
+      "response": {
+        "code": "HTTP_409",
+        "message": "This assessment has no pinned Speaking version and cannot enable this task.",
+        "request_id": "req_db0982891bf6"
+      }
+    },
+    {
+      "check": "legacy_run_unchanged",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_f86684db6787480f",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "run_id": "asr_f86684db6787480f",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v1",
+        "status": "in_progress",
+        "created_at": "2026-11-17T03:10:52.451100Z",
+        "updated_at": "2026-11-17T03:10:52.451102Z",
+        "completed_at": null,
+        "tasks": [
+          {
+            "skill_id": "listening",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "speaking",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "reading",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "writing",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          }
+        ]
+      }
+    },
+    {
+      "check": "create_repeat",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "idempotency_key": "c1-repeat-run"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "run_id": "asr_33ce65867faa4fd9",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "status": "in_progress",
+        "created_at": "2026-11-17T03:10:52.471847Z",
+        "updated_at": "2026-11-17T03:10:52.471849Z",
+        "completed_at": null,
+        "tasks": [
+          {
+            "skill_id": "listening",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "speaking",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "reading",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "writing",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          }
+        ]
+      }
+    },
+    {
+      "check": "record_prior_prompt_exposure",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_33ce65867faa4fd9/speaking/start",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_33ce65867faa4fd9",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "in_progress",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": true,
+        "metadata_status": "not_registered",
+        "recording": null,
+        "evidence_source": null,
+        "evidence_reference": null,
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      }
+    },
+    {
+      "check": "recording_id_cannot_bind_another_task",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_33ce65867faa4fd9/speaking/complete",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "recording_id": "c1-http-synthetic-metadata",
+          "task_version": "speaking-initial-community-skill-v1",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T12:05:00+08:00",
+          "idempotency_key": "c1-http-registration"
+        }
+      },
+      "status": 409,
+      "expected": 409,
+      "response": {
+        "code": "HTTP_409",
+        "message": "Recording ID is already registered for an assessment.",
+        "request_id": "req_04973df8d1cf"
+      }
+    },
+    {
+      "check": "restore_after_restart",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "completed",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": false,
+        "metadata_status": "registered",
+        "recording": {
+          "recording_id": "c1-http-synthetic-metadata",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T04:05:00Z",
+          "registered_at": "2026-11-17T03:10:52.434793Z",
+          "provenance": "client_reported"
+        },
+        "evidence_source": "speaking_assessment_recording",
+        "evidence_reference": "c1-http-synthetic-metadata",
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      }
+    },
+    {
+      "check": "retry_after_restart",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/speaking/complete",
+      "request": {
+        "json": {
+          "learner_id": "c1-http-learner",
+          "recording_id": "c1-http-synthetic-metadata",
+          "task_version": "speaking-initial-community-skill-v1",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T12:05:00+08:00",
+          "idempotency_key": "c1-http-registration"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "completed",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": false,
+        "metadata_status": "registered",
+        "recording": {
+          "recording_id": "c1-http-synthetic-metadata",
+          "duration_seconds": 48.25,
+          "recorded_at": "2026-11-17T04:05:00Z",
+          "registered_at": "2026-11-17T03:10:52.434793Z",
+          "provenance": "client_reported"
+        },
+        "evidence_source": "speaking_assessment_recording",
+        "evidence_reference": "c1-http-synthetic-metadata",
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      }
+    },
+    {
+      "check": "practice_history_is_separate",
+      "method": "GET",
+      "path": "/api/v1/speaking/practices",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": [
+        {
+          "recording_id": "c1-ordinary-practice",
+          "session_id": "speak_5e4e87c12abaa0798eb05a890163b599d04df785",
+          "prompt_id": "daily-routine",
+          "prompt_version": "speaking-part1-v1",
+          "prompt_text": "What part of your daily routine do you enjoy most, and why?",
+          "duration_seconds": 20.0,
+          "recorded_at": "2026-11-17T04:05:00+00:00",
+          "completed_at": "2026-11-17T03:10:52.411204+00:00",
+          "self_check": [
+            "direct"
+          ],
+          "evaluation_status": "not_assessed",
+          "evidence_type": "practice_only",
+          "note": "录音未上传。练习完成不证明口语水平、迁移或长期保持。"
+        }
+      ]
+    },
+    {
+      "check": "preserve_reading_result",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/reading",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "skill_id": "reading",
+        "task_id": "reading-community-garden-v2",
+        "task_version": "reading-initial-community-garden-v2",
+        "rule_version": "reading-mcq-evidence-v2",
+        "task_status": "completed",
+        "learning_session_id": "sess_f4746674684e41ed",
+        "repeated_exposure": false,
+        "diagnostic_quality": "limited_observation",
+        "evidence_insufficient": true,
+        "limitations": [
+          "四道原创客观题只观察本材料中的细节、因果、推断和目的理解；题量不足以估计整体阅读能力或 IELTS Band。旧版 v1 四题正确项均位于第一选项，其作答保留作历史记录，但不作为无偏能力证据。"
+        ],
+        "design_rationale": "四题均为单一最佳答案：直接定位、因果关系、跨句推断、方案目的。文本约 190 词、四段、常见学术生活词汇，无专业背景要求；要求跨句整合但不含复杂句法陷阱。V2 正确项位置依次为第 3、1、4、2 项，每个位置恰好一次；仅改变选项顺序，不改变题干、材料、答案含义或理解目标。作为短初始观察，标记 evidence_insufficient。",
+        "passage": "When the old railway depot became a community garden, residents expected the hardest work to be digging. They soon discovered that deciding how to share the small site took longer. The committee divided the land into twelve plots, but reserved two beds near the entrance for anyone who wanted to grow herbs without renting a plot.\n\nWater was the next concern. A roof tank collected rain, yet it could not supply the garden through a dry August. Instead of buying a larger tank, volunteers placed mulch around young plants. The layer reduced evaporation, so the existing supply lasted longer. The committee also asked plot holders to water before nine in the morning, when less water would be lost to heat.\n\nIn its first season, the garden produced fewer vegetables than the committee had forecast. However, the weekly open mornings attracted families who did not garden. A nearby café began using some of the surplus herbs, while the library hosted short workshops on seed saving. The committee therefore judged success by more than the weight of the harvest: it also counted visits and workshop attendance.\n\nFor the next season, the residents rejected a proposal to add more plots. They chose instead to widen the central path, because wheelbarrows had difficulty passing when two people worked side by side. The change would reduce the growing area slightly, but make deliveries and shared work easier.",
+        "questions": [
+          {
+            "question_id": "readgarden-v2-q1",
+            "prompt": "What were the two entrance beds intended for?",
+            "options": [
+              "Vegetables for the café",
+              "Tools used by the committee",
+              "Herbs for visitors without a rented plot",
+              "Plants that needed extra water"
+            ],
+            "skill": "explicit_detail",
+            "answer": "Herbs for visitors without a rented plot",
+            "correct_answer": "Herbs for visitors without a rented plot",
+            "is_correct": true,
+            "explanation": "The first paragraph says the two beds were reserved for anyone wanting herbs without renting a plot.",
+            "attempt_id": "att_7e347b59d37e4ed1",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "readgarden-v2-q2",
+            "prompt": "Why did volunteers use mulch?",
+            "options": [
+              "To reduce water loss from the soil",
+              "To collect more rain from the roof",
+              "To make extra room for plots",
+              "To protect the path from wheelbarrows"
+            ],
+            "skill": "cause_effect",
+            "answer": "To reduce water loss from the soil",
+            "correct_answer": "To reduce water loss from the soil",
+            "is_correct": true,
+            "explanation": "The passage states that mulch reduced evaporation, helping the existing water supply last longer.",
+            "attempt_id": "att_406e6d001d814a05",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "readgarden-v2-q3",
+            "prompt": "What can be inferred about the committee’s first-season measure of success?",
+            "options": [
+              "It focused only on income from the café",
+              "It was based on the number of rented plots",
+              "It ignored activities outside the garden",
+              "It included community participation as well as produce"
+            ],
+            "skill": "inference",
+            "answer": "It included community participation as well as produce",
+            "correct_answer": "It included community participation as well as produce",
+            "is_correct": true,
+            "explanation": "Although the harvest was below forecast, the committee also counted visits and workshop attendance.",
+            "attempt_id": "att_dee8b7b07d254f29",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "readgarden-v2-q4",
+            "prompt": "Why did residents choose to widen the central path?",
+            "options": [
+              "To increase the number of plots",
+              "To make shared work and deliveries easier",
+              "To help rain reach the roof tank",
+              "To provide space for more workshops"
+            ],
+            "skill": "purpose_and_reason",
+            "answer": "To make shared work and deliveries easier",
+            "correct_answer": "To make shared work and deliveries easier",
+            "is_correct": true,
+            "explanation": "The final paragraph explains wheelbarrows could not pass easily and says widening would make deliveries and shared work easier.",
+            "attempt_id": "att_017f723b0e034d41",
+            "evidence_validity": "eligible"
+          }
+        ],
+        "correct_count": 4,
+        "attempt_references": [
+          {
+            "attempt_id": "att_7e347b59d37e4ed1",
+            "question_id": "readgarden-v2-q1",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_406e6d001d814a05",
+            "question_id": "readgarden-v2-q2",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_dee8b7b07d254f29",
+            "question_id": "readgarden-v2-q3",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_017f723b0e034d41",
+            "question_id": "readgarden-v2-q4",
+            "evidence_validity": "eligible"
+          }
+        ],
+        "unassessed_capabilities": [
+          "整体阅读水平",
+          "IELTS Band",
+          "长期保持",
+          "独立迁移"
+        ]
+      }
+    },
+    {
+      "check": "preserve_listening_result",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4/listening",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "assessment_run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "skill_id": "listening",
+        "task_id": "listening-community-arts-workshop-v1",
+        "task_version": "listening-initial-community-arts-v1",
+        "rule_version": "listening-mcq-exact-choice-v1",
+        "assessment_version": "initial-v2",
+        "task_status": "completed",
+        "learning_session_id": "sess_17f2d51b3dc74088",
+        "audio_url": "/audio/listening/initial-community-arts-v1.wav",
+        "audio_sha256": "739E3D1263195E63386E04103B21BD34A1701E86549EA81CE35768482C974CC7",
+        "repeated_exposure": false,
+        "evidence_insufficient": true,
+        "limitations": [
+          "六道原创客观题只观察本材料中的细节、因果、行动推断和说话者目的理解；题量不足以估计整体听力能力或 IELTS Band。",
+          "重复曝光只依据 VerbaTrail 中记录的相同版本练习会话和题目；无法识别平台外听过的材料。"
+        ],
+        "questions": [
+          {
+            "question_id": "listening-initial-community-arts-v1-q1",
+            "prompt": "On which day will the printmaking workshop take place?",
+            "options": [
+              "Friday",
+              "Saturday",
+              "Sunday",
+              "Monday"
+            ],
+            "item_type": "explicit_detail",
+            "answer": "Saturday",
+            "correct_answer": "Saturday",
+            "is_correct": true,
+            "explanation": "Rowan confirms that the workshop is still on Saturday.",
+            "attempt_id": "att_5a2fe760acec4150",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q2",
+            "prompt": "What time will the workshop begin?",
+            "options": [
+              "10:00",
+              "10:15",
+              "10:45",
+              "10:30"
+            ],
+            "item_type": "explicit_detail",
+            "answer": "10:30",
+            "correct_answer": "10:30",
+            "is_correct": true,
+            "explanation": "The revised start time is spoken as ten thirty, half an hour later than the leaflet time.",
+            "attempt_id": "att_ebd2b3e7bd2b494a",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q3",
+            "prompt": "Which entrance should the participant use?",
+            "options": [
+              "The side entrance beside the bicycle shelter",
+              "The main doors",
+              "The café entrance",
+              "The rear delivery entrance"
+            ],
+            "item_type": "explicit_detail",
+            "answer": "The side entrance beside the bicycle shelter",
+            "correct_answer": "The side entrance beside the bicycle shelter",
+            "is_correct": true,
+            "explanation": "Rowan directs participants to the side entrance beside the bicycle shelter and says the main doors will remain locked.",
+            "attempt_id": "att_aba3858b8b804ff1",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q4",
+            "prompt": "Why has the class moved to a different room?",
+            "options": [
+              "The café needs the studio",
+              "The class has more participants",
+              "Electricians need the main hall",
+              "The bicycle shelter is being repaired"
+            ],
+            "item_type": "cause_effect",
+            "answer": "Electricians need the main hall",
+            "correct_answer": "Electricians need the main hall",
+            "is_correct": true,
+            "explanation": "Rowan says the class moved because electricians need the main hall that morning.",
+            "attempt_id": "att_2a7ed12d2b1e4118",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q5",
+            "prompt": "What should a participant do if a delayed bus makes them arrive after 10:40?",
+            "options": [
+              "Wait until the café opens",
+              "Ring the bell marked “workshops”",
+              "Go around to the main doors",
+              "Call the electrician"
+            ],
+            "item_type": "action_inference",
+            "answer": "Ring the bell marked “workshops”",
+            "correct_answer": "Ring the bell marked “workshops”",
+            "is_correct": true,
+            "explanation": "For arrivals after ten forty, Rowan says to ring the workshops bell so reception can let the participant in.",
+            "attempt_id": "att_52563134e33e4301",
+            "evidence_validity": "eligible"
+          },
+          {
+            "question_id": "listening-initial-community-arts-v1-q6",
+            "prompt": "Why did Rowan leave this message?",
+            "options": [
+              "To advertise a different workshop",
+              "To ask the participant to bring paper and ink",
+              "To cancel the Saturday session",
+              "To confirm revised arrangements and ask for a reply only if attendance is no longer possible"
+            ],
+            "item_type": "speaker_purpose",
+            "answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+            "correct_answer": "To confirm revised arrangements and ask for a reply only if attendance is no longer possible",
+            "is_correct": true,
+            "explanation": "Rowan says the centre needs to confirm the updated arrangements were received and asks for a reply only if the participant cannot attend.",
+            "attempt_id": "att_866071180dd34874",
+            "evidence_validity": "eligible"
+          }
+        ],
+        "correct_count": 6,
+        "attempt_references": [
+          {
+            "attempt_id": "att_5a2fe760acec4150",
+            "question_id": "listening-initial-community-arts-v1-q1",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_ebd2b3e7bd2b494a",
+            "question_id": "listening-initial-community-arts-v1-q2",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_aba3858b8b804ff1",
+            "question_id": "listening-initial-community-arts-v1-q3",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_2a7ed12d2b1e4118",
+            "question_id": "listening-initial-community-arts-v1-q4",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_52563134e33e4301",
+            "question_id": "listening-initial-community-arts-v1-q5",
+            "evidence_validity": "eligible"
+          },
+          {
+            "attempt_id": "att_866071180dd34874",
+            "question_id": "listening-initial-community-arts-v1-q6",
+            "evidence_validity": "eligible"
+          }
+        ],
+        "unassessed_capabilities": [
+          "整体听力能力",
+          "IELTS Band",
+          "长期保持",
+          "独立迁移"
+        ],
+        "observation": "本次原创听力材料中的有限客观作答表现；答错记录保留为观察，不代表能力薄弱或掌握。"
+      }
+    },
+    {
+      "check": "check_run_and_task_statuses",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_140e19dbce3448d4",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "run_id": "asr_140e19dbce3448d4",
+        "learner_id": "c1-http-learner",
+        "assessment_version": "initial-v2",
+        "status": "in_progress",
+        "created_at": "2026-11-17T03:10:52.297204Z",
+        "updated_at": "2026-11-17T03:10:52.434793Z",
+        "completed_at": null,
+        "tasks": [
+          {
+            "skill_id": "listening",
+            "status": "completed",
+            "evidence_source": "attempt",
+            "evidence_reference": "att_866071180dd34874"
+          },
+          {
+            "skill_id": "speaking",
+            "status": "completed",
+            "evidence_source": "speaking_assessment_recording",
+            "evidence_reference": "c1-http-synthetic-metadata"
+          },
+          {
+            "skill_id": "reading",
+            "status": "completed",
+            "evidence_source": "attempt",
+            "evidence_reference": "att_017f723b0e034d41"
+          },
+          {
+            "skill_id": "writing",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          }
+        ]
+      }
+    },
+    {
+      "check": "learner_model_stays_unassessed",
+      "method": "GET",
+      "path": "/api/v1/learner-model",
+      "request": {
+        "params": {
+          "learner_id": "c1-http-learner"
+        }
+      },
+      "status": 200,
+      "expected": 200,
+      "response": {
+        "contract_version": "1.0",
+        "learner_id": "c1-http-learner",
+        "language_code": "en",
+        "skills": [
+          {
+            "skill_id": "listening",
+            "assessment_status": "observed",
+            "has_learning_record": true,
+            "evidence_levels": [
+              "initial_assessment"
+            ],
+            "evidence": [
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "listening",
+                "competency_id": "listening_detail",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_5a2fe760acec4150",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "listening-mcq-exact-choice-v1",
+                "content_version": "listening-initial-community-arts-v1",
+                "observed_at": "2026-11-17T03:10:52.370316Z",
+                "observation": "正确",
+                "limitations": [
+                  "仅反映具体练习的客观作答，不能推断整体听力水平或 IELTS 分数。"
+                ]
+              },
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "listening",
+                "competency_id": "listening_detail",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_ebd2b3e7bd2b494a",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "listening-mcq-exact-choice-v1",
+                "content_version": "listening-initial-community-arts-v1",
+                "observed_at": "2026-11-17T03:10:52.370319Z",
+                "observation": "正确",
+                "limitations": [
+                  "仅反映具体练习的客观作答，不能推断整体听力水平或 IELTS 分数。"
+                ]
+              },
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "listening",
+                "competency_id": "listening_detail",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_aba3858b8b804ff1",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "listening-mcq-exact-choice-v1",
+                "content_version": "listening-initial-community-arts-v1",
+                "observed_at": "2026-11-17T03:10:52.370321Z",
+                "observation": "正确",
+                "limitations": [
+                  "仅反映具体练习的客观作答，不能推断整体听力水平或 IELTS 分数。"
+                ]
+              },
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "listening",
+                "competency_id": "listening_cause_effect",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_2a7ed12d2b1e4118",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "listening-mcq-exact-choice-v1",
+                "content_version": "listening-initial-community-arts-v1",
+                "observed_at": "2026-11-17T03:10:52.370323Z",
+                "observation": "正确",
+                "limitations": [
+                  "仅反映具体练习的客观作答，不能推断整体听力水平或 IELTS 分数。"
+                ]
+              },
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "listening",
+                "competency_id": "listening_inference",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_52563134e33e4301",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "listening-mcq-exact-choice-v1",
+                "content_version": "listening-initial-community-arts-v1",
+                "observed_at": "2026-11-17T03:10:52.370324Z",
+                "observation": "正确",
+                "limitations": [
+                  "仅反映具体练习的客观作答，不能推断整体听力水平或 IELTS 分数。"
+                ]
+              },
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "listening",
+                "competency_id": "listening_speaker_purpose",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_866071180dd34874",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "listening-mcq-exact-choice-v1",
+                "content_version": "listening-initial-community-arts-v1",
+                "observed_at": "2026-11-17T03:10:52.370326Z",
+                "observation": "正确",
+                "limitations": [
+                  "仅反映具体练习的客观作答，不能推断整体听力水平或 IELTS 分数。"
+                ]
+              }
+            ],
+            "limitations": [
+              "仅反映具体练习的客观作答，不能推断整体听力水平或 IELTS 分数。"
+            ]
+          },
+          {
+            "skill_id": "speaking",
+            "assessment_status": "not_assessed",
+            "has_learning_record": true,
+            "evidence_levels": [
+              "practice_activity"
+            ],
+            "evidence": [
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "speaking",
+                "competency_id": "speaking_expression",
+                "assessment_status": "not_assessed",
+                "evidence_type": "practice_activity",
+                "evidence_source": "speaking_practice",
+                "evidence_reference": "c1-ordinary-practice",
+                "evidence_validity": "not_evaluated",
+                "evaluation_method": "learner_self_check",
+                "evaluation_rule_version": null,
+                "content_version": "speaking-part1-v1",
+                "observed_at": "2026-11-17T03:10:52.411204Z",
+                "observation": "录音练习 20 秒；用户自查 1 项",
+                "limitations": [
+                  "自查由学习者提供，并非系统语音检测；口语水平未评估。",
+                  "初始评估只登记客户端申报的录音元数据，服务器无法验证录音是否存在，也无法确认本机录音是否仍可用。"
+                ]
+              },
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "speaking",
+                "competency_id": "speaking_expression",
+                "assessment_status": "not_assessed",
+                "evidence_type": "assessment_activity",
+                "evidence_source": "speaking_assessment_recording",
+                "evidence_reference": "c1-http-synthetic-metadata",
+                "evidence_validity": "not_evaluated",
+                "evaluation_method": "client_reported_metadata",
+                "evaluation_rule_version": null,
+                "content_version": "speaking-initial-community-skill-v1",
+                "observed_at": "2026-11-17T03:10:52.434793Z",
+                "observation": "已登记口语初始任务的客户端录音元数据，语音未核验。",
+                "limitations": [
+                  "自查由学习者提供，并非系统语音检测；口语水平未评估。",
+                  "初始评估只登记客户端申报的录音元数据，服务器无法验证录音是否存在，也无法确认本机录音是否仍可用。"
+                ]
+              }
+            ],
+            "limitations": [
+              "自查由学习者提供，并非系统语音检测；口语水平未评估。",
+              "初始评估只登记客户端申报的录音元数据，服务器无法验证录音是否存在，也无法确认本机录音是否仍可用。"
+            ]
+          },
+          {
+            "skill_id": "reading",
+            "assessment_status": "observed",
+            "has_learning_record": true,
+            "evidence_levels": [
+              "initial_assessment"
+            ],
+            "evidence": [
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "reading",
+                "competency_id": "assessment-reading-initial-v2",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_7e347b59d37e4ed1",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "reading-mcq-evidence-v2",
+                "content_version": "reading-initial-community-garden-v2",
+                "observed_at": "2026-11-17T03:10:52.338590Z",
+                "observation": "正确",
+                "limitations": [
+                  "作答、独立迁移及延迟复习只反映相应题目，不代表整体阅读水平或永久掌握。旧版 Reading 初始评估 v1 的正确项全部位于第一选项，保留为历史记录但不作为无偏能力证据。"
+                ]
+              },
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "reading",
+                "competency_id": "assessment-reading-initial-v2",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_406e6d001d814a05",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "reading-mcq-evidence-v2",
+                "content_version": "reading-initial-community-garden-v2",
+                "observed_at": "2026-11-17T03:10:52.338595Z",
+                "observation": "正确",
+                "limitations": [
+                  "作答、独立迁移及延迟复习只反映相应题目，不代表整体阅读水平或永久掌握。旧版 Reading 初始评估 v1 的正确项全部位于第一选项，保留为历史记录但不作为无偏能力证据。"
+                ]
+              },
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "reading",
+                "competency_id": "assessment-reading-initial-v2",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_dee8b7b07d254f29",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "reading-mcq-evidence-v2",
+                "content_version": "reading-initial-community-garden-v2",
+                "observed_at": "2026-11-17T03:10:52.338597Z",
+                "observation": "正确",
+                "limitations": [
+                  "作答、独立迁移及延迟复习只反映相应题目，不代表整体阅读水平或永久掌握。旧版 Reading 初始评估 v1 的正确项全部位于第一选项，保留为历史记录但不作为无偏能力证据。"
+                ]
+              },
+              {
+                "learner_id": "c1-http-learner",
+                "language_code": "en",
+                "skill_id": "reading",
+                "competency_id": "assessment-reading-initial-v2",
+                "assessment_status": "observed",
+                "evidence_type": "initial_assessment",
+                "evidence_source": "attempt",
+                "evidence_reference": "att_017f723b0e034d41",
+                "evidence_validity": "eligible",
+                "evaluation_method": "rule_check",
+                "evaluation_rule_version": "reading-mcq-evidence-v2",
+                "content_version": "reading-initial-community-garden-v2",
+                "observed_at": "2026-11-17T03:10:52.338599Z",
+                "observation": "正确",
+                "limitations": [
+                  "作答、独立迁移及延迟复习只反映相应题目，不代表整体阅读水平或永久掌握。旧版 Reading 初始评估 v1 的正确项全部位于第一选项，保留为历史记录但不作为无偏能力证据。"
+                ]
+              }
+            ],
+            "limitations": [
+              "作答、独立迁移及延迟复习只反映相应题目，不代表整体阅读水平或永久掌握。旧版 Reading 初始评估 v1 的正确项全部位于第一选项，保留为历史记录但不作为无偏能力证据。"
+            ]
+          },
+          {
+            "skill_id": "writing",
+            "assessment_status": "not_assessed",
+            "has_learning_record": false,
+            "evidence_levels": [],
+            "evidence": [],
+            "limitations": [
+              "字数和修订行为不评价写作语义质量；写作水平未评估。"
+            ]
+          }
+        ],
+        "learning_goal": null
+      }
+    }
+  ],
+  "scope": "Real HTTP with synthetic recording metadata. No audio was sent or captured from a microphone.",
+  "practice_compatibility": "The ordinary practice fixture matches the existing browser's UTC timestamp. The first HTTP run exposed pre-existing loss of non-UTC offsets in ordinary practice after SQLite reload. The C1 registration separately verifies offset normalization.",
+  "migration": [
+    "0011_assessment_reading_task",
+    "0012_speaking_assessment"
+  ],
+  "uvicorn_restarted": true,
+  "isolated_database": {
+    "counts": {
+      "registrations": 1,
+      "speaking_practices": 1,
+      "learning_sessions": 3,
+      "attempts": 10
+    },
+    "linked_metadata": [
+      "c1-http-synthetic-metadata",
+      "asr_140e19dbce3448d4",
+      "completed",
+      "c1-http-synthetic-metadata"
+    ]
+  },
+  "formal_database_sha256": {
+    "before": "BC4656AA2BC624F0A257254BA25597DB3031126FDFCBE79E5F3BB0CB607793E0",
+    "after": "BC4656AA2BC624F0A257254BA25597DB3031126FDFCBE79E5F3BB0CB607793E0"
+  }
+}
