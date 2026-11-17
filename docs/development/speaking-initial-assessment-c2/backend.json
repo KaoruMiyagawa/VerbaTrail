@@ -1,0 +1,331 @@
+{
+  "status": "pass",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/openapi.json",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exams/catalog",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exams/catalog",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/profile/exam-preparation",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/profile/exam-preparation",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/speaking",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/speaking/start",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/speaking/complete",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/speaking/complete",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/reading",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/speaking",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/speaking",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/listening",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/reading",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/reading/start",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/reading/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/reading/submit",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/listening/start",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "status": 206
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb/listening/submit",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_5c33ba027c3d4ffb",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exams/catalog",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/profile/exam-preparation",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exams/catalog",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/profile/exam-preparation",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/speaking/prompts",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/speaking/practices",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/speaking/prompts",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/speaking/practices",
+      "status": 200
+    }
+  ],
+  "counts": {
+    "runs": 1,
+    "registrations": 1,
+    "attempts": 10,
+    "ordinary_speaking_practices": 0
+  },
+  "run_id": "asr_5c33ba027c3d4ffb",
+  "run_status": "in_progress",
+  "recording_id": "ebb8305e-2590-4c55-a743-94c00298ce78",
+  "tasks": {
+    "listening": {
+      "status": "completed",
+      "evidence_reference": "att_78748161fc1a4e6a"
+    },
+    "speaking": {
+      "status": "completed",
+      "evidence_reference": "ebb8305e-2590-4c55-a743-94c00298ce78"
+    },
+    "reading": {
+      "status": "completed",
+      "evidence_reference": "att_79e9073b4c05445c"
+    },
+    "writing": {
+      "status": "not_started",
+      "evidence_reference": null
+    }
+  },
+  "formal_database_sha256": {
+    "before": "BC4656AA2BC624F0A257254BA25597DB3031126FDFCBE79E5F3BB0CB607793E0",
+    "after": "BC4656AA2BC624F0A257254BA25597DB3031126FDFCBE79E5F3BB0CB607793E0"
+  }
+}

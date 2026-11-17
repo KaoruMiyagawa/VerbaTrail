@@ -1,0 +1,1727 @@
+{
+  "status": "pass",
+  "risks": {
+    "response_loss": "pass",
+    "isolation": "pass",
+    "faults": "pass",
+    "mobile": "pass"
+  },
+  "runs": {
+    "a": "asr_1173ea567c544f3e",
+    "b": "asr_87fe48035e49439b",
+    "legacy": "asr_f4f66e38b1f644f5"
+  },
+  "registrations": {
+    "asr_1173ea567c544f3e": {
+      "learner_id": "default_learner",
+      "recording_id": "5e87ad01-05a9-466f-b43c-80363ff3f24f",
+      "task_version": "speaking-initial-community-skill-v1",
+      "prompt_id": "community-skill-exchange",
+      "prompt_version": "community-skill-exchange-v1",
+      "duration_seconds": 1.32,
+      "recorded_at": "2026-11-17T03:40:53.849Z",
+      "idempotency_key": "e2031696-4101-41c6-80b3-ab365a725675"
+    },
+    "asr_87fe48035e49439b": {
+      "learner_id": "default_learner",
+      "recording_id": "3ab5aad9-5e87-4ff2-9211-1313c6ecd363",
+      "task_version": "speaking-initial-community-skill-v1",
+      "prompt_id": "community-skill-exchange",
+      "prompt_version": "community-skill-exchange-v1",
+      "duration_seconds": 1.41,
+      "recorded_at": "2026-11-17T03:41:04.341Z",
+      "idempotency_key": "393fc1fa-d318-4ef1-b2c1-85e5f0a7f151"
+    },
+    "asr_0c2c1b9cd89c4dfd": {
+      "learner_id": "default_learner",
+      "recording_id": "2ec078d5-4c22-41f9-ab5e-e34420495bd8",
+      "task_version": "speaking-initial-community-skill-v1",
+      "prompt_id": "community-skill-exchange",
+      "prompt_version": "community-skill-exchange-v1",
+      "duration_seconds": 1.88,
+      "recorded_at": "2026-11-17T03:41:09.776Z",
+      "idempotency_key": "28f3d2c6-cc98-4acc-bdec-059f4ed86572"
+    },
+    "asr_d05ac88f8f514e4c": {
+      "learner_id": "default_learner",
+      "recording_id": "5992c4bb-3656-4766-9630-c419bf27e40f",
+      "task_version": "speaking-initial-community-skill-v1",
+      "prompt_id": "community-skill-exchange",
+      "prompt_version": "community-skill-exchange-v1",
+      "duration_seconds": 1.85,
+      "recorded_at": "2026-11-17T03:41:19.600Z",
+      "idempotency_key": "f0f885c2-03b1-4599-9ea6-0faca7a4059f"
+    }
+  },
+  "requests": [
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886852966,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886852966,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886852966,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886853095,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/reading",
+      "at_ms": 1794886853103,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/listening",
+      "at_ms": 1794886853103,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking",
+      "at_ms": 1794886853312,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking/start",
+      "at_ms": 1794886853532,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886853576,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886853581,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886855437,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886855437,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886855437,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886855458,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/reading",
+      "at_ms": 1794886855478,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/listening",
+      "at_ms": 1794886855478,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking",
+      "at_ms": 1794886855478,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking/complete",
+      "at_ms": 1794886855775,
+      "body": "{\"learner_id\":\"default_learner\",\"recording_id\":\"5e87ad01-05a9-466f-b43c-80363ff3f24f\",\"task_version\":\"speaking-initial-community-skill-v1\",\"prompt_id\":\"community-skill-exchange\",\"prompt_version\":\"community-skill-exchange-v1\",\"duration_seconds\":1.32,\"recorded_at\":\"2026-11-17T03:40:53.849Z\",\"idempotency_key\":\"e2031696-4101-41c6-80b3-ab365a725675\"}",
+      "failure": "net::ERR_CONNECTION_RESET"
+    },
+    {
+      "profile": "primary",
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking/complete",
+      "at_ms": 1794886855775,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking",
+      "at_ms": 1794886855793,
+      "failure": "net::ERR_CONNECTION_RESET"
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking",
+      "at_ms": 1794886856087,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886856105,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886856124,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886856904,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886856905,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886856905,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886856919,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/reading",
+      "at_ms": 1794886856929,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/listening",
+      "at_ms": 1794886856929,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking",
+      "at_ms": 1794886856931,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b",
+      "at_ms": 1794886857677,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/reading",
+      "at_ms": 1794886857688,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/listening",
+      "at_ms": 1794886857688,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking",
+      "at_ms": 1794886857688,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking/start",
+      "at_ms": 1794886857908,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b",
+      "at_ms": 1794886857923,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886857936,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886858149,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/reading",
+      "at_ms": 1794886858161,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/listening",
+      "at_ms": 1794886858161,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking",
+      "at_ms": 1794886858162,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b",
+      "at_ms": 1794886858382,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/reading",
+      "at_ms": 1794886858397,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/listening",
+      "at_ms": 1794886858398,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking",
+      "at_ms": 1794886858398,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886858925,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/reading",
+      "at_ms": 1794886858936,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/listening",
+      "at_ms": 1794886858937,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking",
+      "at_ms": 1794886858937,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b",
+      "at_ms": 1794886859147,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/reading",
+      "at_ms": 1794886859153,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/listening",
+      "at_ms": 1794886859153,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking",
+      "at_ms": 1794886859153,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_f4f66e38b1f644f5",
+      "at_ms": 1794886859678,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_f4f66e38b1f644f5/reading",
+      "at_ms": 1794886859686,
+      "status": 409
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_f4f66e38b1f644f5/listening",
+      "at_ms": 1794886859687,
+      "status": 409
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_f4f66e38b1f644f5/speaking",
+      "at_ms": 1794886859687,
+      "status": 409
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886859923,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/reading",
+      "at_ms": 1794886859945,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/listening",
+      "at_ms": 1794886859945,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking",
+      "at_ms": 1794886859945,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/exams/catalog",
+      "at_ms": 1794886860434,
+      "status": 200,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/profile/exam-preparation",
+      "at_ms": 1794886860434,
+      "status": 200,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/exams/catalog",
+      "at_ms": 1794886860434,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/profile/exam-preparation",
+      "at_ms": 1794886860435,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/speaking/prompts",
+      "at_ms": 1794886860568,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/speaking/practices",
+      "at_ms": 1794886860568,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/speaking/prompts",
+      "at_ms": 1794886860568,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/speaking/practices",
+      "at_ms": 1794886860568,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886860783,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886860783,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886860783,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886860792,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/reading",
+      "at_ms": 1794886860800,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/listening",
+      "at_ms": 1794886860801,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b",
+      "at_ms": 1794886860943,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/reading",
+      "at_ms": 1794886860955,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/listening",
+      "at_ms": 1794886860955,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking",
+      "at_ms": 1794886861158,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886861563,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886861563,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886861563,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e",
+      "at_ms": 1794886861707,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/reading",
+      "at_ms": 1794886861718,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/listening",
+      "at_ms": 1794886861718,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_1173ea567c544f3e/speaking",
+      "at_ms": 1794886861937,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking/complete",
+      "at_ms": 1794886866305,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking/complete",
+      "at_ms": 1794886866305,
+      "body": "{\"learner_id\":\"default_learner\",\"recording_id\":\"3ab5aad9-5e87-4ff2-9211-1313c6ecd363\",\"task_version\":\"speaking-initial-community-skill-v1\",\"prompt_id\":\"community-skill-exchange\",\"prompt_version\":\"community-skill-exchange-v1\",\"duration_seconds\":1.41,\"recorded_at\":\"2026-11-17T03:41:04.341Z\",\"idempotency_key\":\"393fc1fa-d318-4ef1-b2c1-85e5f0a7f151\"}",
+      "failure": "net::ERR_CONNECTION_RESET"
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking",
+      "at_ms": 1794886866317,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886866948,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886866948,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886866948,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b",
+      "at_ms": 1794886866958,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/reading",
+      "at_ms": 1794886866967,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/listening",
+      "at_ms": 1794886866967,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking",
+      "at_ms": 1794886866967,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking",
+      "at_ms": 1794886867337,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b/speaking/complete",
+      "at_ms": 1794886867353,
+      "body": "{\"learner_id\":\"default_learner\",\"recording_id\":\"3ab5aad9-5e87-4ff2-9211-1313c6ecd363\",\"task_version\":\"speaking-initial-community-skill-v1\",\"prompt_id\":\"community-skill-exchange\",\"prompt_version\":\"community-skill-exchange-v1\",\"duration_seconds\":1.41,\"recorded_at\":\"2026-11-17T03:41:04.341Z\",\"idempotency_key\":\"393fc1fa-d318-4ef1-b2c1-85e5f0a7f151\"}",
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_87fe48035e49439b",
+      "at_ms": 1794886867374,
+      "status": 200
+    },
+    {
+      "profile": "primary",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886867380,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886867488,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886867490,
+      "body": "{\"learner_id\":\"default_learner\",\"assessment_version\":\"initial-v2\",\"idempotency_key\":\"61f0d5d9-8863-4df0-a1da-2258a3961a90\"}",
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886867507,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd",
+      "at_ms": 1794886867515,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd/reading",
+      "at_ms": 1794886867525,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd/listening",
+      "at_ms": 1794886867525,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd/speaking",
+      "at_ms": 1794886867525,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd/speaking/start",
+      "at_ms": 1794886868986,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd",
+      "at_ms": 1794886869014,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886869027,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd/speaking/complete",
+      "at_ms": 1794886873591,
+      "body": "{\"learner_id\":\"default_learner\",\"recording_id\":\"2ec078d5-4c22-41f9-ab5e-e34420495bd8\",\"task_version\":\"speaking-initial-community-skill-v1\",\"prompt_id\":\"community-skill-exchange\",\"prompt_version\":\"community-skill-exchange-v1\",\"duration_seconds\":1.88,\"recorded_at\":\"2026-11-17T03:41:09.776Z\",\"idempotency_key\":\"28f3d2c6-cc98-4acc-bdec-059f4ed86572\"}",
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd/speaking/complete",
+      "at_ms": 1794886873591,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd",
+      "at_ms": 1794886873615,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886873622,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886873794,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886873794,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886873794,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd",
+      "at_ms": 1794886873814,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd/reading",
+      "at_ms": 1794886873822,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd/listening",
+      "at_ms": 1794886873823,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_0c2c1b9cd89c4dfd/speaking",
+      "at_ms": 1794886873827,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886877454,
+      "body": "{\"learner_id\":\"default_learner\",\"assessment_version\":\"initial-v2\",\"idempotency_key\":\"0bc746e5-1ef9-4890-afa3-ec130d53bb9c\"}",
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886877468,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c",
+      "at_ms": 1794886877480,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c/reading",
+      "at_ms": 1794886877492,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c/listening",
+      "at_ms": 1794886877493,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c/speaking",
+      "at_ms": 1794886877493,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c/speaking/start",
+      "at_ms": 1794886878903,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c",
+      "at_ms": 1794886878921,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886878928,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c/speaking/complete",
+      "at_ms": 1794886883438,
+      "body": "{\"learner_id\":\"default_learner\",\"recording_id\":\"5992c4bb-3656-4766-9630-c419bf27e40f\",\"task_version\":\"speaking-initial-community-skill-v1\",\"prompt_id\":\"community-skill-exchange\",\"prompt_version\":\"community-skill-exchange-v1\",\"duration_seconds\":1.85,\"recorded_at\":\"2026-11-17T03:41:19.600Z\",\"idempotency_key\":\"f0f885c2-03b1-4599-9ea6-0faca7a4059f\"}",
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c/speaking/complete",
+      "at_ms": 1794886883438,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c",
+      "at_ms": 1794886883464,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886883470,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886883656,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886883657,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886883657,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c",
+      "at_ms": 1794886883666,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c/reading",
+      "at_ms": 1794886883675,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c/listening",
+      "at_ms": 1794886883675,
+      "status": 200
+    },
+    {
+      "profile": "separate-profile",
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_d05ac88f8f514e4c/speaking",
+      "at_ms": 1794886883675,
+      "status": 200
+    }
+  ],
+  "timeline": [
+    {
+      "at_ms": 1794886855791,
+      "event": "response_dropped",
+      "kind": "committed_post_response",
+      "status": 200
+    },
+    {
+      "at_ms": 1794886855798,
+      "event": "response_dropped",
+      "kind": "automatic_reconciliation_get_response",
+      "status": 200
+    },
+    {
+      "at_ms": 1794886855971,
+      "event": "manual_retry"
+    },
+    {
+      "at_ms": 1794886858169,
+      "event": "A_http_response_held",
+      "run": "asr_1173ea567c544f3e",
+      "status": 200
+    },
+    {
+      "at_ms": 1794886858501,
+      "event": "A_http_response_released_after_B_selection"
+    },
+    {
+      "at_ms": 1794886859032,
+      "event": "A_IndexedDB_completion_held"
+    },
+    {
+      "at_ms": 1794886859254,
+      "event": "A_IndexedDB_completion_released_after_B_selection"
+    },
+    {
+      "at_ms": 1794886866313,
+      "event": "B_post_blocked_before_upstream",
+      "run": "asr_87fe48035e49439b"
+    }
+  ],
+  "screenshots": [
+    "response-lost-pending.png",
+    "separate-profile-no-audio.png",
+    "indexeddb-save-fault.png",
+    "touch-premium-restored.png",
+    "touch-noir-restored.png"
+  ],
+  "checks": {
+    "response_loss": {
+      "local": {
+        "runId": "asr_1173ea567c544f3e",
+        "bytes": 13618,
+        "metadata": {
+          "learner_id": "default_learner",
+          "recording_id": "5e87ad01-05a9-466f-b43c-80363ff3f24f",
+          "task_version": "speaking-initial-community-skill-v1",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "duration_seconds": 1.32,
+          "recorded_at": "2026-11-17T03:40:53.849Z",
+          "idempotency_key": "e2031696-4101-41c6-80b3-ab365a725675"
+        },
+        "registration": "local"
+      },
+      "observed": {
+        "media": [
+          {
+            "acquired": true,
+            "tracks": 1
+          }
+        ],
+        "chunks": [
+          {
+            "bytes": 13618,
+            "mime": "audio/webm;codecs=opus",
+            "discarded": false
+          }
+        ],
+        "tracks": [
+          "ended"
+        ]
+      },
+      "intercepted": [
+        {
+          "kind": "committed_post_response",
+          "status": 200
+        },
+        {
+          "kind": "automatic_reconciliation_get_response",
+          "status": 200
+        }
+      ],
+      "upstream": {
+        "assessment_run_id": "asr_1173ea567c544f3e",
+        "learner_id": "default_learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "completed",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": false,
+        "metadata_status": "registered",
+        "recording": {
+          "recording_id": "5e87ad01-05a9-466f-b43c-80363ff3f24f",
+          "duration_seconds": 1.32,
+          "recorded_at": "2026-11-17T03:40:53.849000Z",
+          "registered_at": "2026-11-17T03:40:55.783432Z",
+          "provenance": "client_reported"
+        },
+        "evidence_source": "speaking_assessment_recording",
+        "evidence_reference": "5e87ad01-05a9-466f-b43c-80363ff3f24f",
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      },
+      "firstPlayback": {
+        "time": 0.229581,
+        "local": true
+      },
+      "refreshedPlayback": {
+        "time": 0.288477,
+        "local": true
+      },
+      "browser_complete_posts": 1
+    },
+    "isolation": {
+      "a": {
+        "assessment_run_id": "asr_1173ea567c544f3e",
+        "learner_id": "default_learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "completed",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": false,
+        "metadata_status": "registered",
+        "recording": {
+          "recording_id": "5e87ad01-05a9-466f-b43c-80363ff3f24f",
+          "duration_seconds": 1.32,
+          "recorded_at": "2026-11-17T03:40:53.849000Z",
+          "registered_at": "2026-11-17T03:40:55.783432Z",
+          "provenance": "client_reported"
+        },
+        "evidence_source": "speaking_assessment_recording",
+        "evidence_reference": "5e87ad01-05a9-466f-b43c-80363ff3f24f",
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      },
+      "b": {
+        "assessment_run_id": "asr_87fe48035e49439b",
+        "learner_id": "default_learner",
+        "assessment_version": "initial-v2",
+        "skill_id": "speaking",
+        "task_status": "in_progress",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt": {
+          "task_id": "speaking-initial-community-skill",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "text": "Your neighborhood is starting a weekly skill exchange. Tell the organizer about a practical skill you could teach a small group. Explain what the group would do first, and how you would help someone who found that step difficult.",
+          "instructions": "Record one response in English. Save the audio in this browser before registering its metadata.",
+          "suggested_seconds": 60,
+          "source": "Original prompt written for VerbaTrail; no IELTS test material used."
+        },
+        "repeated_exposure": true,
+        "metadata_status": "not_registered",
+        "recording": null,
+        "evidence_source": null,
+        "evidence_reference": null,
+        "evidence_validity": "not_evaluated",
+        "audio_available_on_server": false,
+        "local_audio_availability": "unknown",
+        "evaluation_status": "not_assessed",
+        "limitations": [
+          "Recording metadata is reported by the client. The server cannot verify that a recording exists or evaluate its content or quality.",
+          "Audio is intended for local browser storage. Availability on the current device must be checked locally.",
+          "Task completion means metadata was registered. Duration is guidance only; speaking ability has not been assessed."
+        ]
+      },
+      "legacy": {
+        "run_id": "asr_f4f66e38b1f644f5",
+        "learner_id": "default_learner",
+        "assessment_version": "initial-v1",
+        "status": "in_progress",
+        "created_at": "2026-11-17T03:40:50.442915Z",
+        "updated_at": "2026-11-17T03:40:50.442917Z",
+        "completed_at": null,
+        "tasks": [
+          {
+            "skill_id": "listening",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "speaking",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "reading",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          },
+          {
+            "skill_id": "writing",
+            "status": "not_started",
+            "evidence_source": null,
+            "evidence_reference": null
+          }
+        ]
+      },
+      "fresh_profile_has_blob": false,
+      "healthy_after_409": [
+        "Reading 4/4",
+        "Listening 6/6 and audio loaded",
+        "ordinary Speaking prompt catalogue"
+      ]
+    },
+    "faults": {
+      "denied": "麦克风权限被拒绝，请在浏览器设置中允许访问。重新读取 Speaking",
+      "interrupted": "录音已中断，本次录音未保存。请重新录制。重新读取 Speaking",
+      "storage": "录音保存失败。请检查浏览器存储空间或设置，再重试保存。",
+      "blocked": 1,
+      "pendingPlayback": {
+        "time": 0.279808,
+        "local": true
+      },
+      "saved": {
+        "runId": "asr_87fe48035e49439b",
+        "bytes": 14584,
+        "metadata": {
+          "learner_id": "default_learner",
+          "recording_id": "3ab5aad9-5e87-4ff2-9211-1313c6ecd363",
+          "task_version": "speaking-initial-community-skill-v1",
+          "prompt_id": "community-skill-exchange",
+          "prompt_version": "community-skill-exchange-v1",
+          "duration_seconds": 1.41,
+          "recorded_at": "2026-11-17T03:41:04.341Z",
+          "idempotency_key": "393fc1fa-d318-4ef1-b2c1-85e5f0a7f151"
+        },
+        "registration": "local"
+      },
+      "empty_capture_rejected": true,
+      "browser_complete_posts": 2
+    },
+    "mobile": [
+      {
+        "theme": "premium",
+        "run": "asr_0c2c1b9cd89c4dfd",
+        "layout": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "theme": "premium"
+        },
+        "record": {
+          "runId": "asr_0c2c1b9cd89c4dfd",
+          "bytes": 22626,
+          "metadata": {
+            "learner_id": "default_learner",
+            "recording_id": "2ec078d5-4c22-41f9-ab5e-e34420495bd8",
+            "task_version": "speaking-initial-community-skill-v1",
+            "prompt_id": "community-skill-exchange",
+            "prompt_version": "community-skill-exchange-v1",
+            "duration_seconds": 1.88,
+            "recorded_at": "2026-11-17T03:41:09.776Z",
+            "idempotency_key": "28f3d2c6-cc98-4acc-bdec-059f4ed86572"
+          },
+          "registration": "local"
+        },
+        "playback": {
+          "time": 0.241961,
+          "local": true
+        },
+        "focus": [
+          {
+            "label": "开始 Speaking",
+            "focus_visible": true,
+            "outline": "solid",
+            "outline_width": "3px",
+            "top": 728.96875,
+            "bottom": 772.0625,
+            "header_bottom": 160,
+            "actionable": true
+          },
+          {
+            "label": "开始录音",
+            "focus_visible": true,
+            "outline": "solid",
+            "outline_width": "3px",
+            "top": 706.046875,
+            "bottom": 749.140625,
+            "header_bottom": 160,
+            "actionable": true
+          },
+          {
+            "label": "停止录音",
+            "focus_visible": true,
+            "outline": "solid",
+            "outline_width": "3px",
+            "top": 781.046875,
+            "bottom": 824.140625,
+            "header_bottom": 160,
+            "actionable": true
+          },
+          {
+            "label": "登记本次录音任务",
+            "focus_visible": true,
+            "outline": "solid",
+            "outline_width": "3px",
+            "top": 705.53125,
+            "bottom": 748.625,
+            "header_bottom": 160,
+            "actionable": true
+          }
+        ],
+        "taps": [
+          {
+            "label": "开始新一轮评估",
+            "x": 100,
+            "y": 396.78125
+          },
+          {
+            "label": "Speaking：not_started",
+            "x": 119.78125,
+            "y": 639.9921875
+          },
+          {
+            "label": "开始 Speaking",
+            "x": 80.5078125,
+            "y": 750.515625
+          },
+          {
+            "label": "开始录音",
+            "x": 195,
+            "y": 727.59375
+          },
+          {
+            "label": "停止录音",
+            "x": 195,
+            "y": 802.59375
+          },
+          {
+            "label": "native audio play",
+            "x": 56,
+            "y": 658.53125
+          },
+          {
+            "label": "登记本次录音任务",
+            "x": 195,
+            "y": 727.078125
+          },
+          {
+            "label": "registered result",
+            "x": 195,
+            "y": 597.8515625
+          }
+        ],
+        "gestures": [
+          {
+            "label": "Speaking：not_started",
+            "start": 735,
+            "end": 285,
+            "before": 0,
+            "after": 225
+          },
+          {
+            "label": "native audio play",
+            "start": 735,
+            "end": 285,
+            "before": 577,
+            "after": 827
+          },
+          {
+            "label": "registered result",
+            "start": 735,
+            "end": 285,
+            "before": 0,
+            "after": 435
+          },
+          {
+            "label": "registered result",
+            "start": 735,
+            "end": 285,
+            "before": 435,
+            "after": 727
+          }
+        ]
+      },
+      {
+        "theme": "noir",
+        "run": "asr_d05ac88f8f514e4c",
+        "layout": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "theme": "noir"
+        },
+        "record": {
+          "runId": "asr_d05ac88f8f514e4c",
+          "bytes": 21346,
+          "metadata": {
+            "learner_id": "default_learner",
+            "recording_id": "5992c4bb-3656-4766-9630-c419bf27e40f",
+            "task_version": "speaking-initial-community-skill-v1",
+            "prompt_id": "community-skill-exchange",
+            "prompt_version": "community-skill-exchange-v1",
+            "duration_seconds": 1.85,
+            "recorded_at": "2026-11-17T03:41:19.600Z",
+            "idempotency_key": "f0f885c2-03b1-4599-9ea6-0faca7a4059f"
+          },
+          "registration": "local"
+        },
+        "playback": {
+          "time": 0.259389,
+          "local": true
+        },
+        "focus": [
+          {
+            "label": "开始 Speaking",
+            "focus_visible": true,
+            "outline": "solid",
+            "outline_width": "3px",
+            "top": 729.140625,
+            "bottom": 772.234375,
+            "header_bottom": 160,
+            "actionable": true
+          },
+          {
+            "label": "开始录音",
+            "focus_visible": true,
+            "outline": "solid",
+            "outline_width": "3px",
+            "top": 706.21875,
+            "bottom": 749.3125,
+            "header_bottom": 160,
+            "actionable": true
+          },
+          {
+            "label": "停止录音",
+            "focus_visible": true,
+            "outline": "solid",
+            "outline_width": "3px",
+            "top": 781.21875,
+            "bottom": 824.3125,
+            "header_bottom": 160,
+            "actionable": true
+          },
+          {
+            "label": "登记本次录音任务",
+            "focus_visible": true,
+            "outline": "solid",
+            "outline_width": "3px",
+            "top": 705.703125,
+            "bottom": 748.796875,
+            "header_bottom": 160,
+            "actionable": true
+          }
+        ],
+        "taps": [
+          {
+            "label": "开始新一轮评估",
+            "x": 100,
+            "y": 396.78125
+          },
+          {
+            "label": "Speaking：not_started",
+            "x": 119.78125,
+            "y": 640.1640625
+          },
+          {
+            "label": "开始 Speaking",
+            "x": 80.5078125,
+            "y": 750.6875
+          },
+          {
+            "label": "开始录音",
+            "x": 195,
+            "y": 727.765625
+          },
+          {
+            "label": "停止录音",
+            "x": 195,
+            "y": 802.765625
+          },
+          {
+            "label": "native audio play",
+            "x": 56,
+            "y": 658.703125
+          },
+          {
+            "label": "登记本次录音任务",
+            "x": 195,
+            "y": 727.25
+          },
+          {
+            "label": "registered result",
+            "x": 195,
+            "y": 598.0234375
+          }
+        ],
+        "gestures": [
+          {
+            "label": "开始新一轮评估",
+            "start": 265,
+            "end": 720,
+            "before": 727,
+            "after": 287
+          },
+          {
+            "label": "开始新一轮评估",
+            "start": 265,
+            "end": 720,
+            "before": 287,
+            "after": 0
+          },
+          {
+            "label": "Speaking：not_started",
+            "start": 735,
+            "end": 285,
+            "before": 0,
+            "after": 304
+          },
+          {
+            "label": "native audio play",
+            "start": 735,
+            "end": 285,
+            "before": 656,
+            "after": 906
+          },
+          {
+            "label": "registered result",
+            "start": 735,
+            "end": 285,
+            "before": 0,
+            "after": 435
+          },
+          {
+            "label": "registered result",
+            "start": 735,
+            "end": 285,
+            "before": 435,
+            "after": 806
+          }
+        ]
+      }
+    ],
+    "learner_model": {
+      "skill_id": "speaking",
+      "assessment_status": "not_assessed",
+      "has_learning_record": true,
+      "evidence_levels": [],
+      "evidence": [
+        {
+          "learner_id": "default_learner",
+          "language_code": "en",
+          "skill_id": "speaking",
+          "competency_id": "speaking_expression",
+          "assessment_status": "not_assessed",
+          "evidence_type": "assessment_activity",
+          "evidence_source": "speaking_assessment_recording",
+          "evidence_reference": "5e87ad01-05a9-466f-b43c-80363ff3f24f",
+          "evidence_validity": "not_evaluated",
+          "evaluation_method": "client_reported_metadata",
+          "evaluation_rule_version": null,
+          "content_version": "speaking-initial-community-skill-v1",
+          "observed_at": "2026-11-17T03:40:55.783432Z",
+          "observation": "已登记口语初始任务的客户端录音元数据，语音未核验。",
+          "limitations": [
+            "自查由学习者提供，并非系统语音检测；口语水平未评估。",
+            "初始评估只登记客户端申报的录音元数据，服务器无法验证录音是否存在，也无法确认本机录音是否仍可用。"
+          ]
+        },
+        {
+          "learner_id": "default_learner",
+          "language_code": "en",
+          "skill_id": "speaking",
+          "competency_id": "speaking_expression",
+          "assessment_status": "not_assessed",
+          "evidence_type": "assessment_activity",
+          "evidence_source": "speaking_assessment_recording",
+          "evidence_reference": "3ab5aad9-5e87-4ff2-9211-1313c6ecd363",
+          "evidence_validity": "not_evaluated",
+          "evaluation_method": "client_reported_metadata",
+          "evaluation_rule_version": null,
+          "content_version": "speaking-initial-community-skill-v1",
+          "observed_at": "2026-11-17T03:41:07.358199Z",
+          "observation": "已登记口语初始任务的客户端录音元数据，语音未核验。同一学习者此前已开始过相同版本的任务。",
+          "limitations": [
+            "自查由学习者提供，并非系统语音检测；口语水平未评估。",
+            "初始评估只登记客户端申报的录音元数据，服务器无法验证录音是否存在，也无法确认本机录音是否仍可用。"
+          ]
+        },
+        {
+          "learner_id": "default_learner",
+          "language_code": "en",
+          "skill_id": "speaking",
+          "competency_id": "speaking_expression",
+          "assessment_status": "not_assessed",
+          "evidence_type": "assessment_activity",
+          "evidence_source": "speaking_assessment_recording",
+          "evidence_reference": "2ec078d5-4c22-41f9-ab5e-e34420495bd8",
+          "evidence_validity": "not_evaluated",
+          "evaluation_method": "client_reported_metadata",
+          "evaluation_rule_version": null,
+          "content_version": "speaking-initial-community-skill-v1",
+          "observed_at": "2026-11-17T03:41:13.596397Z",
+          "observation": "已登记口语初始任务的客户端录音元数据，语音未核验。同一学习者此前已开始过相同版本的任务。",
+          "limitations": [
+            "自查由学习者提供，并非系统语音检测；口语水平未评估。",
+            "初始评估只登记客户端申报的录音元数据，服务器无法验证录音是否存在，也无法确认本机录音是否仍可用。"
+          ]
+        },
+        {
+          "learner_id": "default_learner",
+          "language_code": "en",
+          "skill_id": "speaking",
+          "competency_id": "speaking_expression",
+          "assessment_status": "not_assessed",
+          "evidence_type": "assessment_activity",
+          "evidence_source": "speaking_assessment_recording",
+          "evidence_reference": "5992c4bb-3656-4766-9630-c419bf27e40f",
+          "evidence_validity": "not_evaluated",
+          "evaluation_method": "client_reported_metadata",
+          "evaluation_rule_version": null,
+          "content_version": "speaking-initial-community-skill-v1",
+          "observed_at": "2026-11-17T03:41:23.443967Z",
+          "observation": "已登记口语初始任务的客户端录音元数据，语音未核验。同一学习者此前已开始过相同版本的任务。",
+          "limitations": [
+            "自查由学习者提供，并非系统语音检测；口语水平未评估。",
+            "初始评估只登记客户端申报的录音元数据，服务器无法验证录音是否存在，也无法确认本机录音是否仍可用。"
+          ]
+        }
+      ],
+      "limitations": [
+        "自查由学习者提供，并非系统语音检测；口语水平未评估。",
+        "初始评估只登记客户端申报的录音元数据，服务器无法验证录音是否存在，也无法确认本机录音是否仍可用。"
+      ]
+    }
+  }
+}

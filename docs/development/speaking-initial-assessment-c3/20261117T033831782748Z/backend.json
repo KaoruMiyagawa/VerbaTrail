@@ -1,0 +1,989 @@
+{
+  "status": "fail",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/openapi.json",
+      "at_ms": 1794886712415,
+      "status": 200,
+      "response_at_ms": 1794886712611
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886712881,
+      "status": 200,
+      "response_at_ms": 1794886712928
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886712930,
+      "status": 200,
+      "response_at_ms": 1794886712940
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886712942,
+      "status": 200,
+      "response_at_ms": 1794886712950
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading/start",
+      "at_ms": 1794886712951,
+      "status": 200,
+      "response_at_ms": 1794886712971
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading/submit",
+      "at_ms": 1794886712973,
+      "status": 200,
+      "response_at_ms": 1794886712997
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening/start",
+      "at_ms": 1794886712999,
+      "status": 200,
+      "response_at_ms": 1794886713013
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening/submit",
+      "at_ms": 1794886713014,
+      "status": 200,
+      "response_at_ms": 1794886713030
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886715477,
+      "status": 200,
+      "response_at_ms": 1794886715484
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886715487,
+      "status": 200,
+      "response_at_ms": 1794886715489
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886715476,
+      "status": 200,
+      "response_at_ms": 1794886715490
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886715499,
+      "status": 200,
+      "response_at_ms": 1794886715504
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886715630,
+      "status": 200,
+      "response_at_ms": 1794886715635
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading",
+      "at_ms": 1794886715643,
+      "status": 200,
+      "response_at_ms": 1794886715668
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening",
+      "at_ms": 1794886715645,
+      "status": 200,
+      "response_at_ms": 1794886715677
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "at_ms": 1794886715684,
+      "status": 206,
+      "response_at_ms": 1794886715689
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886715846,
+      "status": 200,
+      "response_at_ms": 1794886715854
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking/start",
+      "at_ms": 1794886716059,
+      "status": 200,
+      "response_at_ms": 1794886716069
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886716105,
+      "status": 200,
+      "response_at_ms": 1794886716108
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886716110,
+      "status": 200,
+      "response_at_ms": 1794886716113
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886718062,
+      "status": 200,
+      "response_at_ms": 1794886718065
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886718067,
+      "status": 200,
+      "response_at_ms": 1794886718069
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886718062,
+      "status": 200,
+      "response_at_ms": 1794886718071
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886718083,
+      "status": 200,
+      "response_at_ms": 1794886718090
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886718099,
+      "status": 200,
+      "response_at_ms": 1794886718111
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading",
+      "at_ms": 1794886718097,
+      "status": 200,
+      "response_at_ms": 1794886718119
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening",
+      "at_ms": 1794886718098,
+      "status": 200,
+      "response_at_ms": 1794886718125
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "at_ms": 1794886718136,
+      "status": 206,
+      "response_at_ms": 1794886718139
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking/complete",
+      "at_ms": 1794886718420,
+      "status": 200,
+      "response_at_ms": 1794886718420
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking/complete",
+      "at_ms": 1794886718422,
+      "body": {
+        "learner_id": "default_learner",
+        "recording_id": "7c1ede57-962e-4294-8349-bf49efeca5f8",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt_id": "community-skill-exchange",
+        "prompt_version": "community-skill-exchange-v1",
+        "duration_seconds": 1.39,
+        "recorded_at": "2026-11-17T03:38:36.426Z",
+        "idempotency_key": "6c83ad5e-b380-4dc4-9aa6-216b0d44aa8b"
+      },
+      "status": 200,
+      "response_at_ms": 1794886718437
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886718443,
+      "status": 200,
+      "response_at_ms": 1794886718446
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886718519,
+      "status": 200,
+      "response_at_ms": 1794886718523
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886718725,
+      "status": 200,
+      "response_at_ms": 1794886718728
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886718747,
+      "status": 200,
+      "response_at_ms": 1794886718751
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886718756,
+      "status": 200,
+      "response_at_ms": 1794886718761
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886719633,
+      "status": 200,
+      "response_at_ms": 1794886719650
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886719651,
+      "status": 200,
+      "response_at_ms": 1794886719653
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886719633,
+      "status": 200,
+      "response_at_ms": 1794886719655
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886719657,
+      "status": 200,
+      "response_at_ms": 1794886719661
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886719667,
+      "status": 200,
+      "response_at_ms": 1794886719673
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading",
+      "at_ms": 1794886719666,
+      "status": 200,
+      "response_at_ms": 1794886719683
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening",
+      "at_ms": 1794886719666,
+      "status": 200,
+      "response_at_ms": 1794886719687
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "at_ms": 1794886719699,
+      "status": 206,
+      "response_at_ms": 1794886719701
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886720285,
+      "status": 200,
+      "response_at_ms": 1794886720290
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5",
+      "at_ms": 1794886720411,
+      "status": 200,
+      "response_at_ms": 1794886720415
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking",
+      "at_ms": 1794886720420,
+      "status": 200,
+      "response_at_ms": 1794886720427
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/listening",
+      "at_ms": 1794886720419,
+      "status": 200,
+      "response_at_ms": 1794886720428
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/reading",
+      "at_ms": 1794886720419,
+      "status": 200,
+      "response_at_ms": 1794886720428
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking/start",
+      "at_ms": 1794886720629,
+      "status": 200,
+      "response_at_ms": 1794886720643
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5",
+      "at_ms": 1794886720648,
+      "status": 200,
+      "response_at_ms": 1794886720653
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886720655,
+      "status": 200,
+      "response_at_ms": 1794886720660
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886720736,
+      "status": 200,
+      "response_at_ms": 1794886720739
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking",
+      "at_ms": 1794886720741,
+      "status": 200,
+      "response_at_ms": 1794886720744
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886720748,
+      "status": 200,
+      "response_at_ms": 1794886720752
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886720876,
+      "status": 200,
+      "response_at_ms": 1794886720880
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886720886,
+      "status": 200,
+      "response_at_ms": 1794886720906
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading",
+      "at_ms": 1794886720885,
+      "status": 200,
+      "response_at_ms": 1794886720917
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening",
+      "at_ms": 1794886720886,
+      "status": 200,
+      "response_at_ms": 1794886720920
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886720981,
+      "status": 200,
+      "response_at_ms": 1794886720985
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5",
+      "at_ms": 1794886721095,
+      "status": 200,
+      "response_at_ms": 1794886721099
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking",
+      "at_ms": 1794886721106,
+      "status": 200,
+      "response_at_ms": 1794886721124
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/listening",
+      "at_ms": 1794886721105,
+      "status": 200,
+      "response_at_ms": 1794886721126
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/reading",
+      "at_ms": 1794886721105,
+      "status": 200,
+      "response_at_ms": 1794886721127
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886721528,
+      "status": 200,
+      "response_at_ms": 1794886721532
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886721639,
+      "status": 200,
+      "response_at_ms": 1794886721643
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886721647,
+      "status": 200,
+      "response_at_ms": 1794886721653
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading",
+      "at_ms": 1794886721646,
+      "status": 200,
+      "response_at_ms": 1794886721661
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening",
+      "at_ms": 1794886721646,
+      "status": 200,
+      "response_at_ms": 1794886721665
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886721747,
+      "status": 200,
+      "response_at_ms": 1794886721751
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5",
+      "at_ms": 1794886721859,
+      "status": 200,
+      "response_at_ms": 1794886721863
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking",
+      "at_ms": 1794886721876,
+      "status": 200,
+      "response_at_ms": 1794886721880
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/listening",
+      "at_ms": 1794886721875,
+      "status": 200,
+      "response_at_ms": 1794886721880
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/reading",
+      "at_ms": 1794886721875,
+      "status": 200,
+      "response_at_ms": 1794886721881
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886722293,
+      "status": 200,
+      "response_at_ms": 1794886722297
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_991faaa0a6c148eb",
+      "at_ms": 1794886722414,
+      "status": 200,
+      "response_at_ms": 1794886722419
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_991faaa0a6c148eb/speaking",
+      "at_ms": 1794886722428,
+      "status": 409,
+      "response_at_ms": 1794886722433
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_991faaa0a6c148eb/reading",
+      "at_ms": 1794886722426,
+      "status": 409,
+      "response_at_ms": 1794886722434
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_991faaa0a6c148eb/listening",
+      "at_ms": 1794886722427,
+      "status": 409,
+      "response_at_ms": 1794886722435
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_991faaa0a6c148eb",
+      "at_ms": 1794886722531,
+      "status": 200,
+      "response_at_ms": 1794886722534
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886722536,
+      "status": 200,
+      "response_at_ms": 1794886722540
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886722660,
+      "status": 200,
+      "response_at_ms": 1794886722665
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening",
+      "at_ms": 1794886722678,
+      "status": 200,
+      "response_at_ms": 1794886722703
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886722679,
+      "status": 200,
+      "response_at_ms": 1794886722706
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading",
+      "at_ms": 1794886722677,
+      "status": 200,
+      "response_at_ms": 1794886722717
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exams/catalog",
+      "at_ms": 1794886723130,
+      "status": 200,
+      "response_at_ms": 1794886723137
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/profile/exam-preparation",
+      "at_ms": 1794886723130,
+      "status": 200,
+      "response_at_ms": 1794886723138
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exams/catalog",
+      "at_ms": 1794886723147,
+      "status": 200,
+      "response_at_ms": 1794886723169
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/profile/exam-preparation",
+      "at_ms": 1794886723148,
+      "status": 200,
+      "response_at_ms": 1794886723171
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/speaking/prompts",
+      "at_ms": 1794886723280,
+      "status": 200,
+      "response_at_ms": 1794886723285
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/speaking/practices",
+      "at_ms": 1794886723281,
+      "status": 200,
+      "response_at_ms": 1794886723291
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/speaking/prompts",
+      "at_ms": 1794886723289,
+      "status": 200,
+      "response_at_ms": 1794886723291
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/speaking/practices",
+      "at_ms": 1794886723294,
+      "status": 200,
+      "response_at_ms": 1794886723297
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886723461,
+      "status": 200,
+      "response_at_ms": 1794886723463
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886723460,
+      "status": 200,
+      "response_at_ms": 1794886723468
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886723466,
+      "status": 200,
+      "response_at_ms": 1794886723468
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886723471,
+      "status": 200,
+      "response_at_ms": 1794886723475
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading",
+      "at_ms": 1794886723480,
+      "status": 200,
+      "response_at_ms": 1794886723497
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening",
+      "at_ms": 1794886723481,
+      "status": 200,
+      "response_at_ms": 1794886723500
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "at_ms": 1794886723510,
+      "status": 206,
+      "response_at_ms": 1794886723512
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886723518,
+      "status": 200,
+      "response_at_ms": 1794886723523
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5",
+      "at_ms": 1794886723642,
+      "status": 200,
+      "response_at_ms": 1794886723646
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/listening",
+      "at_ms": 1794886723650,
+      "status": 200,
+      "response_at_ms": 1794886723655
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/reading",
+      "at_ms": 1794886723650,
+      "status": 200,
+      "response_at_ms": 1794886723657
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking",
+      "at_ms": 1794886723859,
+      "status": 200,
+      "response_at_ms": 1794886723862
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886724293,
+      "status": 200,
+      "response_at_ms": 1794886724297
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886724293,
+      "status": 200,
+      "response_at_ms": 1794886724301
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886724299,
+      "status": 200,
+      "response_at_ms": 1794886724302
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886724298,
+      "status": 200,
+      "response_at_ms": 1794886724306
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62",
+      "at_ms": 1794886724446,
+      "status": 200,
+      "response_at_ms": 1794886724449
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/reading",
+      "at_ms": 1794886724462,
+      "status": 200,
+      "response_at_ms": 1794886724479
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/listening",
+      "at_ms": 1794886724463,
+      "status": 200,
+      "response_at_ms": 1794886724485
+    },
+    {
+      "method": "GET",
+      "path": "/audio/listening/initial-community-arts-v1.wav",
+      "at_ms": 1794886724504,
+      "status": 206,
+      "response_at_ms": 1794886724506
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a7b03c0953054f62/speaking",
+      "at_ms": 1794886724685,
+      "status": 200,
+      "response_at_ms": 1794886724688
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking/complete",
+      "at_ms": 1794886729037,
+      "status": 200,
+      "response_at_ms": 1794886729037
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking",
+      "at_ms": 1794886729045,
+      "status": 200,
+      "response_at_ms": 1794886729049
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking",
+      "at_ms": 1794886729138,
+      "status": 200,
+      "response_at_ms": 1794886729146
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886729686,
+      "status": 200,
+      "response_at_ms": 1794886729692
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "at_ms": 1794886729694,
+      "status": 200,
+      "response_at_ms": 1794886729696
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886729686,
+      "status": 200,
+      "response_at_ms": 1794886729697
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5",
+      "at_ms": 1794886729701,
+      "status": 200,
+      "response_at_ms": 1794886729705
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/listening",
+      "at_ms": 1794886729710,
+      "status": 200,
+      "response_at_ms": 1794886729717
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/reading",
+      "at_ms": 1794886729709,
+      "status": 200,
+      "response_at_ms": 1794886729718
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking",
+      "at_ms": 1794886729711,
+      "status": 200,
+      "response_at_ms": 1794886729718
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking",
+      "at_ms": 1794886730059,
+      "status": 200,
+      "response_at_ms": 1794886730062
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5/speaking/complete",
+      "at_ms": 1794886730076,
+      "body": {
+        "learner_id": "default_learner",
+        "recording_id": "54ee8c6d-dbf7-4f13-b1fb-dd31c99a2cd8",
+        "task_version": "speaking-initial-community-skill-v1",
+        "prompt_id": "community-skill-exchange",
+        "prompt_version": "community-skill-exchange-v1",
+        "duration_seconds": 1.42,
+        "recorded_at": "2026-11-17T03:38:47.046Z",
+        "idempotency_key": "92ca9f21-f359-4725-a40e-49eef2cd587d"
+      },
+      "status": 200,
+      "response_at_ms": 1794886730090
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_a1098e08dcc549b5",
+      "at_ms": 1794886730101,
+      "status": 200,
+      "response_at_ms": 1794886730105
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886730109,
+      "status": 200,
+      "response_at_ms": 1794886730114
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886730211,
+      "status": 200,
+      "response_at_ms": 1794886730211
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886730213,
+      "status": 200,
+      "response_at_ms": 1794886730230
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886730233,
+      "status": 200,
+      "response_at_ms": 1794886730238
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_de84c1baeaa74fc7",
+      "at_ms": 1794886730241,
+      "status": 200,
+      "response_at_ms": 1794886730246
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_de84c1baeaa74fc7/speaking",
+      "at_ms": 1794886730253,
+      "status": 200,
+      "response_at_ms": 1794886730259
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_de84c1baeaa74fc7/reading",
+      "at_ms": 1794886730251,
+      "status": 200,
+      "response_at_ms": 1794886730261
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_de84c1baeaa74fc7/listening",
+      "at_ms": 1794886730252,
+      "status": 200,
+      "response_at_ms": 1794886730262
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/assessment-runs/asr_de84c1baeaa74fc7/speaking/start",
+      "at_ms": 1794886731692,
+      "status": 200,
+      "response_at_ms": 1794886731708
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs/asr_de84c1baeaa74fc7",
+      "at_ms": 1794886731743,
+      "status": 200,
+      "response_at_ms": 1794886731747
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/assessment-runs",
+      "at_ms": 1794886731752,
+      "status": 200,
+      "response_at_ms": 1794886731757
+    }
+  ],
+  "error": "Command '['node', 'scripts/verify-speaking-assessment-c3.mjs']' returned non-zero exit status 1.",
+  "formal_database_sha256": {
+    "before": "BC4656AA2BC624F0A257254BA25597DB3031126FDFCBE79E5F3BB0CB607793E0",
+    "after": "BC4656AA2BC624F0A257254BA25597DB3031126FDFCBE79E5F3BB0CB607793E0"
+  }
+}
