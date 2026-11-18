@@ -10,9 +10,10 @@ from sqlalchemy.orm import Session
 from app.api.v1.dependencies import get_db
 from app.application.evidence_validity import evidence_status
 from app.content.speaking_initial_assessment import RECORDING_SOURCE, TASK_VERSION
+from app.content.writing_initial_assessment import SUBMISSION_SOURCE as WRITING_SUBMISSION_SOURCE
 from app.persistence.models import (AssessmentRun, AssessmentTask, Attempt, ExamPreparationProfile,
     KnowledgeTopic, LearningSession, ReadingGroupVersion, ReviewItem, SpeakingAssessmentRecording,
-    SpeakingPractice, WritingDraft, WritingRevision)
+    SpeakingPractice, WritingDraft, WritingRevision, AssessmentWritingSubmission)
 
 router = APIRouter(tags=["learner-model"])
 
@@ -120,6 +121,27 @@ def learner_model(learner_id: str = Query(default='default_learner', min_length=
                 revisions = db.scalars(select(WritingRevision).where(WritingRevision.session_id == d.session_id).order_by(WritingRevision.number)).all()
                 for rev in revisions:
                     add(competency_id='writing_expression', assessment_status='not_assessed', evidence_type='practice_activity', evidence_source='writing_revision', evidence_reference=rev.id, evidence_validity='not_evaluated', evaluation_method='deterministic_text_metrics', content_version=d.task_snapshot.get('version'), observed_at=rev.submitted_at, observation=f"第 {rev.number} 次提交，{rev.feedback.get('word_count', 0)} 词" + ('，基于前次修订' if rev.source_revision_id else ''))
+        if skill == 'writing':
+            submissions = db.execute(
+                select(AssessmentWritingSubmission, AssessmentTask)
+                .join(AssessmentTask, AssessmentTask.id == AssessmentWritingSubmission.assessment_task_id)
+                .join(AssessmentRun, AssessmentRun.id == AssessmentTask.run_id)
+                .where(AssessmentRun.learner_id == learner_id,
+                       AssessmentTask.skill_id == 'writing',
+                       AssessmentTask.status == 'completed',
+                       AssessmentTask.evidence_source == WRITING_SUBMISSION_SOURCE,
+                       AssessmentTask.evidence_reference == AssessmentWritingSubmission.id)
+                .order_by(AssessmentWritingSubmission.submitted_at)
+            ).all()
+            for submission, task in submissions:
+                add(competency_id='writing_expression', assessment_status='not_assessed',
+                    evidence_type='assessment_activity', evidence_source=WRITING_SUBMISSION_SOURCE,
+                    evidence_reference=submission.id, evidence_validity='not_evaluated',
+                    evaluation_method='deterministic_text_metrics', content_version=submission.task_version,
+                    observed_at=submission.submitted_at,
+                    observation=(f"已采集初始评估原始文本（{submission.word_count} 词，"
+                                 f"{submission.paragraph_count} 段）；semantic_quality: not_assessed；"
+                                 "不构成写作能力证据。"))
         if ids and skill == 'speaking':
             practices = db.scalars(select(SpeakingPractice).where(SpeakingPractice.session_id.in_(ids)).order_by(SpeakingPractice.completed_at)).all()
             for p in practices:

@@ -1121,7 +1121,7 @@ def test_openapi_schema_endpoint_inventory(seeded_client: TestClient) -> None:
     paths = schema["paths"]
 
     # The skill-specific routes are public alongside shared APIs.
-    assert len(paths) == 53
+    assert len(paths) == 57
     assert "POST" in {method.upper() for method in paths["/api/v1/profile/evidence-revalidation"]}
     assert {
         "/api/v1/learner-model",
@@ -1131,6 +1131,10 @@ def test_openapi_schema_endpoint_inventory(seeded_client: TestClient) -> None:
         "/api/v1/assessment-runs/{run_id}/speaking",
         "/api/v1/assessment-runs/{run_id}/speaking/start",
         "/api/v1/assessment-runs/{run_id}/speaking/complete",
+        "/api/v1/assessment-runs/{run_id}/writing",
+        "/api/v1/assessment-runs/{run_id}/writing/start",
+        "/api/v1/assessment-runs/{run_id}/writing/draft",
+        "/api/v1/assessment-runs/{run_id}/writing/submit",
         "/api/v1/listening/lesson", "/api/v1/listening/sessions",
         "/api/v1/listening/sessions/{session_id}", "/api/v1/listening/sessions/{session_id}/submit",
         "/api/v1/listening/history",
@@ -1147,11 +1151,11 @@ def test_openapi_schema_endpoint_inventory(seeded_client: TestClient) -> None:
         for method in methods
         if method.lower() in {"get", "post", "put", "patch", "delete"}
     ]
-    assert len(public_operations) == 58
+    assert len(public_operations) == 62
     stage4_public_operations = [
         op for op in public_operations if op[1] != "/api/v1/health"
     ]
-    assert len(stage4_public_operations) == 57
+    assert len(stage4_public_operations) == 61
 
     # Hidden alias GET /api/v1/dashboard/summary is functional (200) but excluded from OpenAPI schema
     assert "/api/v1/dashboard/summary" not in paths

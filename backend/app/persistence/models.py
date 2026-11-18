@@ -1204,3 +1204,43 @@ class SpeakingAssessmentRecording(Base):
     recorded_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     registered_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
     idempotency_key: Mapped[str] = mapped_column(String(128), nullable=False)
+
+
+class AssessmentWritingDraft(Base):
+    """Mutable draft scoped to exactly one AssessmentTask."""
+
+    __tablename__ = "assessment_writing_drafts"
+    __table_args__ = (CheckConstraint("version >= 0", name="ck_assessment_writing_draft_version"),)
+    assessment_task_id: Mapped[str] = mapped_column(ForeignKey("assessment_tasks.id", ondelete="CASCADE"), primary_key=True)
+    body: Mapped[str] = mapped_column(Text, nullable=False, default="", server_default=text("''"))
+    version: Mapped[int] = mapped_column(Integer, nullable=False, default=0, server_default=text("0"))
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
+
+
+class AssessmentWritingSubmission(Base):
+    """Append-only original response attached to one version-pinned task."""
+
+    __tablename__ = "assessment_writing_submissions"
+    __table_args__ = (
+        UniqueConstraint("assessment_task_id", name="uq_assessment_writing_submission_task"),
+        UniqueConstraint("assessment_task_id", "idempotency_key", name="uq_assessment_writing_submission_key"),
+        CheckConstraint("draft_version >= 0 AND word_count > 0 AND paragraph_count >= 0", name="ck_assessment_writing_submission_metrics"),
+    )
+    id: Mapped[str] = mapped_column(String(64), primary_key=True, default=lambda: new_id("aws"))
+    assessment_task_id: Mapped[str] = mapped_column(ForeignKey("assessment_tasks.id", ondelete="CASCADE"), nullable=False, index=True)
+    task_version: Mapped[str] = mapped_column(String(64), nullable=False)
+    prompt_id: Mapped[str] = mapped_column(String(64), nullable=False)
+    prompt_version: Mapped[str] = mapped_column(String(64), nullable=False)
+    draft_version: Mapped[int] = mapped_column(Integer, nullable=False)
+    body: Mapped[str] = mapped_column(Text, nullable=False)
+    body_sha256: Mapped[str] = mapped_column(String(64), nullable=False)
+    word_count: Mapped[int] = mapped_column(Integer, nullable=False)
+    paragraph_count: Mapped[int] = mapped_column(Integer, nullable=False)
+    submitted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
+    idempotency_key: Mapped[str] = mapped_column(String(128), nullable=False)
+
+
+@event.listens_for(AssessmentWritingSubmission, "before_update")
+@event.listens_for(AssessmentWritingSubmission, "before_delete")
+def _prevent_assessment_writing_submission_mutation(_mapper: Any, _connection: Any, _target: Any) -> None:
+    raise ImmutableRecordError("Assessment Writing submissions are immutable evidence records.")
