@@ -40,6 +40,21 @@ npm run dev
 
 如端口被占用，不要结束未知进程；选择未占用端口并同步修改 Vite 配置、`VITE_API_BASE_URL` 与后端 `CORS_ORIGINS`。
 
+## 启动 Windows 桌面开发版
+
+先按本页安装依赖。Electron 需要 Node.js 22.12 或更新版本，首次启动会下载 Electron 运行时。
+
+```powershell
+cd D:\Projects\VerbaTrail\frontend
+npm run desktop
+```
+
+命令和桌面快捷方式都启动同一个 **VerbaTrail** 开发版。每次启动检查前端源码指纹，缺少构建或源码变更时自动更新 `dist-desktop`。Electron 随后启动 FastAPI，静态前端和 API 共用 `http://127.0.0.1:18191`。关闭窗口会停止该本地服务。桌面数据默认存放在 `%APPDATA%\VerbaTrail\desktop.sqlite3`。需要隔离调试时，可在启动前将 `VERBATRAIL_DESKTOP_PROFILE_DIR` 设为已创建的独立绝对目录。
+
+运行 `npm run desktop:shortcut` 可创建或刷新 **VerbaTrail** 快捷方式。修改源码后，完全关闭再从快捷方式打开桌面版即可。已经打开时再次点击快捷方式会聚焦当前窗口。需要单独构建桌面前端时运行 `npm run build:desktop`。
+
+当前桌面开发版需要本仓库、Python 环境与 Electron 依赖。仓库尚未配置 Windows 安装包。
+
 ## 数据、模型与模式
 
 - `FakeModelProvider` 为离线模拟，不会调用真实模型；远程模型调用默认关闭。
