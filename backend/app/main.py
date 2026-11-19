@@ -15,6 +15,7 @@ from app.api.v1.router import api_v1_router
 from app.api.v1.assessment_listening import audio_router as assessment_listening_audio_router
 from app.application.exceptions import ApplicationError
 from app.config import Settings, get_settings
+from app.content.reading_practice import reading_practice_pack
 from app.decision import IllegalAgentToolCallError
 from app.domain.exceptions import (
     DomainRuleViolationError,
@@ -58,6 +59,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                         session,
                         pack_data=load_matching_headings_diagnostic_pack(session),
                     )
+                    import_content_pack(session, pack_data=reading_practice_pack())
                     session.commit()
                 except Exception:
                     session.rollback()

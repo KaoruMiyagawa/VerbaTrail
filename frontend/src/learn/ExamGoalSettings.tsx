@@ -22,7 +22,7 @@ function BandGoal({ label, value, disabled, onChange }: {
   </label>;
 }
 
-export function ExamGoalSettings() {
+export function ExamGoalSettings({ onSelectionSaved }: { onSelectionSaved?: () => void }) {
   const [catalog, setCatalog] = useState<ExamCatalogEntry[]>([]);
   const [profile, setProfile] = useState<ExamPreparationProfile | null>(null);
   const [loadAttempt, setLoadAttempt] = useState(0);
@@ -57,6 +57,7 @@ export function ExamGoalSettings() {
         exam_date: profile.exam_date,
         ...update,
       }, learnerId));
+      if (update.exam_variant) onSelectionSaved?.();
     } catch (cause) {
       setError(cause instanceof ApiClientError ? cause.message : '保存失败，请重试。');
     } finally {

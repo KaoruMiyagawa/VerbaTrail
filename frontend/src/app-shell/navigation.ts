@@ -1,9 +1,10 @@
 export type PlannedSkillWorkspace = 'listening' | 'speaking' | 'writing';
-export type WorkspaceId = 'home' | 'learning' | 'assessment' | PlannedSkillWorkspace | 'diagnosis' | 'transfer' | 'review' | 'profile';
+export type WorkspaceId = 'home' | 'reading' | 'learning' | 'assessment' | PlannedSkillWorkspace | 'diagnosis' | 'transfer' | 'review' | 'profile';
 
 export const WORKSPACE_PATHS = {
   home: '/',
   learning: '/learning',
+  reading: '/learn/reading',
   assessment: '/learn/assessment',
   listening: '/learn/listening',
   speaking: '/learn/speaking',
@@ -15,7 +16,7 @@ export const WORKSPACE_PATHS = {
 } as const satisfies Record<WorkspaceId, string>;
 
 export const WORKSPACE_SHORTCUTS = [
-  { id: 'learning', label: '阅读' },
+  { id: 'reading', label: '阅读' },
   { id: 'diagnosis', label: '诊断洞察' },
   { id: 'transfer', label: '迁移验证' },
   { id: 'review', label: '复习' },
@@ -28,6 +29,5 @@ export function isLearnWorkspace(workspace: WorkspaceId): boolean {
 
 export function resolveWorkspaceFromPath(pathname: string): WorkspaceId {
   const normalized = pathname.replace(/\/+$/, '') || '/';
-  if (normalized === '/learn/reading') return 'learning';
   return (Object.keys(WORKSPACE_PATHS) as WorkspaceId[]).find(id => WORKSPACE_PATHS[id] === normalized) ?? 'home';
 }

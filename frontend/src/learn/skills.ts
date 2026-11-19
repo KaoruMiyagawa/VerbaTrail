@@ -20,7 +20,7 @@ export type PlannedSkill = SkillDetails & {
 };
 
 export type SkillDefinition = PlannedSkill | (SkillDetails & (
-  | { availability: 'implemented'; workspace: 'learning' | PlannedSkillWorkspace; availableCapabilities: readonly string[] }
+  | { availability: 'implemented'; workspace: 'reading' | PlannedSkillWorkspace; availableCapabilities: readonly string[] }
   | { availability: 'unavailable'; availableCapabilities: readonly [] }
 ));
 
@@ -51,9 +51,9 @@ export const SKILLS = {
     id: 'reading',
     label: 'Reading',
     localizedLabel: '阅读',
-    description: '用原创阅读材料练习判断题与段落标题匹配。',
+    description: '阅读完整的原创英文文章，作答后对照原文查看逐题解析。',
     availability: 'implemented',
-    workspace: 'learning',
+    workspace: 'reading',
     examVariants,
     availableCapabilities: ['TFNG', 'Matching Headings', '作答与评价', '诊断与专项训练', '独立迁移', '首轮延迟复习', '学习历史'],
   },

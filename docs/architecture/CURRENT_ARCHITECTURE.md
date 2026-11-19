@@ -25,11 +25,13 @@ flowchart LR
 
 ## 当前 IELTS 实现范围
 
-产品导航呈现 Learn / Discover / Adapt。Learn 首页 `/` 提供 Listening、Speaking、Reading、Writing 四个入口。Reading 使用既有 `/learning` 工作区，`/learn/reading` 可直接访问同一工作区。Listening 含一套原创合成音频练习，Writing 支持一套原创 Task 2 题目。Speaking 位于 `/learn/speaking`，支持三道原创 Part 1 问题、本地录音及回放。Discover 和 Adapt 显示规划状态。
+产品导航呈现 Learn / Discover / Adapt。Learn 首页 `/` 提供 Listening、Speaking、Reading、Writing 四个入口。`/learn/reading` 提供 Academic 整篇文章练习，原有阅读练习与诊断继续使用 `/learning`。Listening 含一套原创合成音频练习，Writing 支持一套原创 Task 2 题目。Speaking 位于 `/learn/speaking`，支持三道原创 Part 1 问题、本地录音及回放。Discover 和 Adapt 显示规划状态。
 
 `frontend/src/learn/skills.ts` 定义类型化技能目录和能力状态。`implemented` 表示已有学习流程，`planned` 表示可浏览规划，`unavailable` 表示无可用入口。目录由前端静态维护。考试目标、题目派发、作答、诊断、复习和学习历史继续以共享 API 为准。
 
 Academic 与 General Training 有有限的 Reading 流程，包括 TFNG 及 Matching Headings 结构化题组；Matching Headings 已接入固定内容版本、逐项评分、错误假设、追问、针对性训练、独立迁移和首轮延迟复习。历史、Review 和 Profile 消费服务端记录。
+
+Academic 整篇练习的版本化源文件位于 `backend/app/content/reading/`。开发和桌面后端启动时，通过共享内容导入器发布文章、题目和私有答案。前端从 `/api/v1/reading/articles` 读取已导入的内容，在当前标签页保留草稿。每名学习者每个文章版本有一次正式提交，由共享 LearningSession 和 Attempt 保存，结果包含逐题解释和原文引用。此得分只反映本次练习表现。
 
 **IELTS-2B.1 Phase 6.2 最终工程验收为 PASS WITH LIMITATIONS。** 旧版证据有效性标记、派生状态协调与用户重新验证已在隔离 SQLite 复验。正式库的协调和生产发布评估仍有待执行。原 Phase 6 FAIL 作为历史记录保留。[最终复验](../development/IELTS_2B1_PHASE6_2_ACCEPTANCE.md) · [原 Phase 6 报告](../development/IELTS_2B1_FINAL_ACCEPTANCE.md)
 

@@ -148,7 +148,7 @@ export const AppShell: React.FC<AppShellProps> = (props) => {
         )}
       </header>
 
-      <main ref={main} className={`focus-stage ${activeWorkspace === 'learning' || activeWorkspace === 'transfer' ? 'focus-stage-wide' : ''}`}>
+      <main ref={main} className={`focus-stage ${activeWorkspace === 'reading' || activeWorkspace === 'learning' || activeWorkspace === 'transfer' ? 'focus-stage-wide' : ''}`}>
         {children}
       </main>
     </div>

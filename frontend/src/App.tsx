@@ -32,6 +32,7 @@ import { plannedSkills } from './learn/skills';
 import { ListeningWorkspace } from './learn/ListeningWorkspace';
 import { WritingWorkspace } from './learn/WritingWorkspace';
 import { SpeakingWorkspace } from './learn/SpeakingWorkspace';
+import { ReadingWorkspace } from './learn/ReadingWorkspace';
 import { AssessmentWorkspace } from './learn/AssessmentWorkspace';
 
 export const App: React.FC = () => {
@@ -195,6 +196,8 @@ export const App: React.FC = () => {
         <SpeakingWorkspace onNavigate={navigateWorkspace} />
       ) : activeWorkspace === 'writing' ? (
         <WritingWorkspace onNavigate={navigateWorkspace} />
+      ) : activeWorkspace === 'reading' ? (
+        <ReadingWorkspace onNavigate={navigateWorkspace} />
       ) : plannedSkill ? (
         <PlannedSkillPage skill={plannedSkill} onNavigate={navigateWorkspace} />
       ) : dataMode === 'real' && activeWorkspace === 'listening' ? (

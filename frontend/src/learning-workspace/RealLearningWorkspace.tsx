@@ -440,6 +440,7 @@ export const RealLearningWorkspace: React.FC<RealLearningWorkspaceProps> = ({ wo
     : undefined;
   const selectableTopics = topicsResource.state.status === 'success'
     ? topicsResource.state.data.filter(topic => examProfile?.selection_persisted
+      && !topic.id.startsWith('ielts-reading-practice-')
       && topic.domain_code === (examProfile.exam_variant === 'general_training' ? 'ielts_general_training' : 'ielts_academic')
       && (topic.initial_question_types?.includes('matching_headings') || topic.id.endsWith('-reading-english')))
     : [];

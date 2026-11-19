@@ -288,7 +288,7 @@ const verifyLearn = async () => {
   assert.deepEqual(cards, [
     { skill: 'Listening', route: '/learn/listening', status: '可练习' },
     { skill: 'Speaking', route: '/learn/speaking', status: '可练习' },
-    { skill: 'Reading', route: '/learning', status: '可练习' },
+    { skill: 'Reading', route: '/learn/reading', status: '可练习' },
     { skill: 'Writing', route: '/learn/writing', status: '可练习' },
   ]);
   for (const name of ['premium', 'noir']) {
@@ -348,10 +348,11 @@ const verifyLearn = async () => {
   await capture('learn-speaking-mobile', 'body', 390, 844);
   await touch('.learn-back-link');
   await text('IELTS 学习中心');
-  await touch('.learn-skill-card[href="/learning"]');
-  await text('请先在 Learn 保存考试类型。');
-  assert.equal(await evaluate("location.pathname"), '/learning');
-  await navigate('/learn/reading');
+  await touch('.learn-skill-card[href="/learn/reading"]');
+  await text('先保存考试类型，即可查看对应练习。');
+  assert.equal(await evaluate("location.pathname"), '/learn/reading');
+  await text('原有阅读练习与诊断');
+  await navigate('/learning');
   await text('选择阅读任务');
   assert.deepEqual(learnConsoleErrors, []);
   checkingLearn = false;
