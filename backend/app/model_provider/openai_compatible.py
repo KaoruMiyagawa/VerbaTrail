@@ -172,6 +172,8 @@ class OpenAICompatibleProvider:
 
         total_attempts = 0
         max_total_attempts = 1 + max(0, self.max_retries)
+        if request.max_attempts is not None:
+            max_total_attempts = min(max_total_attempts, request.max_attempts)
         start_time = time.perf_counter()
         last_error: ModelProviderError | None = None
 

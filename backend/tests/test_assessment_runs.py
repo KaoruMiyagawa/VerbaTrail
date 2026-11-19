@@ -15,7 +15,7 @@ def test_migrate_from_0009(test_settings):
     try:
         upgrade_database(database_url=test_settings.database_url, engine=engine, revision='0009_speaking_practice')
         assert 'assessment_runs' not in inspect(engine).get_table_names()
-        upgrade_database(database_url=test_settings.database_url, engine=engine)
+        upgrade_database(database_url=test_settings.database_url, engine=engine, revision='0013_writing_assessment')
         assert {'assessment_runs', 'assessment_tasks'} <= set(inspect(engine).get_table_names())
         with engine.connect() as conn:
             assert conn.scalar(text('select version_num from alembic_version')) == '0013_writing_assessment'

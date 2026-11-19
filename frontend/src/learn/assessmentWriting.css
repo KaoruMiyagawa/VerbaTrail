@@ -1,0 +1,210 @@
+.assessment-writing {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+  margin-top: 16px;
+}
+
+.assessment-writing[hidden] { display: none !important; }
+.assessment-writing [hidden] { display: none !important; }
+.assessment-writing .focus-card { min-width: 0; }
+.assessment-writing button { min-height: 42px; }
+
+.assessment-writing-header,
+.assessment-writing-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.assessment-writing-header h2,
+.assessment-writing-header label {
+  margin: 0;
+  color: var(--focus-ink);
+  font-weight: 650;
+}
+
+.assessment-writing-header > span,
+.assessment-writing-source,
+.assessment-writing-toolbar > span {
+  color: var(--focus-muted);
+  font-size: .875rem;
+  overflow-wrap: anywhere;
+}
+
+.assessment-writing-version {
+  border: 1px solid var(--focus-line);
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: var(--focus-subtle);
+  font-family: var(--focus-font-mono);
+}
+
+.assessment-writing-question {
+  max-width: 72ch;
+  margin: 18px 0;
+  color: var(--focus-ink);
+  font-family: var(--vt-serif, Georgia, serif);
+  font-size: 1.15rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.assessment-writing-editor { display: grid; gap: 14px; }
+.assessment-writing-editor textarea {
+  min-height: min(56vh, 34rem);
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.assessment-writing-submitted-body,
+.assessment-writing-recovery pre,
+.assessment-writing-result details pre {
+  max-height: 38rem;
+  overflow: auto;
+  padding: 16px;
+  border: 1px solid var(--focus-line);
+  border-radius: var(--focus-radius-sm);
+  background: var(--focus-subtle);
+  color: var(--focus-ink);
+  font-family: var(--vt-serif, Georgia, serif);
+  font-size: 1rem;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.assessment-writing-evidence-meta,
+.assessment-writing-observation dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 10px;
+  margin: 16px 0 0;
+}
+
+.assessment-writing-evidence-meta > div,
+.assessment-writing-observation dl > div {
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--focus-line);
+  border-radius: var(--focus-radius-sm);
+}
+
+.assessment-writing-evidence-meta dt,
+.assessment-writing-observation dt {
+  color: var(--focus-muted);
+  font-size: .78rem;
+  font-weight: 600;
+}
+
+.assessment-writing-evidence-meta dd,
+.assessment-writing-observation dd {
+  margin: 3px 0 0;
+  color: var(--focus-ink);
+  font-size: .86rem;
+  overflow-wrap: anywhere;
+}
+
+.assessment-writing-observation-grid { display: grid; gap: 12px; margin-top: 16px; }
+.assessment-writing-observation {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--focus-line);
+  border-radius: var(--focus-radius-md);
+  background: var(--focus-surface);
+}
+
+.assessment-writing-observation header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--focus-secondary);
+  font-size: .9rem;
+}
+
+.assessment-writing-observation blockquote {
+  margin: 12px 0;
+  padding: 12px 14px;
+  border-left: 3px solid var(--focus-blue);
+  background: var(--focus-blue-soft);
+  color: var(--focus-ink);
+  font-family: var(--vt-serif, Georgia, serif);
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.assessment-writing-source-range {
+  display: block;
+  margin-top: 10px;
+  color: var(--focus-muted);
+  font-size: .75rem;
+}
+
+.assessment-writing-diagnostic-content,
+.assessment-writing-decision,
+.assessment-writing-followup,
+.assessment-writing-followup form {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.assessment-writing-diagnostic { overflow-wrap: anywhere; }
+.assessment-writing-diagnostic-content button { justify-self: start; }
+.assessment-writing-followup {
+  padding: 16px;
+  border: 1px solid var(--focus-line);
+  border-radius: var(--focus-radius-md);
+  background: var(--focus-subtle);
+}
+.assessment-writing-followup textarea { min-height: 9rem; }
+.assessment-writing-model-consent { display: flex; gap: 8px; align-items: baseline; }
+
+.assessment-writing-practice {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  margin-top: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--focus-line);
+}
+
+.assessment-writing-practice-editor {
+  display: grid;
+  gap: 10px;
+}
+.assessment-writing-practice-editor textarea { min-height: 12rem; }
+
+.assessment-writing-practice-comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 12px;
+}
+.assessment-writing-practice-comparison > div { min-width: 0; }
+.assessment-writing-practice-comparison pre { max-height: 22rem; }
+
+.assessment-writing-transfer {
+  display: grid;
+  gap: 14px;
+  overflow-wrap: anywhere;
+}
+.assessment-writing-transfer-task {
+  max-width: 75ch;
+  padding: 16px;
+  border: 1px solid var(--focus-line);
+  border-radius: var(--focus-radius-md);
+  background: var(--focus-subtle);
+}
+.assessment-writing-limitations { border-color: var(--focus-amber); }
+.assessment-writing-notice { color: var(--focus-secondary); }
+.assessment-writing-recovery { border-color: var(--focus-amber); }
+
+@media (max-width: 600px) {
+  .assessment-writing-header { align-items: flex-start; }
+  .assessment-writing-toolbar { align-items: flex-start; }
+  .assessment-writing-toolbar .focus-actions { width: 100%; }
+  .assessment-writing-toolbar .focus-actions button { flex: 1 1 auto; }
+}

@@ -22,6 +22,7 @@ class ModelRequest(BaseModel):
     system_prompt: str
     user_prompt: str
     max_tokens: int = Field(default=1024, ge=1, le=8192)
+    max_attempts: int | None = Field(default=None, ge=1)
     temperature: float = Field(default=0.1, ge=0.0, le=2.0)
     session_id: str | None = None
     diagnostic_case_id: str | None = None

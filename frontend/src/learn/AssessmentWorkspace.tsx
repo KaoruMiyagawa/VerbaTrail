@@ -3,15 +3,16 @@ import {assessmentApi,type AssessmentRun,type ReadingAssessment,type ListeningAs
 import {ApiClientError,getApiBaseUrl} from '../api/client';
 import type {WorkspaceId} from '../app-shell/navigation';
 import {AssessmentSpeakingTask} from './AssessmentSpeakingTask';
+import {AssessmentWritingTask} from './AssessmentWritingTask';
 import {draftKey,loadDraft,submitWithRecovery,type AssessmentSkill} from './assessmentState';
 const learner='default_learner',selectedKey=`assessment:selected:${learner}`,createKey=`assessment:create:${learner}`;
 const skillKey=`assessment:skill:${learner}`;
-const skillLabels={reading:'Reading',listening:'Listening',speaking:'Speaking'};
+const skillLabels={reading:'Reading',listening:'Listening',speaking:'Speaking',writing:'Writing'};
 type AvailableSkill=keyof typeof skillLabels;
 function isAvailableSkill(skill:string|null):skill is AvailableSkill {
- return skill==='reading'||skill==='listening'||skill==='speaking';
+ return skill==='reading'||skill==='listening'||skill==='speaking'||skill==='writing';
 }
-const taskStatus=(skill:string,status:string)=>skill==='speaking'&&status==='completed'?'任务已登记 · 口语能力未评分':status;
+const taskStatus=(skill:string,status:string)=>skill==='speaking'&&status==='completed'?'任务已登记 · 口语能力未评分':skill==='writing'&&status==='completed'?'已提交 · 写作能力未评估':status;
 const key=()=>crypto.randomUUID();
 const message=(e:unknown)=>e instanceof ApiClientError && e.status===409?'此历史任务无法按已固定版本恢复，请开始新的评估。'+e.message:e instanceof Error?e.message:'请求失败，请重试。';
 type Task=ReadingAssessment|ListeningAssessment;
@@ -59,6 +60,7 @@ export function AssessmentWorkspace({onNavigate}:{onNavigate:(workspace:Workspac
    <span>{skill_id}：初始评估后续开放</span>}</li>)}</ul></section>
   {(['reading','listening'] as const).map(s=><SkillTask key={`${run.run_id}:${s}`} runId={run.run_id} skill={s} visible={skill===s} onChanged={changed}/>)}
   {skill==='speaking' && <AssessmentSpeakingTask key={run.run_id} runId={run.run_id} learner={learner} onChanged={changed}/>}
+  <AssessmentWritingTask key={run.run_id} runId={run.run_id} learner={learner} visible={skill==='writing'} onChanged={changed}/>
  </>}
  </div>;
 }

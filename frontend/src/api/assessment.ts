@@ -41,6 +41,64 @@ export interface SpeakingAssessment {
   evaluation_status: 'not_assessed';
   limitations: string[];
 }
+export interface AssessmentWritingPrompt {
+  task_id: string;
+  task_version: string;
+  prompt_id: string;
+  prompt_version: string;
+  text: string;
+  instructions: string;
+  suggested_words: number;
+  max_characters: number;
+  source: string;
+  scope: string;
+}
+export interface AssessmentWritingDraft {
+  body: string;
+  version: number;
+  updated_at: string;
+}
+export interface AssessmentWritingSubmission {
+  submission_id: string;
+  task_version: string;
+  prompt_id: string;
+  prompt_version: string;
+  draft_version: number;
+  body: string;
+  body_sha256: string;
+  word_count: number;
+  paragraph_count: number;
+  submitted_at: string;
+  evidence_type: 'assessment_activity';
+  source: 'assessment_writing_submission';
+  evaluation_status: 'not_assessed';
+  semantic_quality: 'not_assessed';
+  ability_evidence_valid: false;
+}
+export interface AssessmentWriting {
+  assessment_run_id: string;
+  learner_id: string;
+  assessment_version: string;
+  skill_id: 'writing';
+  task_status: 'not_started' | 'in_progress' | 'skipped' | 'completed';
+  task_id: string | null;
+  task_version: string | null;
+  prompt: AssessmentWritingPrompt | null;
+  draft: AssessmentWritingDraft | null;
+  submission: AssessmentWritingSubmission | null;
+  evidence_source: string | null;
+  evidence_reference: string | null;
+  limitations: string[];
+}
+export interface AssessmentWritingSubmitRequest {
+  learner_id: string;
+  body: string;
+  version: number;
+  task_version: string;
+  prompt_id: string;
+  prompt_version: string;
+  idempotency_key: string;
+}
 const root = '/api/v1/assessment-runs';
 const query = (learner: string) => `?learner_id=${encodeURIComponent(learner)}`;
 const path = (run: string) => `${root}/${encodeURIComponent(run)}`;
@@ -57,4 +115,8 @@ export const assessmentApi = {
   reading: (run: string, learner: string) => apiRequest<ReadingAssessment>(path(run) + '/reading' + query(learner)),
   start: (run: string, learner: string) => apiRequest<ReadingAssessment>(path(run) + '/reading/start' + query(learner), {method:'POST'}),
   submit: (run: string, learner: string, answers: Record<string,string>, key: string) => apiRequest<ReadingAssessment>(path(run) + '/reading/submit', {method:'POST', body:JSON.stringify({learner_id:learner, answers, idempotency_key:key})}),
+  writing: (run: string, learner: string, signal?: AbortSignal) => apiRequest<AssessmentWriting>(path(run) + '/writing' + query(learner), {signal}),
+  startWriting: (run: string, learner: string) => apiRequest<AssessmentWriting>(path(run) + '/writing/start' + query(learner), {method:'POST'}),
+  saveWritingDraft: (run: string, payload: Pick<AssessmentWritingSubmitRequest, 'learner_id' | 'body' | 'version'>) => apiRequest<AssessmentWritingDraft>(path(run) + '/writing/draft', {method:'PUT', body:JSON.stringify(payload)}),
+  submitWriting: (run: string, payload: AssessmentWritingSubmitRequest) => apiRequest<AssessmentWriting>(path(run) + '/writing/submit', {method:'POST', body:JSON.stringify(payload)}),
 };

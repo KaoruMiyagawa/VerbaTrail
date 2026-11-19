@@ -1,17 +1,29 @@
 """Run-scoped initial Writing response collection; no semantic scoring."""
 
+from collections.abc import Iterator
+from contextlib import contextmanager
 from datetime import datetime, timezone
 from hashlib import sha256
 import re
 from typing import Annotated, Literal
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Response
 from pydantic import AwareDatetime, BaseModel, ConfigDict, Field, field_validator
 from sqlalchemy import select, update
 from sqlalchemy.orm import Session
 
-from app.api.v1.dependencies import get_db
+from app.api.v1.dependencies import get_db, get_model_provider
+from app.application.writing_agent_service import WritingAgentService, WritingDiagnosticConflict
+from app.application.writing_diagnostic_service import build_writing_diagnostic
+from app.application.writing_practice_service import WritingPracticeConflict, WritingPracticeService, WritingPracticeView
+from app.application.writing_transfer_service import WritingTransferConflict, WritingTransferService, WritingTransferView
+from app.config import Settings, get_settings
 from app.content import writing_initial_assessment as content
+from app.content.writing_transfer import MAX_CHARACTERS as MAX_TRANSFER_CHARACTERS
+from app.decision.writing_agent_schemas import MAX_ANSWER_CHARACTERS, WritingAgentSessionView
+from app.decision.writing_practice import MAX_REVISION_CHARACTERS
+from app.decision.writing_schemas import WritingDiagnosticResult
+from app.model_provider import ModelProvider
 from app.persistence.models import AssessmentRun, AssessmentTask, AssessmentWritingDraft, AssessmentWritingSubmission, new_id, utc_now
 
 router = APIRouter(prefix="/assessment-runs/{run_id}/writing", tags=["assessment"])
@@ -38,6 +50,66 @@ class SubmitInput(DraftInput):
     prompt_id: str = Field(min_length=1, max_length=64)
     prompt_version: str = Field(min_length=1, max_length=64)
     idempotency_key: str = Field(min_length=8, max_length=128, pattern=r"^[A-Za-z0-9_-]+$")
+
+
+class DiagnosticStartInput(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    idempotency_key: str = Field(min_length=8, max_length=128, pattern=r"^[A-Za-z0-9_-]+$")
+    allow_model: bool = Field(default=False, strict=True)
+    recover_decision_id: str | None = Field(default=None, min_length=1, max_length=64)
+
+
+class DiagnosticAnswerInput(DiagnosticStartInput):
+    question_id: str = Field(min_length=1, max_length=64)
+    body: str = Field(min_length=1, max_length=MAX_ANSWER_CHARACTERS)
+
+    @field_validator("body")
+    @classmethod
+    def validate_answer(cls, value: str) -> str:
+        if not value.strip() or any(
+            (ord(c) < 32 and c not in "\t\n\r") or 0xD800 <= ord(c) <= 0xDFFF for c in value
+        ):
+            raise ValueError("Enter a nonblank plain-text clarification.")
+        return value
+
+
+class PracticeDraftInput(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    body: str = Field(max_length=MAX_REVISION_CHARACTERS)
+    version: int = Field(ge=0, le=2147483646, strict=True)
+
+    @field_validator("body")
+    @classmethod
+    def validate_text(cls, value: str) -> str:
+        if any((ord(c) < 32 and c not in "\t\n\r") or 0xD800 <= ord(c) <= 0xDFFF for c in value):
+            raise ValueError("Only plain Unicode text and standard whitespace are supported.")
+        return value
+
+
+class PracticeSubmitInput(PracticeDraftInput):
+    idempotency_key: str = Field(min_length=8, max_length=128, pattern=r"^[A-Za-z0-9_-]+$")
+
+    @field_validator("body")
+    @classmethod
+    def require_revision(cls, value: str) -> str:
+        if not value.strip():
+            raise ValueError("Enter a nonblank revision.")
+        return value
+
+
+class TransferDraftInput(PracticeDraftInput):
+    body: str = Field(max_length=MAX_TRANSFER_CHARACTERS)
+
+
+class TransferSubmitInput(PracticeSubmitInput):
+    body: str = Field(max_length=MAX_TRANSFER_CHARACTERS)
+
+    @field_validator("body")
+    @classmethod
+    def require_response(cls, value: str) -> str:
+        if not WORD.search(value):
+            raise ValueError("Enter some text before submitting a Writing transfer response.")
+        return value
 
 
 def _write_lock(db: Session) -> None:
@@ -67,8 +139,18 @@ def _owned(db: Session, run_id: str, learner_id: str, write: bool = False) -> tu
 
 
 def _check_state(db: Session, task: AssessmentTask) -> tuple[AssessmentWritingDraft | None, AssessmentWritingSubmission | None]:
-    draft = db.get(AssessmentWritingDraft, task.id)
-    submission = db.scalar(select(AssessmentWritingSubmission).where(AssessmentWritingSubmission.assessment_task_id == task.id))
+    # Read task status, draft and formal evidence from the same SQL snapshot.
+    row = db.execute(
+        select(AssessmentTask, AssessmentWritingDraft, AssessmentWritingSubmission)
+        .select_from(AssessmentTask)
+        .outerjoin(AssessmentWritingDraft, AssessmentWritingDraft.assessment_task_id == AssessmentTask.id)
+        .outerjoin(AssessmentWritingSubmission, AssessmentWritingSubmission.assessment_task_id == AssessmentTask.id)
+        .where(AssessmentTask.id == task.id)
+        .execution_options(populate_existing=True)
+    ).one_or_none()
+    if row is None:
+        raise HTTPException(409, "The Writing task is no longer available.")
+    task, draft, submission = row
     if task.status == "not_started":
         if draft or submission or task.evidence_reference or task.evidence_source:
             raise HTTPException(409, "Unstarted Writing task contains unexpected saved state.")
@@ -80,6 +162,7 @@ def _check_state(db: Session, task: AssessmentTask) -> tuple[AssessmentWritingDr
                 or task.evidence_reference != submission.id
                 or submission.task_version != content.TASK_VERSION
                 or submission.prompt_id != content.PROMPT_ID or submission.prompt_version != content.PROMPT_VERSION
+                or draft.version != submission.draft_version + 1 or draft.body != submission.body
                 or sha256(submission.body.encode("utf-8")).hexdigest() != submission.body_sha256):
             raise HTTPException(409, "Completed Writing evidence is missing or inconsistent and cannot be safely restored.")
     else:
@@ -138,6 +221,200 @@ def _view(db: Session, run: AssessmentRun, task: AssessmentTask) -> dict:
 def get_writing(run_id: str, learner_id: Learner = "default_learner", db: Session = Depends(get_db)) -> dict:
     run, task = _owned(db, run_id, learner_id)
     return _view(db, run, task)
+
+
+@router.get("/diagnostic")
+def get_writing_diagnostic(
+    run_id: str,
+    response: Response,
+    learner_id: Learner = "default_learner",
+    db: Session = Depends(get_db),
+) -> WritingDiagnosticResult:
+    """Derive evidence from the owned, digest-verified formal submission."""
+    _, snapshot = _owned_diagnostic_snapshot(db, run_id, learner_id)
+    response.headers["Cache-Control"] = "no-store"
+    return snapshot
+
+
+def _owned_diagnostic_snapshot(
+    db: Session, run_id: str, learner_id: str, *, write: bool = False,
+) -> tuple[str, WritingDiagnosticResult]:
+    _, task = _owned(db, run_id, learner_id, write=write)
+    _, submission = _check_state(db, task)
+    if submission is None:
+        raise HTTPException(409, "Submit the Writing task before requesting diagnostic evidence.")
+    return task.id, build_writing_diagnostic(
+        submission, prompt=content.PROMPT["text"], instructions=content.PROMPT["instructions"],
+    )
+
+
+def _writing_agent(
+    db: Session = Depends(get_db),
+    settings: Settings = Depends(get_settings),
+    provider: ModelProvider = Depends(get_model_provider),
+) -> WritingAgentService:
+    return WritingAgentService(db, settings, provider)
+
+
+@router.get("/diagnostic/session")
+def get_diagnostic_session(
+    run_id: str, response: Response, learner_id: Learner = "default_learner",
+    agent: WritingAgentService = Depends(_writing_agent),
+) -> WritingAgentSessionView:
+    _, snapshot = _owned_diagnostic_snapshot(agent.db, run_id, learner_id)
+    response.headers["Cache-Control"] = "no-store"
+    try:
+        return agent.read(snapshot)
+    except WritingDiagnosticConflict as exc:
+        raise HTTPException(409, str(exc)) from exc
+
+
+def _advance_diagnostic(
+    run_id: str, learner_id: str, payload: DiagnosticStartInput, agent: WritingAgentService,
+) -> WritingAgentSessionView:
+    task_id, snapshot = _owned_diagnostic_snapshot(agent.db, run_id, learner_id, write=True)
+    answer = payload if isinstance(payload, DiagnosticAnswerInput) else None
+    try:
+        return agent.advance(
+            snapshot, task_id=task_id, key=payload.idempotency_key, allow_model=payload.allow_model,
+            recover_decision_id=payload.recover_decision_id,
+            question_id=answer.question_id if answer else None, answer_body=answer.body if answer else None,
+        )
+    except WritingDiagnosticConflict as exc:
+        raise HTTPException(409, str(exc)) from exc
+
+
+@router.post("/diagnostic/start")
+def start_diagnostic(
+    run_id: str, payload: DiagnosticStartInput, response: Response, learner_id: Learner = "default_learner",
+    agent: WritingAgentService = Depends(_writing_agent),
+) -> WritingAgentSessionView:
+    response.headers["Cache-Control"] = "no-store"
+    return _advance_diagnostic(run_id, learner_id, payload, agent)
+
+
+@router.post("/diagnostic/answer")
+def answer_diagnostic(
+    run_id: str, payload: DiagnosticAnswerInput, response: Response, learner_id: Learner = "default_learner",
+    agent: WritingAgentService = Depends(_writing_agent),
+) -> WritingAgentSessionView:
+    response.headers["Cache-Control"] = "no-store"
+    return _advance_diagnostic(run_id, learner_id, payload, agent)
+
+
+def _practice(db: Session, run_id: str, learner_id: str, *, write: bool = False) -> WritingPracticeService:
+    _, snapshot = _owned_diagnostic_snapshot(db, run_id, learner_id, write=write)
+    return WritingPracticeService(db, snapshot)
+
+
+@router.get("/training")
+def get_training(
+    run_id: str, response: Response, learner_id: Learner = "default_learner",
+    db: Session = Depends(get_db),
+) -> WritingPracticeView | None:
+    response.headers["Cache-Control"] = "no-store"
+    try:
+        return _practice(db, run_id, learner_id).read()
+    except WritingPracticeConflict as exc:
+        raise HTTPException(409, str(exc)) from exc
+
+
+@router.post("/training/start")
+def start_training(
+    run_id: str, response: Response, learner_id: Learner = "default_learner",
+    db: Session = Depends(get_db),
+) -> WritingPracticeView:
+    response.headers["Cache-Control"] = "no-store"
+    try:
+        result = _practice(db, run_id, learner_id, write=True).start()
+        db.commit()
+        return result
+    except WritingPracticeConflict as exc:
+        raise HTTPException(409, str(exc)) from exc
+
+
+@router.put("/training/draft")
+def save_training_draft(
+    run_id: str, payload: PracticeDraftInput, response: Response, learner_id: Learner = "default_learner",
+    db: Session = Depends(get_db),
+) -> WritingPracticeView:
+    response.headers["Cache-Control"] = "no-store"
+    try:
+        result = _practice(db, run_id, learner_id, write=True).save_draft(payload.body, payload.version)
+        db.commit()
+        return result
+    except WritingPracticeConflict as exc:
+        raise HTTPException(409, str(exc)) from exc
+
+
+@router.post("/training/submit")
+def submit_training(
+    run_id: str, payload: PracticeSubmitInput, response: Response, learner_id: Learner = "default_learner",
+    db: Session = Depends(get_db),
+) -> WritingPracticeView:
+    response.headers["Cache-Control"] = "no-store"
+    try:
+        result = _practice(db, run_id, learner_id, write=True).submit(payload.body, payload.version, payload.idempotency_key)
+        db.commit()
+        return result
+    except WritingPracticeConflict as exc:
+        raise HTTPException(409, str(exc)) from exc
+
+
+@contextmanager
+def _transfer(
+    db: Session, run_id: str, learner_id: str, *, write: bool = False,
+) -> Iterator[WritingTransferService]:
+    run, task = _owned(db, run_id, learner_id, write=write)
+    _, submission = _check_state(db, task)
+    if submission is None:
+        raise HTTPException(409, "Submit the initial Writing task before opening transfer.")
+    try:
+        yield WritingTransferService(db, submission, run.learner_id)
+        if write:
+            db.commit()
+    except WritingTransferConflict as exc:
+        raise HTTPException(409, str(exc)) from exc
+
+
+@router.get("/transfer")
+def get_transfer(
+    run_id: str, response: Response, learner_id: Learner = "default_learner",
+    db: Session = Depends(get_db),
+) -> WritingTransferView | None:
+    response.headers["Cache-Control"] = "no-store"
+    with _transfer(db, run_id, learner_id) as service:
+        return service.read()
+
+
+@router.post("/transfer/start")
+def start_transfer(
+    run_id: str, response: Response, learner_id: Learner = "default_learner",
+    db: Session = Depends(get_db),
+) -> WritingTransferView:
+    response.headers["Cache-Control"] = "no-store"
+    with _transfer(db, run_id, learner_id, write=True) as service:
+        return service.start()
+
+
+@router.put("/transfer/draft")
+def save_transfer_draft(
+    run_id: str, payload: TransferDraftInput, response: Response, learner_id: Learner = "default_learner",
+    db: Session = Depends(get_db),
+) -> WritingTransferView:
+    response.headers["Cache-Control"] = "no-store"
+    with _transfer(db, run_id, learner_id, write=True) as service:
+        return service.save_draft(payload.body, payload.version)
+
+
+@router.post("/transfer/submit")
+def submit_transfer(
+    run_id: str, payload: TransferSubmitInput, response: Response, learner_id: Learner = "default_learner",
+    db: Session = Depends(get_db),
+) -> WritingTransferView:
+    response.headers["Cache-Control"] = "no-store"
+    with _transfer(db, run_id, learner_id, write=True) as service:
+        return service.submit(payload.body, payload.version, payload.idempotency_key)
 
 
 @router.post("/start")

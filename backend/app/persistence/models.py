@@ -25,6 +25,7 @@ from sqlalchemy import (
     DateTime,
     Float,
     ForeignKey,
+    ForeignKeyConstraint,
     Integer,
     Index,
     String,
@@ -1244,3 +1245,199 @@ class AssessmentWritingSubmission(Base):
 @event.listens_for(AssessmentWritingSubmission, "before_delete")
 def _prevent_assessment_writing_submission_mutation(_mapper: Any, _connection: Any, _target: Any) -> None:
     raise ImmutableRecordError("Assessment Writing submissions are immutable evidence records.")
+
+
+class AssessmentWritingDiagnosticDecision(Base):
+    """One durable reservation and outcome per Writing diagnostic phase."""
+
+    __tablename__ = "assessment_writing_diagnostic_decisions"
+    __table_args__ = (
+        UniqueConstraint("submission_id", "phase", name="uq_writing_diagnostic_phase"),
+        UniqueConstraint("submission_id", "idempotency_key", name="uq_writing_diagnostic_key"),
+        UniqueConstraint("id", "submission_id", name="uq_writing_diagnostic_id_submission"),
+        UniqueConstraint("model_call_id", name="uq_writing_diagnostic_model_call"),
+        ForeignKeyConstraint(
+            ["submission_id", "required_initial_phase"],
+            ["assessment_writing_diagnostic_decisions.submission_id", "assessment_writing_diagnostic_decisions.phase"],
+            name="fk_writing_diagnostic_initial", ondelete="CASCADE",
+        ),
+        CheckConstraint(
+            "(phase = 'initial' AND answer_body IS NULL AND required_initial_phase IS NULL) OR "
+            "(phase = 'followup' AND answer_body IS NOT NULL AND required_initial_phase IS NOT NULL "
+            "AND required_initial_phase = 'initial' AND followup_limit = 1)",
+            name="ck_writing_diagnostic_phase_answer",
+        ),
+        CheckConstraint("reserved_tokens >= 0 AND reserved_tokens <= token_budget AND followup_limit IN (0, 1)",
+                        name="ck_writing_diagnostic_reserved_tokens"),
+        CheckConstraint(
+            "(result IS NULL AND completed_at IS NULL) OR (result IS NOT NULL AND completed_at IS NOT NULL)",
+            name="ck_writing_diagnostic_finalization",
+        ),
+        CheckConstraint(
+            "(reserved_tokens = 0 AND planned_model IS NULL AND model_call_id IS NULL) OR "
+            "(reserved_tokens > 0 AND planned_model IS NOT NULL AND allow_model = true)",
+            name="ck_writing_diagnostic_model_reservation",
+        ),
+        CheckConstraint(
+            "completed_at IS NOT NULL OR (reserved_tokens > 0 AND model_call_id IS NULL)",
+            name="ck_writing_diagnostic_pending",
+        ),
+    )
+    id: Mapped[str] = mapped_column(String(64), primary_key=True, default=lambda: new_id("awd"))
+    submission_id: Mapped[str] = mapped_column(
+        ForeignKey("assessment_writing_submissions.id", ondelete="CASCADE"), nullable=False,
+    )
+    phase: Mapped[str] = mapped_column(String(16), nullable=False)
+    required_initial_phase: Mapped[str | None] = mapped_column(String(16))
+    idempotency_key: Mapped[str] = mapped_column(String(128), nullable=False)
+    allow_model: Mapped[bool] = mapped_column(Boolean, nullable=False)
+    answer_body: Mapped[str | None] = mapped_column(Text)
+    evidence_version: Mapped[str] = mapped_column(String(64), nullable=False)
+    token_budget: Mapped[int] = mapped_column(Integer, nullable=False)
+    followup_limit: Mapped[int] = mapped_column(Integer, nullable=False)
+    reserved_tokens: Mapped[int] = mapped_column(Integer, nullable=False)
+    planned_model: Mapped[dict[str, str] | None] = mapped_column(JSON(none_as_null=True))
+    result: Mapped[dict[str, Any] | None] = mapped_column(JSON(none_as_null=True))
+    model_call_id: Mapped[str | None] = mapped_column(ForeignKey("model_calls.id", ondelete="RESTRICT"), active_history=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
+    recover_after: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), active_history=True)
+    model_call: Mapped["ModelCall | None"] = relationship()
+
+
+@event.listens_for(AssessmentWritingDiagnosticDecision, "before_update")
+def _finalize_writing_diagnostic_once(_mapper: Any, _connection: Any, target: Any) -> None:
+    state = inspect(target)
+    mutable = {"result", "model_call_id", "completed_at", "model_call"}
+    if any(attr.history.has_changes() for attr in state.attrs if attr.key not in mutable):
+        raise ImmutableRecordError("Writing diagnostic input cannot be changed after reservation.")
+    completed = state.attrs.completed_at.history
+    model_call = state.attrs.model_call_id.history
+    if model_call.has_changes() and (tuple(model_call.deleted) != (None,) or target.model_call_id is None):
+        raise ImmutableRecordError("A Writing model call audit can be attached only once.")
+    if completed.has_changes() and target.completed_at is not None and tuple(completed.deleted) == (None,):
+        return
+    if (not completed.has_changes() and not state.attrs.result.history.has_changes()
+            and model_call.has_changes() and target.completed_at is not None):
+        # An expired request may already have a final local result when its model call returns.
+        return
+    if any(state.attrs[key].history.has_changes() for key in mutable):
+        raise ImmutableRecordError("Writing diagnostic decisions can be finalized only once.")
+
+
+class AssessmentWritingPractice(Base):
+    """A pinned micro exercise and a mutable, versioned revision draft."""
+
+    __tablename__ = "assessment_writing_practices"
+    __table_args__ = (
+        UniqueConstraint("submission_id", name="uq_assessment_writing_practice_submission"),
+        ForeignKeyConstraint(
+            ["decision_id", "submission_id"],
+            ["assessment_writing_diagnostic_decisions.id", "assessment_writing_diagnostic_decisions.submission_id"],
+            name="fk_writing_practice_decision_submission", ondelete="CASCADE",
+        ),
+        Index("ix_writing_practice_decision_submission", "decision_id", "submission_id"),
+        CheckConstraint("draft_version >= 0", name="ck_assessment_writing_practice_version"),
+    )
+    id: Mapped[str] = mapped_column(String(64), primary_key=True, default=lambda: new_id("awp"))
+    submission_id: Mapped[str] = mapped_column(
+        ForeignKey("assessment_writing_submissions.id", ondelete="CASCADE"), nullable=False,
+    )
+    decision_id: Mapped[str] = mapped_column(String(64), nullable=False)
+    plan: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
+    draft_body: Mapped[str] = mapped_column(Text, nullable=False, default="")
+    draft_version: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
+
+
+@event.listens_for(AssessmentWritingPractice, "before_update")
+def _prevent_writing_practice_plan_mutation(_mapper: Any, _connection: Any, target: Any) -> None:
+    state = inspect(target)
+    if any(state.attrs[key].history.has_changes() for key in ("id", "submission_id", "decision_id", "plan")):
+        raise ImmutableRecordError("A Writing practice plan cannot change after it is pinned.")
+
+
+class AssessmentWritingPracticeRevision(Base):
+    """The immutable final revision for a pinned practice."""
+
+    __tablename__ = "assessment_writing_practice_revisions"
+    __table_args__ = (
+        UniqueConstraint("practice_id", name="uq_assessment_writing_practice_revision"),
+        CheckConstraint("base_version >= 0", name="ck_assessment_writing_revision_version"),
+    )
+    id: Mapped[str] = mapped_column(String(64), primary_key=True, default=lambda: new_id("awpr"))
+    practice_id: Mapped[str] = mapped_column(
+        ForeignKey("assessment_writing_practices.id", ondelete="CASCADE"), nullable=False,
+    )
+    base_version: Mapped[int] = mapped_column(Integer, nullable=False)
+    idempotency_key: Mapped[str] = mapped_column(String(128), nullable=False)
+    body: Mapped[str] = mapped_column(Text, nullable=False)
+    body_sha256: Mapped[str] = mapped_column(String(64), nullable=False)
+    feedback: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
+    submitted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
+
+
+@event.listens_for(AssessmentWritingPracticeRevision, "before_update")
+@event.listens_for(AssessmentWritingPracticeRevision, "before_delete")
+def _prevent_writing_practice_revision_mutation(_mapper: Any, _connection: Any, _target: Any) -> None:
+    raise ImmutableRecordError("Final Writing practice revisions are immutable.")
+
+
+class AssessmentWritingTransfer(Base):
+    """A pinned material assignment and its editable Writing transfer draft."""
+
+    __tablename__ = "assessment_writing_transfers"
+    __table_args__ = (
+        UniqueConstraint("practice_revision_id", name="uq_assessment_writing_transfer_revision"),
+        CheckConstraint("draft_version >= 0", name="ck_assessment_writing_transfer_draft_version"),
+        Index(
+            "uq_writing_transfer_first_exposure", "learner_id", "material_id", unique=True,
+            sqlite_where=text("repeated_exposure = false"), postgresql_where=text("repeated_exposure = false"),
+        ),
+        Index("ix_writing_transfer_learner_material", "learner_id", "material_id"),
+    )
+    id: Mapped[str] = mapped_column(String(64), primary_key=True, default=lambda: new_id("awt"))
+    practice_revision_id: Mapped[str] = mapped_column(
+        ForeignKey("assessment_writing_practice_revisions.id", ondelete="CASCADE"), nullable=False,
+    )
+    learner_id: Mapped[str] = mapped_column(String(64), nullable=False)
+    material_id: Mapped[str] = mapped_column(String(64), nullable=False)
+    task_snapshot: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
+    repeated_exposure: Mapped[bool] = mapped_column(Boolean, nullable=False)
+    assigned_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
+    draft_body: Mapped[str] = mapped_column(Text, nullable=False, default="")
+    draft_version: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
+
+
+@event.listens_for(AssessmentWritingTransfer, "before_update")
+def _protect_writing_transfer_assignment(_mapper: Any, _connection: Any, target: Any) -> None:
+    editable = {"draft_body", "draft_version", "updated_at"}
+    if any(attr.history.has_changes() for attr in inspect(target).attrs if attr.key not in editable):
+        raise ImmutableRecordError("The Writing transfer assignment is pinned.")
+
+
+class AssessmentWritingTransferResponse(Base):
+    """One immutable response with deterministic observations per assignment."""
+
+    __tablename__ = "assessment_writing_transfer_responses"
+    __table_args__ = (
+        UniqueConstraint("transfer_id", name="uq_assessment_writing_transfer_response"),
+        CheckConstraint("base_version >= 0", name="ck_assessment_writing_transfer_response_version"),
+    )
+    id: Mapped[str] = mapped_column(String(64), primary_key=True, default=lambda: new_id("awtr"))
+    transfer_id: Mapped[str] = mapped_column(
+        ForeignKey("assessment_writing_transfers.id", ondelete="CASCADE"), nullable=False,
+    )
+    body: Mapped[str] = mapped_column(Text, nullable=False)
+    body_sha256: Mapped[str] = mapped_column(String(64), nullable=False)
+    base_version: Mapped[int] = mapped_column(Integer, nullable=False)
+    idempotency_key: Mapped[str] = mapped_column(String(128), nullable=False)
+    submitted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now)
+    observation: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
+
+
+@event.listens_for(AssessmentWritingTransferResponse, "before_update")
+@event.listens_for(AssessmentWritingTransferResponse, "before_delete")
+def _protect_writing_transfer_response(_mapper: Any, _connection: Any, _target: Any) -> None:
+    raise ImmutableRecordError("A formal Writing transfer response is immutable.")
